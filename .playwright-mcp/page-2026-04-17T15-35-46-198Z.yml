@@ -1,0 +1,500 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e6]:
+    - link [ref=e11] [cursor=pointer]:
+      - /url: /
+    - list [ref=e17]:
+      - listitem [ref=e18]:
+        - link "Accueil" [ref=e19] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=e21]:
+        - link "Formations" [ref=e22] [cursor=pointer]:
+          - /url: /courses/
+      - listitem [ref=e24]:
+        - link "Pages" [ref=e25] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e27]:
+        - link "Shop" [ref=e28] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e30]:
+        - link "Blog" [ref=e31] [cursor=pointer]:
+          - /url: /blog/
+    - generic [ref=e32]:
+      - link [ref=e35] [cursor=pointer]:
+        - /url: /?s=&post_type=lp_course
+        - generic [ref=e36]: 
+      - link "Connexion" [ref=e40] [cursor=pointer]:
+        - /url: /login
+  - generic [ref=e41]:
+    - generic [ref=e44]:
+      - generic [ref=e47]:
+        - heading "Libérer le savoir. Façonner l’avenir." [level=1] [ref=e48]
+        - paragraph [ref=e49]: Nova Academy est une plateforme d'e-learning qui aide ses apprenants à démarrer, se reconvertir ou booster leur carrière.
+      - generic [ref=e50]:
+        - link "Démarrer maintenant" [ref=e52] [cursor=pointer]:
+          - /url: /courses/
+          - generic [ref=e54]: Démarrer maintenant
+        - link "Explorer les programmes" [ref=e56] [cursor=pointer]:
+          - /url: /courses/
+          - generic [ref=e58]: Explorer les programmes
+    - generic [ref=e64]:
+      - generic [ref=e67]:
+        - paragraph [ref=e68]: PROGRAMMES EN LIGNE
+        - heading "Explorez les formations Nova Academy" [level=2] [ref=e69]
+        - paragraph [ref=e71]: Des parcours structurés pour vous aider à développer votre expertise, obtenir des certifications et progresser de manière concrète dans votre domaine.
+      - generic [ref=e72]:
+        - link "Administration des affaires" [ref=e74] [cursor=pointer]:
+          - /url: /course-category/passive-income
+          - generic [ref=e75]:
+            - img [ref=e77]
+            - generic [ref=e79]: Administration des affaires
+        - link "Design graphique" [ref=e81] [cursor=pointer]:
+          - /url: /course-category/photography/
+          - generic [ref=e82]:
+            - img [ref=e84]
+            - generic [ref=e87]: Design graphique
+        - link "Développement web" [ref=e89] [cursor=pointer]:
+          - /url: /course-category/teacher-training
+          - generic [ref=e90]:
+            - img [ref=e92]
+            - generic [ref=e106]: Développement web
+        - link "Enseignement en ligne" [ref=e108] [cursor=pointer]:
+          - /url: /course-category/teaching-online
+          - generic [ref=e109]:
+            - img [ref=e111]
+            - generic [ref=e114]: Enseignement en ligne
+        - link "Arts & Crafts" [ref=e116] [cursor=pointer]:
+          - /url: /course-category/arts-crafts/
+          - generic [ref=e117]:
+            - img [ref=e119]
+            - generic [ref=e127]: Arts & Crafts
+      - generic [ref=e129]:
+        - generic:
+          - button "Go to slide 1"
+          - button "Go to slide 2"
+          - button "Go to slide 3"
+          - button "Go to slide 4"
+          - button "Go to slide 5"
+          - button "Go to slide 6"
+        - button "Previous slide" [ref=e130] [cursor=pointer]:
+          - generic [ref=e131]: 
+        - button "Next slide" [ref=e132] [cursor=pointer]:
+          - generic [ref=e133]: 
+      - link "Voir tous les programmes" [ref=e136] [cursor=pointer]:
+        - /url: /courses/
+        - generic [ref=e138]: Voir tous les programmes
+    - generic [ref=e143]:
+      - generic [ref=e146]:
+        - heading "Transformez votre expérience d'apprentissage" [level=5] [ref=e147]
+        - heading "Apprenez avec intention. Évoluez avec impact." [level=2] [ref=e148]
+        - paragraph [ref=e150]: Nova Academy collabore avec plus de 350 universités et entreprises de renom pour proposer des formations flexibles, abordables et adaptees au marché du travail.
+      - link "Rejoindre la prochaine session" [ref=e152] [cursor=pointer]:
+        - /url: /courses/
+        - generic [ref=e154]: Rejoindre la prochaine session
+    - generic [ref=e156]:
+      - generic [ref=e159]:
+        - paragraph [ref=e160]: Apprenez à votre rythme
+        - heading "Rencontrez nos formateurs" [level=2] [ref=e161]
+        - paragraph [ref=e163]: Notre équipe pédagogique est composée d'enseignants, de chercheurs et de professionnels engagés dans la transmission des savoirs. Ils apportent à chaque programme une exigence académique, un mentorat de qualité et une expertise terrain.
+      - generic [ref=e165]:
+        - generic:
+          - button "Go to slide 1"
+          - button "Go to slide 2"
+      - link "Voir tous les formateurs" [ref=e168] [cursor=pointer]:
+        - /url: /instructors/
+        - generic [ref=e170]: Voir tous les formateurs
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - generic [ref=e197]:
+          - paragraph [ref=e198]: Temoignages
+          - heading "La voix de nos apprenants" [level=2] [ref=e199]
+          - paragraph [ref=e201]: Découvrez des apprenants qui ont transforme leurs competences et leur avenir grâce à Nova Academy.
+        - generic [ref=e206]:
+          - heading "99%" [level=3] [ref=e207]
+          - generic [ref=e208]: Satisfaction
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - generic [ref=e213]:
+            - img [ref=e215]
+            - paragraph [ref=e219]: Les formations Nova Academy sont claires, professionnalisantes et directement applicables en situation réelle.
+          - generic [ref=e220]:
+            - heading "Emma Taylor" [level=6] [ref=e221]
+            - paragraph [ref=e222]: Analyste de données – Programme marketing digital
+        - generic [ref=e223]:
+          - generic [ref=e226]:
+            - img [ref=e228]
+            - paragraph [ref=e232]: Mettez en avant des histoires inspirantes et des expériences partagées par nos apprenants. Nos programmes et services les accompagnent tout au long de leur parcours.
+          - generic [ref=e233]:
+            - heading "John Doe" [level=6] [ref=e234]
+            - paragraph [ref=e235]: Responsable marketing chez ABC Corp
+    - generic [ref=e242]:
+      - generic [ref=e245]:
+        - paragraph [ref=e246]: RÉSULTATS CARRIÈRE
+        - heading "Là où nos apprenants réussissent" [level=2] [ref=e247]
+        - paragraph [ref=e249]: Les diplômés de Nova Academy poursuivent leurs études, la recherche et leur carrière auprès d'universités et d'organisations de premier plan dans le monde entier. Leur réussite illustre notre engagement commun en faveur d'une formation de qualité et de l'apprentissage tout au long de la vie.
+      - region "Image Carousel" [ref=e251]:
+        - generic [ref=e252]:
+          - group [ref=e253]:
+            - figure [ref=e254]:
+              - img [ref=e255]
+          - group [ref=e256]:
+            - figure [ref=e257]:
+              - img [ref=e258]
+          - group [ref=e259]:
+            - figure [ref=e260]:
+              - img [ref=e261]
+          - group [ref=e262]:
+            - figure [ref=e263]:
+              - img [ref=e264]
+          - group [ref=e265]:
+            - figure [ref=e266]:
+              - img [ref=e267]
+          - group [ref=e268]:
+            - figure [ref=e269]:
+              - img [ref=e270]
+          - group "2 / 8" [ref=e271]:
+            - figure [ref=e272]:
+              - img "partner2.png" [ref=e273]
+          - group "3 / 8" [ref=e274]:
+            - figure [ref=e275]:
+              - img "partner3.png" [ref=e276]
+          - group "4 / 8" [ref=e277]:
+            - figure [ref=e278]:
+              - img "partner4.png" [ref=e279]
+          - group "5 / 8" [ref=e280]:
+            - figure [ref=e281]:
+              - img "partner.png" [ref=e282]
+          - group [ref=e283]:
+            - figure [ref=e284]:
+              - img [ref=e285]
+          - group [ref=e286]:
+            - figure [ref=e287]:
+              - img [ref=e288]
+          - group [ref=e289]:
+            - figure [ref=e290]:
+              - img [ref=e291]
+          - group [ref=e292]:
+            - figure [ref=e293]:
+              - img [ref=e294]
+          - group [ref=e295]:
+            - figure [ref=e296]:
+              - img [ref=e297]
+          - group [ref=e298]:
+            - figure [ref=e299]:
+              - img [ref=e300]
+          - group [ref=e301]:
+            - figure [ref=e302]:
+              - img [ref=e303]
+          - group [ref=e304]:
+            - figure [ref=e305]:
+              - img [ref=e306]
+    - generic [ref=e313]:
+      - generic [ref=e314]:
+        - generic [ref=e317]:
+          - paragraph [ref=e318]: PERSPECTIVES
+          - heading "Perspectives & apprentissage" [level=2] [ref=e319]
+        - link "Explorer plus de contenus" [ref=e321] [cursor=pointer]:
+          - /url: /blog/
+          - generic [ref=e323]: Explorer plus de contenus
+      - generic [ref=e325]:
+        - generic:
+          - button "Go to slide 1"
+          - button "Go to slide 2"
+          - button "Go to slide 3"
+          - button "Go to slide 4"
+          - button "Go to slide 5"
+          - button "Go to slide 6"
+        - button "Previous slide" [ref=e326] [cursor=pointer]:
+          - generic [ref=e327]: 
+        - button "Next slide" [ref=e328] [cursor=pointer]:
+          - generic [ref=e329]: 
+        - generic [ref=e331]:
+          - group "4 / 6" [ref=e332]:
+            - link [ref=e334] [cursor=pointer]:
+              - /url: /gallery-teachers-3/
+            - generic [ref=e335]:
+              - heading "Galerie formateurs 3" [level=3] [ref=e336]:
+                - link "Galerie formateurs 3" [ref=e337] [cursor=pointer]:
+                  - /url: /gallery-teachers-3/
+              - generic [ref=e338]:
+                - generic [ref=e339]:
+                  - generic [ref=e340]: 
+                  - text: William
+                - generic [ref=e341]:
+                  - generic [ref=e342]: 
+                  - link "Categorie formateurs" [ref=e343] [cursor=pointer]:
+                    - /url: /category/teachers/
+              - generic [ref=e344]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e345] [cursor=pointer]:
+                - /url: /gallery-teachers-3/
+          - group "5 / 6" [ref=e346]:
+            - link [ref=e348] [cursor=pointer]:
+              - /url: /image-gallery-2/
+            - generic [ref=e349]:
+              - heading "Galerie d'images 2" [level=3] [ref=e350]:
+                - link "Galerie d'images 2" [ref=e351] [cursor=pointer]:
+                  - /url: /image-gallery-2/
+              - generic [ref=e352]:
+                - generic [ref=e353]:
+                  - generic [ref=e354]: 
+                  - text: William
+                - generic [ref=e355]:
+                  - generic [ref=e356]: 
+                  - link "Développement" [ref=e357] [cursor=pointer]:
+                    - /url: /category/developer/
+              - generic [ref=e358]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e359] [cursor=pointer]:
+                - /url: /image-gallery-2/
+          - group "6 / 6" [ref=e360]:
+            - link [ref=e362] [cursor=pointer]:
+              - /url: /image-developer-2/
+            - generic [ref=e363]:
+              - heading "Image developpeur 2" [level=3] [ref=e364]:
+                - link "Image developpeur 2" [ref=e365] [cursor=pointer]:
+                  - /url: /image-developer-2/
+              - generic [ref=e366]:
+                - generic [ref=e367]:
+                  - generic [ref=e368]: 
+                  - text: William
+                - generic [ref=e369]:
+                  - generic [ref=e370]: 
+                  - link "Développement" [ref=e371] [cursor=pointer]:
+                    - /url: /category/developer/
+              - generic [ref=e372]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e373] [cursor=pointer]:
+                - /url: /image-developer-2/
+          - group "1 / 6" [ref=e374]:
+            - link [ref=e376] [cursor=pointer]:
+              - /url: /gallery-events-3-2/
+            - generic [ref=e377]:
+              - heading "Galerie evenements 4" [level=3] [ref=e378]:
+                - link "Galerie evenements 4" [ref=e379] [cursor=pointer]:
+                  - /url: /gallery-events-3-2/
+              - generic [ref=e380]:
+                - generic [ref=e381]:
+                  - generic [ref=e382]: 
+                  - text: William
+                - generic [ref=e383]:
+                  - generic [ref=e384]: 
+                  - link "Développement" [ref=e385] [cursor=pointer]:
+                    - /url: /category/developer/
+              - generic [ref=e386]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e387] [cursor=pointer]:
+                - /url: /gallery-events-3-2/
+          - group "2 / 6" [ref=e388]:
+            - link [ref=e390] [cursor=pointer]:
+              - /url: /gallery-teachers-4/
+            - generic [ref=e391]:
+              - heading "Galerie formateurs 4" [level=3] [ref=e392]:
+                - link "Galerie formateurs 4" [ref=e393] [cursor=pointer]:
+                  - /url: /gallery-teachers-4/
+              - generic [ref=e394]:
+                - generic [ref=e395]:
+                  - generic [ref=e396]: 
+                  - text: William
+                - generic [ref=e397]:
+                  - generic [ref=e398]: 
+                  - link "Categorie formateurs" [ref=e399] [cursor=pointer]:
+                    - /url: /category/teachers/
+              - generic [ref=e400]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e401] [cursor=pointer]:
+                - /url: /gallery-teachers-4/
+          - group "3 / 6" [ref=e402]:
+            - link [ref=e404] [cursor=pointer]:
+              - /url: /gallery-events-3/
+            - generic [ref=e405]:
+              - heading "Galerie evenements 3" [level=3] [ref=e406]:
+                - link "Galerie evenements 3" [ref=e407] [cursor=pointer]:
+                  - /url: /gallery-events-3/
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - generic [ref=e410]: 
+                  - text: William
+                - generic [ref=e411]:
+                  - generic [ref=e412]: 
+                  - link "Evenements" [ref=e413] [cursor=pointer]:
+                    - /url: /category/events/
+              - generic [ref=e414]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e415] [cursor=pointer]:
+                - /url: /gallery-events-3/
+          - group "4 / 6" [ref=e416]:
+            - link [ref=e418] [cursor=pointer]:
+              - /url: /gallery-teachers-3/
+            - generic [ref=e419]:
+              - heading "Galerie formateurs 3" [level=3] [ref=e420]:
+                - link "Galerie formateurs 3" [ref=e421] [cursor=pointer]:
+                  - /url: /gallery-teachers-3/
+              - generic [ref=e422]:
+                - generic [ref=e423]:
+                  - generic [ref=e424]: 
+                  - text: William
+                - generic [ref=e425]:
+                  - generic [ref=e426]: 
+                  - link "Categorie formateurs" [ref=e427] [cursor=pointer]:
+                    - /url: /category/teachers/
+              - generic [ref=e428]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e429] [cursor=pointer]:
+                - /url: /gallery-teachers-3/
+          - group "5 / 6" [ref=e430]:
+            - link [ref=e432] [cursor=pointer]:
+              - /url: /image-gallery-2/
+            - generic [ref=e433]:
+              - heading "Galerie d'images 2" [level=3] [ref=e434]:
+                - link "Galerie d'images 2" [ref=e435] [cursor=pointer]:
+                  - /url: /image-gallery-2/
+              - generic [ref=e436]:
+                - generic [ref=e437]:
+                  - generic [ref=e438]: 
+                  - text: William
+                - generic [ref=e439]:
+                  - generic [ref=e440]: 
+                  - link "Développement" [ref=e441] [cursor=pointer]:
+                    - /url: /category/developer/
+              - generic [ref=e442]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e443] [cursor=pointer]:
+                - /url: /image-gallery-2/
+          - group "6 / 6" [ref=e444]:
+            - link [ref=e446] [cursor=pointer]:
+              - /url: /image-developer-2/
+            - generic [ref=e447]:
+              - heading "Image developpeur 2" [level=3] [ref=e448]:
+                - link "Image developpeur 2" [ref=e449] [cursor=pointer]:
+                  - /url: /image-developer-2/
+              - generic [ref=e450]:
+                - generic [ref=e451]:
+                  - generic [ref=e452]: 
+                  - text: William
+                - generic [ref=e453]:
+                  - generic [ref=e454]: 
+                  - link "Développement" [ref=e455] [cursor=pointer]:
+                    - /url: /category/developer/
+              - generic [ref=e456]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e457] [cursor=pointer]:
+                - /url: /image-developer-2/
+          - group "1 / 6" [ref=e458]:
+            - link [ref=e460] [cursor=pointer]:
+              - /url: /gallery-events-3-2/
+            - generic [ref=e461]:
+              - heading "Galerie evenements 4" [level=3] [ref=e462]:
+                - link "Galerie evenements 4" [ref=e463] [cursor=pointer]:
+                  - /url: /gallery-events-3-2/
+              - generic [ref=e464]:
+                - generic [ref=e465]:
+                  - generic [ref=e466]: 
+                  - text: William
+                - generic [ref=e467]:
+                  - generic [ref=e468]: 
+                  - link "Développement" [ref=e469] [cursor=pointer]:
+                    - /url: /category/developer/
+              - generic [ref=e470]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e471] [cursor=pointer]:
+                - /url: /gallery-events-3-2/
+          - group "2 / 6" [ref=e472]:
+            - link [ref=e474] [cursor=pointer]:
+              - /url: /gallery-teachers-4/
+            - generic [ref=e475]:
+              - heading "Galerie formateurs 4" [level=3] [ref=e476]:
+                - link "Galerie formateurs 4" [ref=e477] [cursor=pointer]:
+                  - /url: /gallery-teachers-4/
+              - generic [ref=e478]:
+                - generic [ref=e479]:
+                  - generic [ref=e480]: 
+                  - text: William
+                - generic [ref=e481]:
+                  - generic [ref=e482]: 
+                  - link "Categorie formateurs" [ref=e483] [cursor=pointer]:
+                    - /url: /category/teachers/
+              - generic [ref=e484]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e485] [cursor=pointer]:
+                - /url: /gallery-teachers-4/
+          - group "3 / 6" [ref=e486]:
+            - link [ref=e488] [cursor=pointer]:
+              - /url: /gallery-events-3/
+            - generic [ref=e489]:
+              - heading "Galerie evenements 3" [level=3] [ref=e490]:
+                - link "Galerie evenements 3" [ref=e491] [cursor=pointer]:
+                  - /url: /gallery-events-3/
+              - generic [ref=e492]:
+                - generic [ref=e493]:
+                  - generic [ref=e494]: 
+                  - text: William
+                - generic [ref=e495]:
+                  - generic [ref=e496]: 
+                  - link "Evenements" [ref=e497] [cursor=pointer]:
+                    - /url: /category/events/
+              - generic [ref=e498]: “Je ne sais pas pourquoi elle a cédé – épuisement, probablement – mais une..
+              - link "En savoir plus" [ref=e499] [cursor=pointer]:
+                - /url: /gallery-events-3/
+  - generic [ref=e502]:
+    - generic [ref=e504]:
+      - generic [ref=e505]:
+        - link [ref=e509] [cursor=pointer]:
+          - /url: /
+        - list [ref=e513]:
+          - listitem [ref=e514]:
+            - 'link "Adresse : n° 200 Joseob, Canada" [ref=e515] [cursor=pointer]':
+              - /url: https://www.google.com/maps
+              - generic [ref=e517]: 
+              - text: "Adresse : n° 200 Joseob, Canada"
+          - listitem [ref=e518]:
+            - 'link "Téléphone : (+1) 212-123-4567" [ref=e519] [cursor=pointer]':
+              - /url: tel:%200000000000
+              - generic [ref=e521]: 
+              - text: "Téléphone : (+1) 212-123-4567"
+          - listitem [ref=e522]:
+            - 'link "E-mail : contact@novaacademy.com" [ref=e523] [cursor=pointer]':
+              - /url: /cdn-cgi/l/email-protection#6920070f06291d010004191b0c1a1a470a0604
+              - generic [ref=e525]: 
+              - text: "E-mail : contact@novaacademy.com"
+      - generic [ref=e526]:
+        - heading "Entreprise" [level=5] [ref=e528]
+        - list [ref=e532]:
+          - listitem [ref=e533]:
+            - link "Formations" [ref=e534] [cursor=pointer]:
+              - /url: /courses/
+          - listitem [ref=e535]:
+            - link "Profil LearnPress" [ref=e536] [cursor=pointer]:
+              - /url: /lp-profile/
+          - listitem [ref=e537]:
+            - link "Abonnements" [ref=e538] [cursor=pointer]:
+              - /url: /memberships/
+          - listitem [ref=e539]:
+            - link "Services" [ref=e540] [cursor=pointer]:
+              - /url: /services/
+      - generic [ref=e541]:
+        - heading "Liens" [level=5] [ref=e543]
+        - list [ref=e547]:
+          - listitem [ref=e548]:
+            - link "Boutique" [ref=e549] [cursor=pointer]:
+              - /url: /shop/
+          - listitem [ref=e550]:
+            - link "Blog" [ref=e551] [cursor=pointer]:
+              - /url: /blog/
+          - listitem [ref=e552]:
+            - link "Galerie" [ref=e553] [cursor=pointer]:
+              - /url: /gallery/
+          - listitem [ref=e554]:
+            - link "Devenir formateur" [ref=e555] [cursor=pointer]:
+              - /url: /become-a-teacher/
+      - generic [ref=e556]:
+        - heading "Nova Academy - Nous croyons que l'apprentissage est la source du progrès humain." [level=5] [ref=e558]
+        - paragraph [ref=e560]: Accédez à vos contenus, suivez votre progression et échangez avec vos formateurs, à tout moment et en tout lieu.
+        - link "Télécharger l'application" [ref=e562] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e564]: Télécharger l'application
+    - generic [ref=e566]:
+      - generic [ref=e570]:
+        - img [ref=e571]
+        - generic [ref=e573]: 
+      - list [ref=e577]:
+        - listitem [ref=e578]:
+          - link "À propos" [ref=e579] [cursor=pointer]:
+            - /url: /about-us/
+        - listitem [ref=e580]:
+          - link "Nous contacter" [ref=e581] [cursor=pointer]:
+            - /url: /contact-us/
+        - listitem [ref=e582]:
+          - link "Politique de confidentialité" [ref=e583] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e584]: © 2025 Nova Academy. Tous droits réservés.
+  - generic [ref=e585]: desktop
+  - status [ref=e586]

@@ -21,6 +21,351 @@
   gap: 24px;
 }
 
+/* Services section - override Bootstrap grid for better card layout */
+#services .row:not(:first-child) {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 24px;
+}
+
+#services .row > [class*="col-"] {
+  flex: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 12px;
+}
+
+/* Team section grid */
+.team-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Portfolio grid */
+.portfolio_area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Pricing section grid */
+.pricing-area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Partners/Brand grid */
+.brand-area .row,
+.partners-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Testimonial grid */
+.testimoniales-area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* FAQ grid */
+.faq-area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* Flexbox fallback for older browsers */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Better card layouts */
+.techno-sinlge-service-box,
+.single-pricing-box,
+.single-blog-box,
+.team-single-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure cards have equal height */
+.techno-sinlge-service-box .techno-service-box-inner,
+.single-pricing-box .pricing-content,
+.team-single-box .team-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Touch-friendly tap targets - minimum 44px */
+button, 
+a, 
+.nav_scroll li a,
+.mean-nav ul li a {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Improve readability on mobile */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure proper spacing on small screens */
+.section-padding {
+  padding: 40px 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Responsive typography */
+h1 { font-size: clamp(24px, 5vw, 48px); }
+h2 { font-size: clamp(20px, 4vw, 36px); }
+h3 { font-size: clamp(18px, 3vw, 28px); }
+h4 { font-size: clamp(16px, 2.5vw, 24px); }
+h5 { font-size: clamp(14px, 2vw, 20px); }
+h6 { font-size: clamp(12px, 1.5vw, 18px); }
+
+p {
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.6;
+}
+
+/* Mobile navigation improvements */
+.mean-nav ul li a {
+  padding: 12px 5%;
+  font-size: 16px;
+  min-height: auto;
+}
+
+.mean-container .mean-nav ul li a {
+  padding: 12px 5%;
+}
+
+/* Language switcher on mobile - make buttons larger and touch-friendly */
+.sdg-language-switcher button {
+  min-width: 50px;
+  min-height: 44px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Header mobile improvements */
+.mobile-menu-area {
+  padding: 10px 0;
+}
+
+.mobile-menu {
+  padding-top: 50px;
+}
+
+/* Make sure slider text is readable on mobile */
+.slider-content h1 {
+  font-size: clamp(24px, 6vw, 40px);
+  line-height: 1.2;
+}
+
+.slider-content p {
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+/* Service cards on mobile */
+.techno-sinlge-service-box {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Team section mobile */
+.team-thumb img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer mobile improvements */
+.footer-widget {
+  margin-bottom: 30px;
+  padding: 0 10px;
+}
+
+/* Form elements on mobile */
+input, textarea, select {
+  font-size: 16px; /* Prevents zoom on iOS */
+  padding: 12px;
+}
+
+/* Button sizing on mobile */
+.dreamit-button a,
+.dreamit-button2 a {
+  padding: 12px 24px;
+  font-size: 14px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pricing cards on mobile */
+.single-pricing-box {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* Portfolio grid on mobile */
+.portfolio_area .grid-item {
+  margin-bottom: 20px;
+}
+
+/* FAQ section mobile */
+.faq-item {
+  margin-bottom: 15px;
+}
+
+/* Testimonial on mobile */
+.testimoniales-title p {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Better focus states for accessibility */
+a:focus, button:focus {
+  outline: 2px solid #e1193a;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .mobile-menu-area,
+  .mean-container {
+    display: none !important;
+  }
+}
+
+/* Services section - override Bootstrap grid for better card layout */
+#services .row:not(:first-child) {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 24px;
+}
+
+#services .row > [class*="col-"] {
+  flex: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 12px;
+}
+
+/* Team section grid */
+.team-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Portfolio grid */
+.portfolio_area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Pricing section grid */
+.pricing-area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Partners/Brand grid */
+.brand-area .row,
+.partners-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Testimonial grid */
+.testimoniales-area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* FAQ grid */
+.faq-area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* Flexbox fallback for older browsers */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Better card layouts */
+.techno-sinlge-service-box,
+.single-pricing-box,
+.single-blog-box,
+.team-single-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure cards have equal height */
+.techno-sinlge-service-box .techno-service-box-inner,
+.single-pricing-box .pricing-content,
+.team-single-box .team-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Services section - override Bootstrap grid for better card layout */
+#services .row:not(:first-child) {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 24px;
+}
+
+#services .row > [class*="col-"] {
+  flex: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 12px;
+}
+
 /* ========== HEADER IMPROVEMENTS ========== */
 
 /* Sticky header transitions */
