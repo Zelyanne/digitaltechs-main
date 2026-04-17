@@ -9,6 +9,101 @@
   --spacing-xl: 48px;
 }
 
+/* Modern Grid Layouts - using auto-fit for responsive columns */
+.services-grid,
+.team-grid,
+.portfolio-grid,
+.pricing-grid,
+.partners-grid,
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Services section - override Bootstrap grid */
+#services .row:not(:first-child) {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  gap: 24px;
+}
+
+#services .row > [class*="col-"] {
+  flex: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 12px;
+}
+
+/* Team section grid */
+.team-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Portfolio grid */
+.portfolio_area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Pricing section grid */
+.pricing-area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Partners/Brand grid */
+.brand-area .row,
+.partners-section .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Testimonial grid */
+.testimoniales-area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* FAQ grid */
+.faq-area .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+/* Flexbox fallback for older browsers */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Better card layouts */
+.techno-sinlge-service-box,
+.single-pricing-box,
+.single-blog-box,
+.team-single-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure cards have equal height */
+.techno-sinlge-service-box .techno-service-box-inner,
+.single-pricing-box .pricing-content,
+.team-single-box .team-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Touch-friendly tap targets - minimum 44px */
 button, 
 a, 
