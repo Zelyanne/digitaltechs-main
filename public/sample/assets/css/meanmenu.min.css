@@ -131,7 +131,7 @@ a.meanmenu-reveal{display:none}
 .mean-container a.meanmenu-reveal:hover span {
   background: #fff;
 }
-.mean-container .mean-bar::before {
+/* .mean-container .mean-bar::before {
     color: #fff;
     content: "Techno";
     font-size: 22px;
@@ -139,4 +139,4 @@ a.meanmenu-reveal{display:none}
     left: 10px;
     position: absolute;
     top: 18px;
-}
+} */
