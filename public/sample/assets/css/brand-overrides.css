@@ -1,0 +1,47 @@
+/* BrandSection: 50% of original height */
+#brand-area.brand-area.style-two,
+#partner-area.brand-area.style-two {
+  padding: 0 !important;
+  min-height: 140px !important;
+  background: #0c0c0c !important;
+  background-image: none !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Footer: reduce excessive top padding from theme */
+.footer-middle {
+  padding-top: 60px !important;
+}
+
+#brand-area .dreamit-section-title2 h1,
+#partner-area .dreamit-section-title2 h1 {
+  padding-top: 30px;
+}
+
+#brand-area .dreamit-single-brand,
+#partner-area .dreamit-single-brand {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#brand-area .brand-thumb,
+#partner-area .brand-thumb {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  #brand-area .brand-thumb,
+  #partner-area .brand-thumb {
+    max-width: 65%;
+  }
+}
+
+@media (max-width: 575px) {
+  #brand-area .brand-thumb,
+  #partner-area .brand-thumb {
+    max-width: 78%;
+  }
+}

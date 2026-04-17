@@ -1,0 +1,17 @@
+/* FAQSection: equal height for contact form and FAQ */
+#contact .row.padding-top > [class*="col-"] {
+  display: flex;
+}
+
+#contact .contact-form-box.style-three,
+#contact .row.background_color {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Contact form fills container */
+#contact .contact-form-box.style-three form {
+  flex: 1;
+}

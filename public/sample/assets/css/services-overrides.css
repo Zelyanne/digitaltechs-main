@@ -1,0 +1,45 @@
+/* ServicesSection: equal height service boxes */
+#services .row:last-child > [class*="col-"] {
+  display: flex;
+}
+
+#services .techno-sinlge-service-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+#services .techno-service-box-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#services .techno-service-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#services .techno-service-title {
+  flex: 1;
+}
+
+@media (max-width: 991px) {
+  #services .techno-sinlge-service-box {
+    padding: 34px 24px 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  #services .techno-sinlge-service-box {
+    padding: 28px 20px 14px;
+  }
+
+  #services .techno-service-title h2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}

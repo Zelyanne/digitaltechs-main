@@ -1,0 +1,4 @@
+/* Portfolio hover - orange overlay disabled */
+.portfolio_area.style-three .single_portfolio:hover .single_portfolio_thumb:before {
+  transform: scale(0) !important; /* Override: keep orange rectangle hidden on hover */
+}

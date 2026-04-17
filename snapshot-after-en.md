@@ -1,0 +1,205 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - link "SDG Techs - Digital marketing agency" [ref=e8] [cursor=pointer]:
+        - /url: "#home"
+        - img "SDG Techs - Digital marketing agency" [ref=e9]
+      - navigation [ref=e11]:
+        - list [ref=e12]
+        - generic [ref=e28]: 
+        - generic [ref=e29]
+        - generic "Language" [ref=e32]
+    - generic [ref=e37]:
+      - generic [ref=e39]:
+        - generic [ref=e43]
+        - generic [ref=e60]
+        - generic [ref=e77]
+        - generic [ref=e94]
+        - generic [ref=e111]
+        - generic [ref=e128]
+        - generic [ref=e145]
+      - generic:
+        - generic [ref=e160] [cursor=pointer]: 
+        - generic [ref=e162] [cursor=pointer]: 
+    - generic [ref=e164]:
+      - heading "OUR CLIENTS" [level=1] [ref=e168]
+      - generic [ref=e170]:
+        - generic [ref=e1105]
+        - text:  
+    - generic [ref=e220]:
+      - heading "OUR PARTNERS" [level=1] [ref=e224]
+      - generic [ref=e226]:
+        - generic [ref=e1179]
+        - text:  
+    - generic [ref=e261]:
+      - generic [ref=e264]:
+        - heading "YOUR CHALLENGES" [level=5] [ref=e265]
+        - heading "DO YOU RECOGNIZE THESE OBSTACLES ?" [level=1] [ref=e266]
+        - paragraph [ref=e267]: Running a business takes time and energy. Here are the common problems that hold growth back.
+      - generic [ref=e268]:
+        - generic [ref=e272]
+        - generic [ref=e289]
+        - generic [ref=e306]
+      - generic [ref=e323]:
+        - heading "Don't worry, we have exactly what you need." [level=2] [ref=e324]
+        - paragraph [ref=e325]: SDG Techs turns your challenges into growth opportunities with tailor-made solutions.
+        - link "DISCOVER OUR SOLUTIONS" [ref=e327] [cursor=pointer]:
+          - /url: "#services"
+    - generic [ref=e329]:
+      - generic [ref=e330]:
+        - generic [ref=e332]
+        - paragraph [ref=e338]: SDG Techs is a digital agency founded in 2016. We help organizations of all kinds and entrepreneurs maximize their results through online execution at the best price. Tailor-made strategies and fast, measurable results, powered by versatile experts and AI tools.
+      - generic [ref=e339]:
+        - generic [ref=e343]
+        - generic [ref=e352]
+        - generic [ref=e361]
+        - generic [ref=e370]
+        - generic [ref=e379]
+        - generic [ref=e388]
+        - generic [ref=e397]
+        - generic [ref=e406]
+        - generic [ref=e415]
+      - link "BOOK A CALL" [ref=e423] [cursor=pointer]:
+        - /url: https://cal.com/sdg-techs/30min
+    - generic [ref=e425]:
+      - generic [ref=e428]:
+        - heading "OUR PLANS" [level=5] [ref=e429]
+        - heading "CHOOSE YOUR PACKAGE" [level=1] [ref=e430]
+        - paragraph [ref=e431]: Packages designed for every stage of your digital growth
+      - generic [ref=e432]:
+        - generic [ref=e434]
+        - generic [ref=e453]
+        - generic [ref=e474]
+      - generic [ref=e497]:
+        - paragraph [ref=e498]: Want more?
+        - button "DISCOVER THE ELITE PACK" [ref=e499] [cursor=pointer]
+    - generic [ref=e501]:
+      - generic [ref=e504]:
+        - heading "INDUSTRIES" [level=5] [ref=e505]
+        - heading "EXPERTISE TAILORED" [level=1] [ref=e506]
+        - paragraph [ref=e507]: We support businesses with clear action plans tailored to their market, goals, and digital maturity.
+      - generic [ref=e508]:
+        - generic [ref=e510]
+        - generic [ref=e516]
+        - generic [ref=e522]
+        - generic [ref=e528]
+        - generic [ref=e534]
+        - generic [ref=e540]
+    - generic [ref=e547]:
+      - img "SDG Techs - Digital marketing agency" [ref=e551]
+      - generic [ref=e552]:
+        - generic [ref=e553]
+        - link "BOOK A CALL" [ref=e579] [cursor=pointer]:
+          - /url: https://cal.com/sdg-techs/30min
+    - generic [ref=e582]:
+      - generic [ref=e584]:
+        - heading "OUR SERVICES" [level=5] [ref=e585]
+        - heading "DIGITAL SOLUTIONS" [level=1] [ref=e586]
+        - heading "FOCUSED ON" [level=1] [ref=e587]
+        - heading "RESULTS" [level=1] [ref=e588]
+        - paragraph [ref=e590]: SDG Techs is a digital agency founded in 2016. We help organizations of all kinds and entrepreneurs maximize their results through online execution at the best price. Tailor-made strategies and fast, measurable results, powered by versatile experts and AI tools.
+      - generic [ref=e592]:
+        - tablist [ref=e593]
+        - generic [ref=e600]
+    - generic [ref=e622]:
+      - generic [ref=e625]:
+        - heading "TESTIMONIALS" [level=5] [ref=e626]
+        - heading "WHAT OUR CLIENTS SAY" [level=1] [ref=e627]
+        - heading "ABOUT US" [level=1] [ref=e628]
+      - generic [ref=e632]:
+        - generic [ref=e636]
+        - generic [ref=e644]
+        - generic [ref=e652]
+        - generic [ref=e660]
+        - generic [ref=e668]
+        - generic [ref=e676]
+        - generic [ref=e684]
+        - generic [ref=e692]
+        - generic [ref=e700]
+        - generic [ref=e708]
+        - generic [ref=e716]
+        - generic [ref=e724]
+      - link "BOOK A CALL" [ref=e734] [cursor=pointer]:
+        - /url: https://cal.com/sdg-techs/30min
+    - generic [ref=e736]:
+      - generic [ref=e737]:
+        - generic [ref=e739]
+        - list [ref=e745]
+      - generic [ref=e751]:
+        - img "Digital Agency - Websites" [ref=e756]
+        - img "Globe Design - Websites" [ref=e761]
+        - img "Marketing Agency - Websites" [ref=e766]
+        - img "Beauty Parlor - Websites" [ref=e771]
+        - img "Apps Design - Websites" [ref=e776]
+        - img "Shopping Mohol - Websites" [ref=e781]
+        - img "Shopping Mohol - Websites" [ref=e786]
+        - img "Shopping Mohol - Websites" [ref=e791]
+        - img "Shopping Mohol - Websites" [ref=e796]
+        - img "Shopping Mohol - Websites" [ref=e801]
+        - img "Flyer Design - Graphics" [ref=e806]
+        - img "Flyer Design - Graphics" [ref=e811]
+        - img "Flyer Design - Graphics" [ref=e816]
+        - img "Flyer Design - Graphics" [ref=e821]
+        - img "Flyer Design - Graphics" [ref=e826]
+        - img "Flyer Design - Graphics" [ref=e831]
+        - img "Flyer Design - Graphics" [ref=e836]
+        - img "Flyer Design - Graphics" [ref=e841]
+        - img "Poster Design - Graphics" [ref=e846]
+        - img "Social Media Design - Graphics" [ref=e851]
+        - img "Social Media Design - Graphics" [ref=e856]
+        - img "Social Media Design - Graphics" [ref=e861]
+        - img "Social Media Design - Graphics" [ref=e866]
+        - img "Social Media Design - Graphics" [ref=e871]
+        - img "Social Media Design - Graphics" [ref=e876]
+        - img "Shopping Mohol - Applications" [ref=e881]
+        - img "Shopping Mohol - Applications" [ref=e886]
+        - img "Shopping Mohol - Applications" [ref=e891]
+        - img "Shopping Mohol - Applications" [ref=e896]
+        - img "Shopping Mohol - Applications" [ref=e901]
+        - img "Shopping Mohol - Applications" [ref=e906]
+        - img "Campagne Google Ads - Advertising" [ref=e911]
+        - img "Campagne Facebook Ads - Advertising" [ref=e916]
+        - img "Campagne Instagram Ads - Advertising" [ref=e921]
+        - img "Campagne LinkedIn Ads - Advertising" [ref=e926]
+        - img "Campagne Display - Advertising" [ref=e931]
+        - img "Campagne Shopping - Advertising" [ref=e936]
+        - img "Campagne TikTok Ads - Advertising" [ref=e941]
+      - link "BOOK A CALL" [ref=e944] [cursor=pointer]:
+        - /url: https://cal.com/sdg-techs/30min
+    - generic [ref=e947]:
+      - generic [ref=e950]:
+        - generic [ref=e952]: 
+        - generic [ref=e953]
+        - heading "Projects completed" [level=4] [ref=e957]
+      - generic [ref=e960]:
+        - generic [ref=e962]: 
+        - generic [ref=e963]
+        - heading "Active team members" [level=4] [ref=e967]
+      - generic [ref=e970]:
+        - generic [ref=e972]: 
+        - generic [ref=e973]
+        - heading "Satisfaction rate" [level=4] [ref=e977]
+    - generic [ref=e980]:
+      - generic [ref=e982]:
+        - generic [ref=e983]
+        - generic [ref=e987]
+      - generic [ref=e1003]:
+        - generic [ref=e1004]
+        - list [ref=e1008]
+    - generic [ref=e1021]:
+      - generic [ref=e1024]:
+        - heading "OUR TEAM" [level=5] [ref=e1025]
+        - heading "MEET OUR EXPERTS" [level=1] [ref=e1026]
+      - generic [ref=e1243]:
+        - generic [ref=e1245]
+        - text:  
+    - generic [ref=e1028]:
+      - generic [ref=e1029]:
+        - generic [ref=e1031]
+        - generic [ref=e1047]
+        - generic [ref=e1061]
+        - generic [ref=e1079]
+      - generic [ref=e1096]:
+        - paragraph [ref=e1100]: Copyright © 2026. All rights reserved SDG Techs
+        - paragraph [ref=e1103]: Legal notice · Services · Careers
+  - text: 
