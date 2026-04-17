@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
 
@@ -34,18 +33,11 @@ const COPY = {
 } as const;
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const { language, setLanguage } = useI18n();
   const c = COPY[language];
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY >= 100);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const headerClass = `techno_nav_manu style-two ${scrolled ? "sticky" : ""}`;
-  const desktopNavLinkStyle = language === "fr" ? { margin: "30px 4px" } : undefined;
+  const headerClass = "techno_nav_manu style-two";
+  const desktopNavLinkStyle = { margin: "30px 4px" };
 
   const langButtonStyle = (active: boolean) =>
     ({
