@@ -68,7 +68,7 @@ export default function Header() {
 
   return (
     <>
-      <div id="sticky-header" className={headerClass}>
+      <div id="sticky-header" className="techno_nav_manu style-two d-none d-lg-block">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-3">
@@ -130,7 +130,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="mobile-menu-area d-sm-block d-md-block d-lg-none">
+      <div className="mobile-menu-area d-block d-lg-none" style={{ display: "block" }}>
         <div className="mobile-menu-header" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 15px" }}>
           <div className="logo" style={{ flex: "0 0 auto" }}>
             <a href="#home" title="sdgtechs">
