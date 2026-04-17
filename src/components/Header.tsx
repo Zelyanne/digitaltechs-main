@@ -54,11 +54,16 @@ export default function Header() {
       background: active ? "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)" : "rgba(255, 255, 255, 0.12)",
       color: "#fff",
       borderRadius: 999,
-      padding: "6px 10px",
+      padding: "8px 14px",
       fontWeight: 800,
-      fontSize: 12,
+      fontSize: 14,
       lineHeight: 1,
       cursor: "pointer",
+      minWidth: "50px",
+      minHeight: "44px",
+      display: "inline-flex",
+      alignItems: "center",
+      justifyContent: "center",
     }) as const;
 
   return (
