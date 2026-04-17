@@ -433,53 +433,74 @@ a:focus, button:focus {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-end !important;
-    gap: 15px !important;
+    gap: 8px !important;
     width: auto !important;
   }
 
-  .nav_scroll {
-    display: flex !important;
-    align-items: center !important;
-    gap: 5px !important;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav_scroll li {
-    margin: 0 3px;
-  }
-
-  .nav_scroll li a {
-    padding: 10px 15px !important;
-    font-size: 15px !important;
-    font-weight: 600 !important;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-
   .header-button {
-    margin-left: 15px;
+    display: flex !important;
+    align-items: center;
+    margin-left: 12px;
+  }
+
+  .header-button i {
+    font-size: 18px;
   }
 
   .slider-button-text {
-    margin-left: 12px;
+    margin-left: 8px;
     text-align: left;
   }
 
   .slider-button-text p {
-    font-size: 12px;
+    font-size: 10px;
     margin: 0;
+    line-height: 1.2;
   }
 
   .slider-button-text h2 {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 700;
     margin: 0;
+    line-height: 1.2;
   }
 
   .sdg-language-switcher {
-    margin-left: 15px;
+    display: flex !important;
+    align-items: center;
+    margin-left: 12px;
+  }
+
+  .sdg-language-switcher button {
+    padding: 6px 10px;
+    font-size: 12px;
+    min-width: 40px;
+    min-height: 36px;
+  }
+
+  /* Pricing packs grid */
+  .pricing-area .row:has(.pricing-card) {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  .pricing-area .row:has(.pricing-card) > div {
+    flex: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  @media (max-width: 1024px) {
+    .pricing-area .row:has(.pricing-card) {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .pricing-area .row:has(.pricing-card) {
+      grid-template-columns: 1fr !important;
+    }
   }
 }
 

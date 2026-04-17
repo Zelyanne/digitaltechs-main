@@ -38,8 +38,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const c = COPY[language];
 
-  const headerClass = "techno_nav_manu style-two";
-  const desktopNavLinkStyle = { margin: "30px 4px" };
+  const desktopNavLinkStyle = { margin: "20px 3px", padding: "8px 8px", fontSize: "13px" };
 
   const langButtonStyle = (active: boolean) =>
     ({
@@ -83,7 +82,7 @@ export default function Header() {
             </div>
             <div className="col-lg-9">
               <nav className="techno_menu text-center">
-                <ul className="nav_scroll">
+                <ul className="nav_scroll" style={{ display: "flex", alignItems: "center", gap: "4px", listStyle: "none", margin: 0, padding: 0 }}>
                   <li>
                     <a href="#home" style={desktopNavLinkStyle}>{c.nav.home}</a>
                   </li>
@@ -102,12 +101,12 @@ export default function Header() {
                   </li>
                   <li><a href="#contact" style={desktopNavLinkStyle}>{c.nav.contact}</a></li>
                 </ul>
-                <div className="header-button">
-                  <i className="flaticon-phone-call" />
+                <div className="header-button" style={{ marginLeft: 10 }}>
+                  <i className="flaticon-phone-call" style={{ fontSize: 18 }} />
                 </div>
-                <div className="slider-button-text">
-                  <p>{c.callLabel}</p>
-                  <h2>+33 6 55 44 33 22</h2>
+                <div className="slider-button-text" style={{ marginLeft: 8, textAlign: "left" }}>
+                  <p style={{ fontSize: 11, margin: 0 }}>{c.callLabel}</p>
+                  <h2 style={{ fontSize: 14, fontWeight: 700, margin: 0 }}>+33 6 55 44 33 22</h2>
                 </div>
                 <div
                   className="sdg-language-switcher"
