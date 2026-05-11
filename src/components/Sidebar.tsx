@@ -1,5 +1,6 @@
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
+import { useCalendlyModal } from "./CalendlyModal";
 
 const COPY = {
   fr: {
@@ -10,7 +11,7 @@ const COPY = {
     contactTitle: "Contacts",
     contact: {
       email: "contact@sdgtechs.com",
-      phone: "+33 6 55 44 33 22",
+      phone: "+33746458691",
       regions: "Afrique, Asie, Europe, Canada",
       hours: "Lun-Ven : 09:00 à 18:00 · Dimanche : fermé",
     },
@@ -23,7 +24,7 @@ const COPY = {
     contactTitle: "Contact info",
     contact: {
       email: "contact@sdgtechs.com",
-      phone: "+33 6 55 44 33 22",
+      phone: "+33746458691",
       regions: "Africa, Asia, Europe, Canada",
       hours: "Mon-Fri: 09:00 to 18:00 · Sunday: Closed",
     },
@@ -33,6 +34,7 @@ const COPY = {
 export default function Sidebar() {
   const { language } = useI18n();
   const c = COPY[language];
+  const { openModal } = useCalendlyModal();
 
   return (
     <div className="xs-sidebar-group info-group">
@@ -57,9 +59,9 @@ export default function Sidebar() {
                   <p className="text">
                     {c.aboutText}
                   </p>
-                  <a href="https://cal.com/sdg-techs/30min" target="_blank" rel="noreferrer" className="theme-btn btn-style-two">
+                  <button onClick={openModal} className="theme-btn btn-style-two">
                     <span>{c.cta}</span> <i className="fas fa-heart" />
-                  </a>
+                  </button>
                 </div>
                 <div className="contact-info">
                   <h2>{c.contactTitle}</h2>

@@ -125,7 +125,7 @@ export default function Footer() {
                   <i className="flaticon-call" />
                 </div>
                 <div className="footer-socail-info">
-                  <p><span>+33 6 55 44 33 22</span></p>
+                  <p><span>+33746458691</span></p>
                 </div>
               </div>
               <div className="footer-inner">

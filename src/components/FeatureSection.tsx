@@ -22,12 +22,26 @@ const COPY = {
       mission:
         "Notre mission est de démocratiser l'accès aux solutions digitales performantes pour tous types d'organisations. Nous croyons en une technologie au service de l'humain, avec des stratégies innovantes et des outils IA de pointe pour des résultats mesurables et durables.",
     },
-    bullets: [
-      "Plus de 10 ans d'expérience",
-      "Intervention en France, Belgique, USA, Canada, Suisse, Londres, Chine, Allemagne, Tunisie, Maroc, Bénin, Togo, Côte d'Ivoire, Congo, Cameroun, etc.",
-      "Stratégies sur-mesure",
-      "Spécialistes certifiés et outils IA",
-    ],
+    bullets: {
+      satisfaction: [
+        "Suivi de chaque projet de A à Z",
+        "Livrables de qualité, délais respectés",
+        "Accompagnement personnalisé tout au long de la collaboration",
+        "Reportings réguliers et transparents",
+      ],
+      experts: [
+        "Plus de 10 ans d'expérience cumulée",
+        "Spécialistes certifiés en marketing digital, IA et développement",
+        "Présence en France, Belgique, USA, Canada, Bénin, Cameroun, etc.",
+        "Équipe polyvalente : growth, design, dev, SEO, copywriting",
+      ],
+      mission: [
+        "Démocratiser l'accès aux solutions digitales performantes",
+        "Technologie au service de l'humain",
+        "Stratégies innovantes et outils IA de pointe",
+        "Résultats mesurables et durables pour tous types d'organisations",
+      ],
+    },
     alts: {
       feature1: "Solutions digitales SDG Techs",
       img2: "Équipe d'experts SDG Techs",
@@ -53,12 +67,26 @@ const COPY = {
       mission:
         "Our mission is to make high-performing digital solutions accessible to all kinds of organizations. We believe in technology that serves people, with innovative strategies and cutting-edge AI tools for measurable, sustainable results.",
     },
-    bullets: [
-      "10+ years of experience",
-      "Operations in France, Belgium, USA, Canada, Switzerland, London, China, Germany, Tunisia, Morocco, Benin, Togo, Côte d'Ivoire, Congo, Cameroon, and more.",
-      "Tailor-made strategies",
-      "Certified specialists and AI tools",
-    ],
+    bullets: {
+      satisfaction: [
+        "End-to-end project management",
+        "Quality deliverables, respected timelines",
+        "Personalized support throughout collaboration",
+        "Regular and transparent reporting",
+      ],
+      experts: [
+        "10+ years of combined experience",
+        "Certified specialists in digital marketing, AI, and development",
+        "Operations in France, Belgium, USA, Canada, Benin, Cameroon, and more",
+        "Versatile team: growth, design, dev, SEO, copywriting",
+      ],
+      mission: [
+        "Making high-performing digital solutions accessible to all",
+        "Technology that serves people",
+        "Innovative strategies and cutting-edge AI tools",
+        "Measurable, sustainable results for all types of organizations",
+      ],
+    },
     alts: {
       feature1: "SDG Techs digital solutions",
       img2: "SDG Techs expert team",
@@ -146,10 +174,9 @@ export default function FeatureSection() {
                       <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="dreamit-department-bottom-content-inner">
                           <ul>
-                            <li><i className="fas fa-check" /><span>{c.bullets[0]}</span></li>
-                            <li><i className="fas fa-check" /><span>{c.bullets[1]}</span></li>
-                            <li><i className="fas fa-check" /><span>{c.bullets[2]}</span></li>
-                            <li><i className="fas fa-check" /><span>{c.bullets[3]}</span></li>
+                            {c.bullets.satisfaction.map((b, i) => (
+                              <li key={i}><i className="fas fa-check" /><span>{b}</span></li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -177,10 +204,9 @@ export default function FeatureSection() {
                       <div className="col-lg-6 col-md-6">
                         <div className="dreamit-department-bottom-content-inner">
                           <ul>
-                            <li><i className="fas fa-check" /><span>{c.bullets[0]}</span></li>
-                            <li><i className="fas fa-check" /><span>{c.bullets[1]}</span></li>
-                            <li><i className="fas fa-check" /><span>{c.bullets[2]}</span></li>
-                            <li><i className="fas fa-check" /><span>{c.bullets[3]}</span></li>
+                            {c.bullets.experts.map((b, i) => (
+                              <li key={i}><i className="fas fa-check" /><span>{b}</span></li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -208,10 +234,9 @@ export default function FeatureSection() {
                       <div className="col-lg-6 col-md-6 col-sm-12">
                         <div className="dreamit-department-bottom-content-inner">
                           <ul>
-                            <li><i className="fas fa-check" /><span>{c.bullets[0]}</span></li>
-                            <li><i className="fas fa-check" /><span>{c.bullets[1]}</span></li>
-                            <li><i className="fas fa-check" /><span>{c.bullets[2]}</span></li>
-                            <li><i className="fas fa-check" /><span>{c.bullets[3]}</span></li>
+                            {c.bullets.mission.map((b, i) => (
+                              <li key={i}><i className="fas fa-check" /><span>{b}</span></li>
+                            ))}
                           </ul>
                         </div>
                       </div>

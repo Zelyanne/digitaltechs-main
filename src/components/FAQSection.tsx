@@ -9,9 +9,20 @@ const COPY = {
     placeholders: {
       name: "Votre nom*",
       email: "Votre email*",
-      phone: "Téléphone",
+      countryCode: "Indicatif pays",
+      phone: "Numéro de téléphone",
       message: "Message*",
     },
+    countryCodes: [
+      { value: "+33", label: "+33 (France)" },
+      { value: "+229", label: "+229 (Bénin)" },
+      { value: "+1", label: "+1 (Canada/USA)" },
+      { value: "+32", label: "+32 (Belgique)" },
+      { value: "+91", label: "+91 (Inde)" },
+      { value: "+225", label: "+225 (Côte d'Ivoire)" },
+      { value: "+221", label: "+221 (Sénégal)" },
+      { value: "+237", label: "+237 (Cameroun)" },
+    ],
     send: "Envoyer",
     faqKicker: "QUESTIONS FRÉQUENTES",
     faqTitle: "COMMENT POUVONS-NOUS ",
@@ -48,9 +59,20 @@ const COPY = {
     placeholders: {
       name: "Your name*",
       email: "Your email*",
-      phone: "Phone",
+      countryCode: "Country code",
+      phone: "Phone number",
       message: "Message*",
     },
+    countryCodes: [
+      { value: "+33", label: "+33 (France)" },
+      { value: "+229", label: "+229 (Benin)" },
+      { value: "+1", label: "+1 (Canada/USA)" },
+      { value: "+32", label: "+32 (Belgium)" },
+      { value: "+91", label: "+91 (India)" },
+      { value: "+225", label: "+225 (Cote d'Ivoire)" },
+      { value: "+221", label: "+221 (Senegal)" },
+      { value: "+237", label: "+237 (Cameroon)" },
+    ],
     send: "Send",
     faqKicker: "FAQ",
     faqTitle: "HOW CAN WE ",
@@ -116,12 +138,12 @@ export default function FAQSection() {
   }, [language]);
 
   return (
-    <div className="faq-area style-two">
+    <div id="contact" className="faq-area style-two">
       <div className="container">
         <div className="row padding-top">
           <div className="col-lg-5 col-md-5 col-sm-12">
             <div className="contact-form-box style-three">
-              <div id="contact" className="contact-form-title white">
+              <div className="contact-form-title white">
                 <h5>{c.contactKicker}</h5>
                 <h3>{c.contactTitle1}</h3>
                 <h3>{c.contactTitle2}</h3>
@@ -139,8 +161,19 @@ export default function FAQSection() {
                     </div>
                   </div>
                   <div className="col-lg-12 col-sm-12">
-                    <div className="from-box">
-                      <input type="tel" name="phone" placeholder={c.placeholders.phone} />
+                    <div className="phone-fields">
+                      <div className="from-box from-box-country">
+                        <select name="country_code" aria-label={c.placeholders.countryCode} defaultValue="+33">
+                          {c.countryCodes.map((country) => (
+                            <option key={`${country.value}-${country.label}`} value={country.value}>
+                              {country.label}
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+                      <div className="from-box from-box-phone">
+                        <input type="tel" name="phone" placeholder={c.placeholders.phone} />
+                      </div>
                     </div>
                   </div>
                   <div className="col-lg-12">

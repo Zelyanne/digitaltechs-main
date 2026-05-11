@@ -15,6 +15,18 @@
         }
       })();
     </script>
+    <script>
+      (function () {
+        try {
+          var storedTheme = localStorage.getItem("sdgtechs.theme");
+          var darkPreferred = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var theme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : (darkPreferred ? "dark" : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          // ignore
+        }
+      })();
+    </script>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>SDG Techs | Agence Marketing Digital</title>
@@ -38,6 +50,7 @@
     <meta name="twitter:image" content="https://www.sdgtechs.com/sample/assets/images/logo.png" />
     <!-- Theme / Mobile -->
     <meta name="theme-color" content="#e1193a" />
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <!-- Favicon -->
@@ -81,7 +94,7 @@
           "address": { "@type": "PostalAddress", "addressRegion": "Cotonou", "addressCountry": "BJ" },
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+33-6-55-44-33-22",
+            "telephone": "+33746458691",
             "contactType": "customer service",
             "email": "contact@sdgtechs.com",
             "areaServed": ["BJ", "FR", "CN", "CA"]
@@ -101,7 +114,7 @@
           "@id": "https://www.sdgtechs.com/#contact",
           "name": "SDG Techs",
           "image": "https://www.sdgtechs.com/sample/assets/images/logo.png",
-          "telephone": "+33 6 55 44 33 22",
+          "telephone": "+33746458691",
           "email": "contact@sdgtechs.com",
           "address": { "@type": "PostalAddress", "addressLocality": "Cotonou", "addressCountry": "Bénin" },
           "url": "https://www.sdgtechs.com",

@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import { IMG } from "../utils/images";
 import tchoboImg from "../../tchobo.webp";
-import alexisImg from "../../IMG_20250207_173742.jpg";
+import alexisImg from "../../alexisimg.png";
+import enockImg from "../../Enock.png";
 import jeromeImg from "../../fadonougbo jerome.png";
 import joelImg from "../../Joel dahoue.png";
 import { useI18n } from "../i18n";
@@ -32,7 +33,8 @@ const members: TeamMember[] = [
   { img: "resource/team12.png", name: "Pascal Alidjinou", role: { fr: "Chargé de Communication / Voix off / Montage Audio • France", en: "Communications / Voice-over / Audio Editing • France" } },
   { img: "resource/team16.png", name: "Onesime Malkiel Adje", role: { fr: "Senior Software Developer • Bénin", en: "Senior Software Developer • Benin" } },
   { img: tchoboImg, name: "Achille Tchobo", role: { fr: "Développeur senior WordPress, PHP / Magento I & II", en: "Senior WordPress Developer, PHP / Magento I & II" } },
-  { img: alexisImg, name: "Alexis Othily", role: { fr: "AI Engineer • IA & Automatisation", en: "AI Engineer • AI & Automation" }, objectPosition: "55% 6%", imgScale: 1.18 },
+  { img: alexisImg, name: "Alexis Othily", role: { fr: "AI Engineer • IA & Automatisation", en: "AI Engineer • AI & Automation" }, objectPosition: "80% 50%", imgScale: 1 },
+  { img: enockImg, name: "KOUTCHIKO A. Hénok", role: { fr: "Business Developer et Dr en Physiopathologie", en: "Business Developer & PhD in Physiopathology" } },
   { img: jeromeImg, name: "Fadonougbo Jerome", role: { fr: "Business Developer • USA", en: "Business Developer • USA" } },
   { img: joelImg, name: "Joel Dahoue", role: { fr: "Business Developer • USA", en: "Business Developer • USA" } },
 ];

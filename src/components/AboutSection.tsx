@@ -1,5 +1,6 @@
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
+import { useCalendlyModal } from "./CalendlyModal";
 
 const COPY = {
   fr: {
@@ -38,6 +39,7 @@ const COPY = {
 
 export default function AboutSection() {
   const { language } = useI18n();
+  const { openModal } = useCalendlyModal();
   const c = COPY[language];
 
   return (
@@ -96,23 +98,22 @@ export default function AboutSection() {
             </div>
             <div className="row mt-4">
               <div className="col-lg-12 text-center">
-                <a
-                  href="https://cal.com/sdg-techs/30min"
-                  target="_blank"
-                  rel="noreferrer"
+                <button
+                  onClick={openModal}
                   className="dreamit-btn"
                   style={{
                     background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)", 
                     color: "#fff", 
                     padding: "15px 40px", 
-                    borderRadius: "30px", 
-                    textDecoration: "none", 
-                    fontWeight: "600",
-                    display: "inline-block",
+                    border: "none",
+                    borderRadius: "5px",
+                    cursor: "pointer",
+                    fontWeight: "bold",
+                    display: "inline-block"
                   }}
                 >
                   {c.cta}
-                </a>
+                </button>
               </div>
             </div>
           </div>

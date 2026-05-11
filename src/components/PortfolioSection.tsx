@@ -1,6 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
+import { useCalendlyModal } from "./CalendlyModal";
 
 const COPY = {
   fr: {
@@ -85,47 +86,83 @@ const projects = [
   { img: "resource/ad7.png", category: "Publicité", title: "Campagne TikTok Ads", filters: "ads" },
 ];
 
+const MOBILE_MAX_ITEMS = 6;
+type PortfolioFilter = "*" | "apps" | "graphics" | "websites" | "ads";
+
+function useIsMobile(breakpoint = 991) {
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth <= breakpoint : false
+  );
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${breakpoint}px)`);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    setIsMobile(mq.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, [breakpoint]);
+  return isMobile;
+}
+
 export default function PortfolioSection() {
-  const containerRef = useRef<HTMLDivElement>(null);
   const { language } = useI18n();
+  const { openModal } = useCalendlyModal();
+  const [activeFilter, setActiveFilter] = useState<PortfolioFilter>("*");
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isotopeRef = useRef<any>(null);
   const c = COPY[language];
+  const isMobile = useIsMobile();
+  
+  // We render all projects and let Isotope handle filtering for better reliability
+  const visibleProjects = projects;
+
+  const portfolioFilters: { key: PortfolioFilter; label: string }[] = [
+    { key: "*", label: c.filters.all },
+    { key: "apps", label: c.filters.apps },
+    { key: "graphics", label: c.filters.graphics },
+    { key: "websites", label: c.filters.websites },
+    { key: "ads", label: c.filters.ads },
+  ];
 
   useEffect(() => {
-    const $ = (window as unknown as { $?: { (el: Element): unknown; fn?: { isotope?: unknown } } }).$;
+    const $ = (window as any).$;
     if (!$?.fn?.isotope || !containerRef.current) return;
-    const $container = $(containerRef.current) as {
-      isotope: (o: object | string) => void;
-      imagesLoaded?: (cb: () => void) => void;
-      closest: (s: string) => unknown;
-    };
+
     const initIsotope = () => {
-      $container.isotope({
+      if (isotopeRef.current) {
+        try { $(containerRef.current).isotope("destroy"); } catch (e) {}
+      }
+      
+      isotopeRef.current = $(containerRef.current).isotope({
         itemSelector: ".grid-item",
-        filter: "*",
+        filter: activeFilter === "*" ? "*" : `.${activeFilter}`,
         layoutMode: "masonry",
         transitionDuration: "0.8s",
       });
-      const $portfolio = $container.closest("#portfolio") as { find: (s: string) => unknown };
-      const $menu = ($portfolio.find(".menu-filtering li") as { off: (e: string) => { on: (e: string, fn: () => void) => void } });
-      $menu.off("click.isotope").on("click.isotope", function (this: HTMLElement) {
-        const $li = $(this) as { siblings: () => { removeClass: (c: string) => void }; addClass: (c: string) => void; attr: (key: string) => string };
-        $li.siblings().removeClass("current_menu_item");
-        $li.addClass("current_menu_item");
-        const selector = $li.attr("data-filter") || "*";
-        $container.isotope({ filter: selector });
-      });
     };
-    if (typeof $container.imagesLoaded === "function") {
-      $container.imagesLoaded(initIsotope);
+
+    if (typeof $(containerRef.current).imagesLoaded === "function") {
+      $(containerRef.current).imagesLoaded(initIsotope);
     } else {
-      setTimeout(initIsotope, 300);
+      setTimeout(initIsotope, 500);
     }
+
     return () => {
-      try {
-        $container.isotope("destroy");
-      } catch { /* ignore */ }
+      if (isotopeRef.current) {
+        try { $(containerRef.current).isotope("destroy"); } catch (e) {}
+        isotopeRef.current = null;
+      }
     };
-  }, []);
+  }, [isMobile, language]); // Re-init on mobile change or language change
+
+  // Handle filter changes via Isotope API instead of re-mounting components
+  useEffect(() => {
+    const $ = (window as any).$;
+    if (isotopeRef.current && $?.fn?.isotope) {
+      $(containerRef.current).isotope({
+        filter: activeFilter === "*" ? "*" : `.${activeFilter}`
+      });
+    }
+  }, [activeFilter]);
 
   return (
     <div id="portfolio" className="portfolio_area style-three">
@@ -144,18 +181,33 @@ export default function PortfolioSection() {
             <div className="portfolio_nav text-right pt-5">
               <div className="portfolio_menu">
                 <ul className="menu-filtering">
-                  <li className="current_menu_item" data-filter="*">{c.filters.all}</li>
-                  <li data-filter=".apps">{c.filters.apps}</li>
-                  <li data-filter=".graphics">{c.filters.graphics}</li>
-                  <li data-filter=".websites">{c.filters.websites}</li>
-                  <li data-filter=".ads">{c.filters.ads}</li>
+                  {portfolioFilters.map((filter) => (
+                    <li
+                      key={filter.key}
+                      className={activeFilter === filter.key ? "current_menu_item" : ""}
+                      data-filter={filter.key === "*" ? "*" : `.${filter.key}`}
+                      role="button"
+                      tabIndex={0}
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        setActiveFilter(filter.key);
+                      }}
+                      onKeyDown={(event) => {
+                        if (event.key !== "Enter" && event.key !== " ") return;
+                        event.preventDefault();
+                        setActiveFilter(filter.key);
+                      }}
+                    >
+                      {filter.label}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div ref={containerRef} className="row image_load">
-          {projects.map((p, i) => (
+          {visibleProjects.map((p, i) => (
             <div
               key={i}
               className={`col-lg-4 col-md-6 col-sm-12 grid-item ${p.filters}`}
@@ -175,24 +227,21 @@ export default function PortfolioSection() {
         </div>
         <div className="row mt-5">
           <div className="col-lg-12 text-center">
-            <a
-              href="https://cal.com/sdg-techs/30min"
-              target="_blank"
-              rel="noreferrer"
+            <button
+              onClick={openModal}
               className="dreamit-btn"
               style={{
                 background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)", 
                 color: "#fff", 
                 padding: "15px 40px", 
-                borderRadius: "30px", 
-                boxShadow: "0 10px 24px rgba(237, 44, 65, 0.28)",
-                textDecoration: "none", 
-                fontWeight: "600",
-                display: "inline-block",
+                border: "none",
+                borderRadius: "5px",
+                cursor: "pointer",
+                fontWeight: "bold"
               }}
             >
-              {c.cta}
-            </a>
+              {language === "fr" ? "PRENDRE RENDEZ-VOUS" : "BOOK A CALL"}
+            </button>
           </div>
         </div>
       </div>

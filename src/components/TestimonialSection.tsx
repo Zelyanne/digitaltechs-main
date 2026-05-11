@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useI18n } from "../i18n";
+import { useCalendlyModal } from "./CalendlyModal";
 
 const COPY = {
   fr: {
@@ -93,8 +94,9 @@ const COPY = {
 } as const;
 
 export default function TestimonialSection() {
-  const carouselRef = useRef<HTMLDivElement>(null);
   const { language } = useI18n();
+  const { openModal } = useCalendlyModal();
+  const carouselRef = useRef<HTMLDivElement>(null);
   const c = COPY[language];
 
   useEffect(() => {
@@ -183,10 +185,8 @@ export default function TestimonialSection() {
         </div>
         <div className="row mt-5">
           <div className="col-lg-12 text-center" style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-            <a
-              href="https://cal.com/sdg-techs/30min"
-              target="_blank"
-              rel="noreferrer"
+            <button
+              onClick={openModal}
               className="dreamit-btn"
               style={{
                 background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)", 
@@ -197,10 +197,12 @@ export default function TestimonialSection() {
                 textDecoration: "none", 
                 fontWeight: "600",
                 display: "inline-block",
+                border: "none",
+                cursor: "pointer"
               }}
             >
               {c.cta}
-            </a>
+            </button>
           </div>
         </div>
       </div>

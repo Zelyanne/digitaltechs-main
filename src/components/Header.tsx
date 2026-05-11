@@ -1,6 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
+
+type ThemeMode = "light" | "dark";
+
+const THEME_STORAGE_KEY = "sdgtechs.theme";
+
+function getInitialTheme(): ThemeMode {
+  if (typeof window === "undefined") return "light";
+
+  try {
+    const stored = window.localStorage.getItem(THEME_STORAGE_KEY);
+    if (stored === "dark" || stored === "light") return stored;
+  } catch {
+    // ignore storage errors
+  }
+
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
 
 const COPY = {
   fr: {
@@ -14,7 +31,9 @@ const COPY = {
       faq: "FAQ",
       contact: "Contactez-nous",
     },
-    callLabel: "Appelez au",
+    callLabel: "WhatsApp",
+    themeLabel: "Thème",
+    themeToggle: "Basculer le thème",
     languageLabel: "Langue",
   },
   en: {
@@ -28,7 +47,9 @@ const COPY = {
       faq: "FAQ",
       contact: "Contact",
     },
-    callLabel: "Call",
+    callLabel: "WhatsApp",
+    themeLabel: "Theme",
+    themeToggle: "Toggle theme",
     languageLabel: "Language",
   },
 } as const;
@@ -36,28 +57,69 @@ const COPY = {
 export default function Header() {
   const { language, setLanguage } = useI18n();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [themeMode, setThemeMode] = useState<ThemeMode>(getInitialTheme);
   const c = COPY[language];
 
-  const desktopNavLinkStyle = { margin: "20px 3px", padding: "8px 8px", fontSize: "13px" };
+  const desktopNavLinkStyle = { margin: "18px 2px", padding: "8px 7px", fontSize: "12.5px" };
 
-  const langButtonStyle = (active: boolean) =>
+  const languageSelectStyle =
+    ({
+      appearance: "none" as const,
+      border: "1px solid rgba(255, 255, 255, 0.35)",
+      background: "rgba(255, 255, 255, 0.12)",
+      color: "#fff",
+      borderRadius: 999,
+      padding: "6px 24px 6px 10px",
+      fontWeight: 800,
+      fontSize: 12,
+      lineHeight: 1,
+      cursor: "pointer",
+      minWidth: "56px",
+      minHeight: "34px",
+      height: "34px",
+      backgroundImage:
+        "linear-gradient(45deg, transparent 50%, #fff 50%), linear-gradient(135deg, #fff 50%, transparent 50%)",
+      backgroundPosition: "calc(100% - 12px) 13px, calc(100% - 7px) 13px",
+      backgroundSize: "5px 5px, 5px 5px",
+      backgroundRepeat: "no-repeat",
+    }) as const;
+
+  const themeButtonStyle = (darkEnabled: boolean) =>
     ({
       appearance: "none",
       border: "1px solid rgba(255, 255, 255, 0.35)",
-      background: active ? "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)" : "rgba(255, 255, 255, 0.12)",
+      background: darkEnabled ? "rgba(9, 15, 24, 0.82)" : "rgba(255, 255, 255, 0.12)",
       color: "#fff",
       borderRadius: 999,
-      padding: "8px 14px",
+      padding: 0,
       fontWeight: 800,
-      fontSize: 14,
+      fontSize: 15,
       lineHeight: 1,
       cursor: "pointer",
-      minWidth: "50px",
-      minHeight: "44px",
+      minWidth: "34px",
+      minHeight: "34px",
+      width: "34px",
+      height: "34px",
       display: "inline-flex",
       alignItems: "center",
       justifyContent: "center",
+      whiteSpace: "nowrap",
     }) as const;
+
+  useEffect(() => {
+    document.body.classList.toggle("sdg-dark-mode", themeMode === "dark");
+    document.documentElement.setAttribute("data-theme", themeMode);
+
+    try {
+      window.localStorage.setItem(THEME_STORAGE_KEY, themeMode);
+    } catch {
+      // ignore storage errors
+    }
+  }, [themeMode]);
+
+  const toggleTheme = () => {
+    setThemeMode((prev) => (prev === "dark" ? "light" : "dark"));
+  };
 
   const toggleMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
@@ -81,8 +143,8 @@ export default function Header() {
               </div>
             </div>
             <div className="col-lg-9">
-              <nav className="techno_menu text-center">
-                <ul className="nav_scroll" style={{ display: "flex", alignItems: "center", gap: "4px", listStyle: "none", margin: 0, padding: 0 }}>
+              <nav className="techno_menu text-center" style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 28 }}>
+                <ul className="nav_scroll" style={{ display: "flex", alignItems: "center", gap: "2px", listStyle: "none", margin: 0, padding: 0 }}>
                   <li>
                     <a href="#home" style={desktopNavLinkStyle}>{c.nav.home}</a>
                   </li>
@@ -101,24 +163,58 @@ export default function Header() {
                   </li>
                   <li><a href="#contact" style={desktopNavLinkStyle}>{c.nav.contact}</a></li>
                 </ul>
-                <div className="header-button" style={{ marginLeft: 10 }}>
-                  <i className="flaticon-phone-call" style={{ fontSize: 18 }} />
+                <div
+                  className="sdg-header-call"
+                  style={{ display: "inline-flex", alignItems: "center", gap: 10, flexShrink: 0 }}
+                >
+                  <span
+                    style={{
+                      width: 38,
+                      height: 38,
+                      borderRadius: 8,
+                      background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)",
+                      color: "#fff",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <i className="flaticon-phone-call" style={{ fontSize: 16 }} />
+                  </span>
+                  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1.1, color: "#fff" }}>
+                    <span style={{ fontSize: 10, fontWeight: 600, opacity: 0.82 }}>{c.callLabel}</span>
+                    <strong style={{ fontSize: 12.5, fontWeight: 800, whiteSpace: "nowrap" }}>+33746458691</strong>
+                  </span>
                 </div>
-                <div className="slider-button-text" style={{ marginLeft: 8, textAlign: "left" }}>
-                  <p style={{ fontSize: 11, margin: 0 }}>{c.callLabel}</p>
-                  <h2 style={{ fontSize: 14, fontWeight: 700, margin: 0 }}>+33 6 55 44 33 22</h2>
+                <div
+                  className="sdg-theme-switcher"
+                  style={{ display: "inline-flex", alignItems: "center", gap: 6, flexShrink: 0 }}
+                  aria-label={c.themeLabel}
+                >
+                  <button
+                    type="button"
+                    onClick={toggleTheme}
+                    aria-pressed={themeMode === "dark"}
+                    aria-label={c.themeToggle}
+                    style={themeButtonStyle(themeMode === "dark")}
+                  >
+                    <i className={themeMode === "dark" ? "fas fa-moon" : "fas fa-sun"} aria-hidden="true" />
+                  </button>
                 </div>
                 <div
                   className="sdg-language-switcher"
-                  style={{ display: "inline-flex", alignItems: "center", gap: 6, marginLeft: 14 }}
+                  style={{ display: "inline-flex", alignItems: "center", gap: 6, position: "relative", flexShrink: 0 }}
                   aria-label={c.languageLabel}
                 >
-                  <button type="button" onClick={() => setLanguage("fr")} aria-pressed={language === "fr"} style={langButtonStyle(language === "fr")}>
-                    FR
-                  </button>
-                  <button type="button" onClick={() => setLanguage("en")} aria-pressed={language === "en"} style={langButtonStyle(language === "en")}>
-                    EN
-                  </button>
+                  <select
+                    value={language}
+                    onChange={(event) => setLanguage(event.target.value as "fr" | "en")}
+                    aria-label={c.languageLabel}
+                    style={languageSelectStyle}
+                  >
+                    <option value="fr">FR</option>
+                    <option value="en">EN</option>
+                  </select>
                 </div>
               </nav>
             </div>
@@ -138,13 +234,14 @@ export default function Header() {
           </div>
           <button
             type="button"
-            className="meanmenu-reveal"
+            className="sdg-mobile-menu-toggle"
             onClick={toggleMenu}
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileMenuOpen}
             style={{
-              background: "none",
-              border: "none",
+              background: "rgba(255, 255, 255, 0.10)",
+              border: "1px solid rgba(255, 255, 255, 0.24)",
+              borderRadius: "10px",
               cursor: "pointer",
               padding: "10px",
               display: "flex",
@@ -159,12 +256,15 @@ export default function Header() {
           >
             {!mobileMenuOpen ? (
               <>
-                <span style={{ width: "25px", height: "3px", background: "#fff", borderRadius: "2px", transition: "all 0.3s" }} />
-                <span style={{ width: "25px", height: "3px", background: "#fff", borderRadius: "2px", transition: "all 0.3s" }} />
-                <span style={{ width: "25px", height: "3px", background: "#fff", borderRadius: "2px", transition: "all 0.3s" }} />
+                <span style={{ display: "block", width: "25px", height: "3px", background: "#fff", borderRadius: "2px", transition: "all 0.3s" }} />
+                <span style={{ display: "block", width: "25px", height: "3px", background: "#fff", borderRadius: "2px", transition: "all 0.3s" }} />
+                <span style={{ display: "block", width: "25px", height: "3px", background: "#fff", borderRadius: "2px", transition: "all 0.3s" }} />
               </>
             ) : (
-              <span style={{ position: "absolute", width: "25px", height: "3px", background: "#e1193a", borderRadius: "2px", transform: "rotate(45deg)" }} />
+              <>
+                <span style={{ display: "block", position: "absolute", width: "25px", height: "3px", background: "#fff", borderRadius: "2px", transform: "rotate(45deg)" }} />
+                <span style={{ display: "block", position: "absolute", width: "25px", height: "3px", background: "#fff", borderRadius: "2px", transform: "rotate(-45deg)" }} />
+              </>
             )}
           </button>
         </div>
@@ -180,16 +280,34 @@ export default function Header() {
               <li><a href="#contact" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.contact}</a></li>
             </ul>
             <div
+              className="sdg-theme-switcher"
+              style={{ display: "flex", gap: 8, padding: "15px 0", borderTop: "1px solid rgba(255,255,255,0.1)", marginTop: "10px" }}
+              aria-label={c.themeLabel}
+            >
+              <button
+                type="button"
+                onClick={toggleTheme}
+                aria-pressed={themeMode === "dark"}
+                aria-label={c.themeToggle}
+                style={themeButtonStyle(themeMode === "dark")}
+              >
+                <i className={themeMode === "dark" ? "fas fa-moon" : "fas fa-sun"} aria-hidden="true" />
+              </button>
+            </div>
+            <div
               className="sdg-language-switcher"
               style={{ display: "flex", gap: 8, padding: "15px 0", borderTop: "1px solid rgba(255,255,255,0.1)", marginTop: "10px" }}
               aria-label={c.languageLabel}
             >
-              <button type="button" onClick={() => setLanguage("fr")} aria-pressed={language === "fr"} style={langButtonStyle(language === "fr")}>
-                FR
-              </button>
-              <button type="button" onClick={() => setLanguage("en")} aria-pressed={language === "en"} style={langButtonStyle(language === "en")}>
-                EN
-              </button>
+              <select
+                value={language}
+                onChange={(event) => setLanguage(event.target.value as "fr" | "en")}
+                aria-label={c.languageLabel}
+                style={languageSelectStyle}
+              >
+                <option value="fr">FR</option>
+                <option value="en">EN</option>
+              </select>
             </div>
           </div>
         )}
