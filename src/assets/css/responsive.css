@@ -220,7 +220,15 @@ body.sdg-dark-mode .faq-area.style-two .style-three .from-box textarea::placehol
 
 body.sdg-dark-mode .mobile-menu-area,
 body.sdg-dark-mode #sticky-header.sticky {
-  background: rgba(9, 15, 24, 0.96) !important;
+  background: #000 !important;
+}
+
+body.sdg-dark-mode #sticky-header,
+body.sdg-dark-mode .techno_nav_manu,
+body.sdg-dark-mode .techno_nav_manu.style-two,
+body.sdg-dark-mode .mobile-menu-area,
+body.sdg-dark-mode .mobile-menu {
+  background: #000 !important;
 }
 
 img {

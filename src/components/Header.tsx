@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
+import darkLogo from "../../sdg (1).jpeg";
 
 type ThemeMode = "light" | "dark";
 
@@ -59,6 +60,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [themeMode, setThemeMode] = useState<ThemeMode>(getInitialTheme);
   const c = COPY[language];
+  const logoSrc = themeMode === "dark" ? darkLogo : IMG("logo.png");
+  const desktopLogoStyle = { maxHeight: themeMode === "dark" ? "42px" : undefined, width: "auto" };
 
   const desktopNavLinkStyle = { margin: "18px 2px", padding: "8px 7px", fontSize: "12.5px" };
 
@@ -135,10 +138,10 @@ export default function Header() {
             <div className="col-lg-3">
               <div className="logo">
                 <a className="logo_img" href="#home" title="sdgtechs">
-                  <img src={IMG("logo.png")} alt={c.logoAlt} />
+                  <img src={logoSrc} alt={c.logoAlt} style={desktopLogoStyle} />
                 </a>
                 <a className="main_sticky" href="#home" title="sdgtechs">
-                  <img src={IMG("logo.png")} alt={c.logoAlt} />
+                  <img src={logoSrc} alt={c.logoAlt} style={desktopLogoStyle} />
                 </a>
               </div>
             </div>
@@ -229,7 +232,7 @@ export default function Header() {
         <div className="mobile-menu-header" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 15px" }}>
           <div className="logo" style={{ flex: "0 0 auto" }}>
             <a href="#home" title="sdgtechs">
-              <img src={IMG("logo.png")} alt={c.logoAlt} style={{ height: "40px", width: "auto" }} />
+              <img src={logoSrc} alt={c.logoAlt} style={{ height: themeMode === "dark" ? "36px" : "40px", width: "auto" }} />
             </a>
           </div>
           <button
