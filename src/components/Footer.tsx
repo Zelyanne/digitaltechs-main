@@ -3,9 +3,9 @@ import { useI18n } from "../i18n";
 
 const COPY = {
   fr: {
-    logoAlt: "SDG Techs - Agence marketing digital",
+    logoAlt: "SDG Techs - Agence de transformation digitale",
     companyDesc:
-      "Agence marketing digital orientée résultats. 10+ ans d'expérience, Afrique, Europe, Asie, Canada.",
+      "Agence de transformation digitale orientée résultats. 10+ ans d'expérience, Afrique, Europe, Asie, Canada.",
     headings: {
       services: { first: "S", rest: "ERVICES" },
       useful: { first: "L", rest: "IENS UTILES" },
@@ -31,9 +31,9 @@ const COPY = {
     legalLine: "Mentions légales · Services · Carrières",
   },
   en: {
-    logoAlt: "SDG Techs - Digital marketing agency",
+    logoAlt: "SDG Techs - Digital transformation agency",
     companyDesc:
-      "Results-driven digital marketing agency. 10+ years of experience across Africa, Europe, Asia, and Canada.",
+      "Results-driven digital transformation agency. 10+ years of experience across Africa, Europe, Asia, and Canada.",
     headings: {
       services: { first: "S", rest: "ERVICES" },
       useful: { first: "U", rest: "SEFUL LINKS" },
@@ -81,10 +81,9 @@ export default function Footer() {
                 </p>
               </div>
               <div className="company_icon">
-                <a href="#"><i className="fab fa-facebook-f" /></a>
-                <a href="#"><i className="fab fa-instagram" /></a>
-                <a href="#"><i className="fa-brands fa-x-twitter" /></a>
-                <a href="#"><i className="fab fa-pinterest-p" /></a>
+                <a href="https://www.facebook.com/sdgtechnologie" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f" /></a>
+                <a href="https://www.instagram.com/sdg_technologie/" target="_blank" rel="noreferrer"><i className="fab fa-instagram" /></a>
+                <a href="https://x.com/sdgtech9" target="_blank" rel="noreferrer"><i className="fa-brands fa-x-twitter" /></a>
               </div>
             </div>
           </div>

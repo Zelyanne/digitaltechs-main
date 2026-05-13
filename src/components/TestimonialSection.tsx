@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { useI18n } from "../i18n";
-import { useCalendlyModal } from "./CalendlyModal";
+import { useBookingModal } from "./BookingModal";
 
 const COPY = {
   fr: {
@@ -95,7 +95,7 @@ const COPY = {
 
 export default function TestimonialSection() {
   const { language } = useI18n();
-  const { openModal } = useCalendlyModal();
+  const { openModal } = useBookingModal();
   const carouselRef = useRef<HTMLDivElement>(null);
   const c = COPY[language];
 

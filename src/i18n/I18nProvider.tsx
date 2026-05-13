@@ -19,7 +19,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     // Basic UX: keep the tab title consistent with the chosen language.
     document.title =
       language === "fr"
-        ? "SDG Techs | Agence Marketing Digital"
+        ? "SDG Techs | Agence de Transformation Digitale"
         : "SDG Techs | Digital Marketing Agency";
 
     // Some of the theme scripts (meanmenu) rebuild on resize;

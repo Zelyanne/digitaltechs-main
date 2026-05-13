@@ -1,12 +1,12 @@
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
-import { useCalendlyModal } from "./CalendlyModal";
+import { useBookingModal } from "./BookingModal";
 
 const COPY = {
   fr: {
     aboutTitle: "À propos",
     aboutText:
-      "SDG Techs est une agence de marketing digital orientée résultats. Nous construisons des systèmes d'acquisition et d'automatisation pour générer des leads, des ventes et de la croissance mesurable.",
+      "SDG Techs est une agence de transformation digitale orientée résultats. Nous construisons des systèmes d'acquisition et d'automatisation pour générer des leads, des ventes et de la croissance mesurable.",
     cta: "Prendre rendez-vous",
     contactTitle: "Contacts",
     contact: {
@@ -19,7 +19,7 @@ const COPY = {
   en: {
     aboutTitle: "About us",
     aboutText:
-      "SDG Techs is a results-driven digital marketing agency. We build acquisition and automation systems to generate leads, sales, and measurable growth.",
+      "SDG Techs is a results-driven digital transformation agency. We build acquisition and automation systems to generate leads, sales, and measurable growth.",
     cta: "Book a call",
     contactTitle: "Contact info",
     contact: {
@@ -34,7 +34,7 @@ const COPY = {
 export default function Sidebar() {
   const { language } = useI18n();
   const c = COPY[language];
-  const { openModal } = useCalendlyModal();
+  const { openModal } = useBookingModal();
 
   return (
     <div className="xs-sidebar-group info-group">
@@ -83,19 +83,13 @@ export default function Sidebar() {
                 </div>
                 <ul className="social-box">
                   <li className="facebook">
-                    <a href="#" className="fab fa-facebook-f" />
-                  </li>
-                  <li className="twitter">
-                    <a href="#" className="fab fa-instagram" />
-                  </li>
-                  <li className="linkedin">
-                    <a href="#" className="fa-brands fa-x-twitter" />
+                    <a href="https://www.facebook.com/sdgtechnologie" target="_blank" rel="noreferrer" className="fab fa-facebook-f" />
                   </li>
                   <li className="instagram">
-                    <a href="#" className="fab fa-pinterest-p" />
+                    <a href="https://www.instagram.com/sdg_technologie/" target="_blank" rel="noreferrer" className="fab fa-instagram" />
                   </li>
-                  <li className="youtube">
-                    <a href="#" className="fab fa-linkedin-in" />
+                  <li className="twitter">
+                    <a href="https://x.com/sdgtech9" target="_blank" rel="noreferrer" className="fa-brands fa-x-twitter" />
                   </li>
                 </ul>
               </div>

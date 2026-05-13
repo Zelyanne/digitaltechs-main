@@ -68,7 +68,7 @@ const COPY = {
           "📧 Séquence d'emails automatisés (5 emails de nurturing)",
           "🤖 Agent IA de qualification des prospects",
           "📊 Tableau de bord analytique (Google Analytics + heatmap)",
-          "📅 Intégration prise de RDV automatique (Calendly)",
+          "📅 Intégration prise de RDV automatique (Cal.com)",
           "🔁 1 campagne publicitaire Meta Ads ou Google Ads configurée",
           "✅ Livraison en 14 jours ouvrés",
         ],
@@ -160,7 +160,7 @@ const COPY = {
           "📧 Automated email sequence (5 nurturing emails)",
           "🤖 AI agent to qualify prospects",
           "📊 Analytics dashboard (Google Analytics + heatmap)",
-          "📅 Automated booking integration (Calendly)",
+          "📅 Automated booking integration (Cal.com)",
           "🔁 1 Meta Ads or Google Ads campaign setup",
           "✅ Delivery in 14 business days",
         ],
@@ -410,7 +410,7 @@ export default function PricingSection() {
         }
         .featured-badge {
           position: absolute;
-          top: -12px;
+          top: 12px;
           left: 50%;
           transform: translateX(-50%);
           color: #fff;
@@ -419,8 +419,10 @@ export default function PricingSection() {
           font-size: 11px;
           font-weight: 700;
           letter-spacing: 1px;
+          white-space: nowrap;
           background: linear-gradient(90deg, var(--accent1), var(--accent2));
           box-shadow: 0 12px 26px rgba(17, 24, 39, 0.16);
+          z-index: 3;
         }
         .pricing-header {
           text-align: center;
@@ -710,7 +712,74 @@ export default function PricingSection() {
           padding: 12px 30px;
           font-size: 14px;
         }
-        @media (max-width: 991px) {
+        /* ---------- Dark mode overrides ---------- */
+body.sdg-dark-mode .pricing-area {
+  background: #0c1420 !important;
+}
+body.sdg-dark-mode .pricing-card {
+  background: #18273a !important;
+  border-color: rgba(228, 235, 243, 0.15) !important;
+  border-top-color: #9eb1c6 !important;
+  color: #e4ebf3 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28) !important;
+}
+body.sdg-dark-mode .featured-badge {
+  background: linear-gradient(135deg, #18273a 0%, #24364d 100%) !important;
+  border: 1px solid rgba(228, 235, 243, 0.18);
+}
+body.sdg-dark-mode .pricing-card::before {
+  opacity: 0.4;
+}
+body.sdg-dark-mode .pack-title {
+  color: #e4ebf3 !important;
+}
+body.sdg-dark-mode .pack-ideal,
+body.sdg-dark-mode .pack-ideal .ideal-label {
+  color: #cdd8e4 !important;
+}
+body.sdg-dark-mode .pricing-header {
+  border-bottom-color: rgba(228, 235, 243, 0.10) !important;
+}
+body.sdg-dark-mode .pack-badge {
+  color: #e4ebf3 !important;
+  background: rgba(228, 235, 243, 0.08) !important;
+  border-color: rgba(228, 235, 243, 0.18) !important;
+}
+body.sdg-dark-mode .pricing-features li {
+  border-bottom-color: rgba(228, 235, 243, 0.08) !important;
+  color: #cdd8e4 !important;
+}
+body.sdg-dark-mode .price-contact {
+  background: none !important;
+  color: #e4ebf3 !important;
+}
+body.sdg-dark-mode .pricing-bonus {
+  border-color: rgba(158, 177, 198, 0.25) !important;
+  color: #cdd8e4 !important;
+  background: rgba(36, 54, 77, 0.20) !important;
+}
+body.sdg-dark-mode .pricing-btn,
+body.sdg-dark-mode .elite-btn,
+body.sdg-dark-mode .elite-close:hover {
+  background: linear-gradient(135deg, #18273a 0%, #24364d 100%) !important;
+  border-color: rgba(228, 235, 243, 0.18) !important;
+  color: #e4ebf3 !important;
+}
+body.sdg-dark-mode .elite-card {
+  background:
+    linear-gradient(#0b0d10, #0b0d10) padding-box,
+    linear-gradient(135deg, #18273a, #24364d) border-box !important;
+}
+body.sdg-dark-mode .elite-card .pack-badge {
+  background: rgba(36, 54, 77, 0.36) !important;
+}
+body.sdg-dark-mode .pack-tagline {
+  color: rgba(228, 235, 243, 0.50) !important;
+}
+body.sdg-dark-mode .elite-text {
+  color: #e4ebf3 !important;
+}
+@media (max-width: 991px) {
           .featured-pack .pricing-card {
             transform: scale(1);
           }

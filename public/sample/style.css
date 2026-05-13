@@ -5345,11 +5345,12 @@ li.current_menu_item:before {
 }
 .brand-thumb img {
   filter: grayscale(100%);
-  transition: all 1s ease;
+  transition: all 0.5s ease;
+  opacity: 0.6;
 }
 .brand-thumb img:hover {
-  filter: invert(100%) sepia(92%) saturate(3758%) hue-rotate(-30deg)
-    brightness(97%) contrast(141%);
+  filter: grayscale(0%);
+  opacity: 1;
 }
 /*style two*/
 .brand-area.style-two {

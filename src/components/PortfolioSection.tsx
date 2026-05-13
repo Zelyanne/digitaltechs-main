@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
-import { useCalendlyModal } from "./CalendlyModal";
+import { useBookingModal } from "./BookingModal";
 
 const COPY = {
   fr: {
@@ -105,7 +105,7 @@ function useIsMobile(breakpoint = 991) {
 
 export default function PortfolioSection() {
   const { language } = useI18n();
-  const { openModal } = useCalendlyModal();
+  const { openModal } = useBookingModal();
   const [activeFilter, setActiveFilter] = useState<PortfolioFilter>("*");
   const containerRef = useRef<HTMLDivElement>(null);
   const isotopeRef = useRef<any>(null);

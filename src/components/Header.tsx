@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
-import darkLogo from "../../sdg (1).jpeg";
+import darkLogo from "../../sdg__1_-removebg-preview.png";
 
 type ThemeMode = "light" | "dark";
 
@@ -22,7 +22,7 @@ function getInitialTheme(): ThemeMode {
 
 const COPY = {
   fr: {
-    logoAlt: "SDG Techs - Agence marketing digital",
+    logoAlt: "SDG Techs - Agence de transformation digitale",
     nav: {
       home: "Accueil",
       partners: "Partenaires",
@@ -38,7 +38,7 @@ const COPY = {
     languageLabel: "Langue",
   },
   en: {
-    logoAlt: "SDG Techs - Digital marketing agency",
+    logoAlt: "SDG Techs - Digital transformation agency",
     nav: {
       home: "Home",
       partners: "Partners",
@@ -175,7 +175,10 @@ export default function Header() {
                       width: 38,
                       height: 38,
                       borderRadius: 8,
-                      background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)",
+                      background: themeMode === "dark"
+                        ? "linear-gradient(135deg, #18273a 0%, #24364d 100%)"
+                        : "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)",
+                      border: themeMode === "dark" ? "1px solid rgba(228, 235, 243, 0.16)" : undefined,
                       color: "#fff",
                       display: "inline-flex",
                       alignItems: "center",
@@ -232,7 +235,7 @@ export default function Header() {
         <div className="mobile-menu-header" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 15px" }}>
           <div className="logo" style={{ flex: "0 0 auto" }}>
             <a href="#home" title="sdgtechs">
-              <img src={logoSrc} alt={c.logoAlt} style={{ height: themeMode === "dark" ? "36px" : "40px", width: "auto" }} />
+              <img src={logoSrc} alt={c.logoAlt} style={{ height: themeMode === "dark" ? "28px" : "30px", width: "auto" }} />
             </a>
           </div>
           <button

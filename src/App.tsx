@@ -18,7 +18,7 @@ import TeamSection from "./components/TeamSection";
 // // import BlogSection from "./components/BlogSection";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import { CalendlyModalProvider, CalendlyModal } from "./components/CalendlyModal";
+import { BookingModalProvider, BookingModal } from "./components/BookingModal";
 
 function App() {
   useEffect(() => {
@@ -38,22 +38,8 @@ function App() {
     };
   }, []);
 
-  // Load Calendly widget script
-  useEffect(() => {
-    let script: HTMLScriptElement | null = null;
-    if (!document.querySelector('script[src*="calendly.com"]')) {
-      script = document.createElement("script");
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      document.head.appendChild(script);
-    }
-    return () => {
-      if (script?.parentNode) script.parentNode.removeChild(script);
-    };
-  }, []);
-
   return (
-    <CalendlyModalProvider>
+    <BookingModalProvider>
       <div className="loader-wrapper">
         <div className="loader" />
         <div className="loder-section left-section" />
@@ -79,8 +65,8 @@ function App() {
       {/* <BlogSection /> */}
       <Footer />
       <ScrollToTop />
-      <CalendlyModal />
-    </CalendlyModalProvider>
+      <BookingModal />
+    </BookingModalProvider>
   );
 }
 

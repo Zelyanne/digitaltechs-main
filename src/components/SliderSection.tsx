@@ -6,7 +6,7 @@ const COPY = {
   fr: {
     slides: [
       { tagline: "BIENVENUE CHEZ SDG TECHS", title1: "Agence de", title2: "Marketing", highlight: "Digital" },
-      { tagline: "AGENCE DE MARKETING DIGITAL", title1: "AMÉLIOREZ VOTRE", title2: "PRÉSENCE", highlight: "EN LIGNE" },
+      { tagline: "AGENCE DE TRANSFORMATION DIGITALE", title1: "AMÉLIOREZ VOTRE", title2: "PRÉSENCE", highlight: "EN LIGNE" },
       { tagline: "BIENVENUE CHEZ SDG TECHS", title1: "Solutions", title2: "Digitales", highlight: "Innovantes" },
     ],
     cta: "DÉCOUVRIR PLUS",
@@ -71,9 +71,9 @@ export default function SliderSection() {
                 </div>
               </div>
               <div className="slider-socail-icon2">
-                <a href="#">LINKEDIN</a>
-                <a href="#">TWITTER</a>
-                <a href="#">FACEBOOK</a>
+                <a href="https://www.facebook.com/sdgtechnologie" target="_blank" rel="noreferrer">FACEBOOK</a>
+                <a href="https://www.instagram.com/sdg_technologie/" target="_blank" rel="noreferrer">INSTAGRAM</a>
+                <a href="https://x.com/sdgtech9" target="_blank" rel="noreferrer">X</a>
               </div>
               <div className="slider-shape-thumb">
                 <div className="slider-shape-thumb-inner">

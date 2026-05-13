@@ -1,5 +1,5 @@
 import { useI18n } from "../i18n";
-import { useCalendlyModal } from "./CalendlyModal";
+import { useBookingModal } from "./BookingModal";
 
 const COPY = {
   fr: {
@@ -154,8 +154,12 @@ const COPY = {
 
 export default function ServicesSection() {
   const { language } = useI18n();
-  const { openModal } = useCalendlyModal();
+  const { openModal } = useBookingModal();
   const c = COPY[language];
+
+  const scrollToCta = () => {
+    document.getElementById("services-cta")?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
 
   return (
     <div id="services" className="service-area style-four">
@@ -182,7 +186,18 @@ export default function ServicesSection() {
         <div className="row">
           {c.services.map((s, i) => (
             <div key={i} className="col-lg-4 col-md-6 col-sm-12">
-              <div className={`techno-sinlge-service-box ${s.active ? "active" : ""}`}>
+              <div
+                className={`techno-sinlge-service-box ${s.active ? "active" : ""}`}
+                role="button"
+                tabIndex={0}
+                onClick={scrollToCta}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    scrollToCta();
+                  }
+                }}
+              >
                 <div className="techno-service-box-inner">
                   <div className="techno-service-content">
                     <div className="techno-service-icon">
@@ -207,6 +222,7 @@ export default function ServicesSection() {
         <div className="row mt-5">
           <div className="col-lg-12 text-center" style={{ display: "flex", justifyContent: "center", width: "100%" }}>
             <button
+              id="services-cta"
               onClick={openModal}
               className="dreamit-btn"
               style={{

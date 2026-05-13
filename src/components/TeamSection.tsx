@@ -1,8 +1,6 @@
 import { useEffect, useRef } from "react";
 import { IMG } from "../utils/images";
 import tchoboImg from "../../tchobo.webp";
-import alexisImg from "../../alexisimg.png";
-import enockImg from "../../Enock.png";
 import jeromeImg from "../../fadonougbo jerome.png";
 import joelImg from "../../Joel dahoue.png";
 import { useI18n } from "../i18n";
@@ -18,7 +16,7 @@ type TeamMember = {
 const members: TeamMember[] = [
   { img: "resource/team1.png", name: "Gislain Sokponwe", role: { fr: "CEO SDG TECHS • Bénin", en: "CEO SDG TECHS • Benin" } },
   { img: "resource/team2.png", name: "Jean-Bernard Batina", role: { fr: "Développeur web & Digital Marketeur • France", en: "Web Developer & Digital Marketer • France" } },
-  { img: "resource/team5.png", name: "Florian Grosjean", role: { fr: "Meta Buyer Expert • France", en: "Meta Buyer Expert • France" } },
+  { img: "resource/grojean.png", name: "Florian Grosjean", role: { fr: "Meta Buyer Expert • France", en: "Meta Buyer Expert • France" } },
   { img: "resource/team4.png", name: "Eya Azizou", role: { fr: "Inbound Marketing Experte • Belgique", en: "Inbound Marketing Expert • Belgium" } },
   { img: "resource/team3.png", name: "Shams Raju", role: { fr: "Développeur WordPress & Web Designer • Inde", en: "WordPress Developer & Web Designer • India" } },
   { img: "resource/team13.png", name: "Alexandre Mc Kinnon", role: { fr: "Business Developer Expert • Canada", en: "Business Development Expert • Canada" } },
@@ -33,8 +31,8 @@ const members: TeamMember[] = [
   { img: "resource/team12.png", name: "Pascal Alidjinou", role: { fr: "Chargé de Communication / Voix off / Montage Audio • France", en: "Communications / Voice-over / Audio Editing • France" } },
   { img: "resource/team16.png", name: "Onesime Malkiel Adje", role: { fr: "Senior Software Developer • Bénin", en: "Senior Software Developer • Benin" } },
   { img: tchoboImg, name: "Achille Tchobo", role: { fr: "Développeur senior WordPress, PHP / Magento I & II", en: "Senior WordPress Developer, PHP / Magento I & II" } },
-  { img: alexisImg, name: "Alexis Othily", role: { fr: "AI Engineer • IA & Automatisation", en: "AI Engineer • AI & Automation" }, objectPosition: "80% 50%", imgScale: 1 },
-  { img: enockImg, name: "KOUTCHIKO A. Hénok", role: { fr: "Business Developer et Dr en Physiopathologie", en: "Business Developer & PhD in Physiopathology" } },
+  { img: "resource/alexis.png", name: "Alexis Othily", role: { fr: "AI Engineer • IA & Automatisation", en: "AI Engineer • AI & Automation" }, objectPosition: "80% 50%", imgScale: 1 },
+  { img: "resource/koutchiko.png", name: "KOUTCHIKO A. Hénok", role: { fr: "Business Developer et Dr en Physiopathologie", en: "Business Developer & PhD in Physiopathology" } },
   { img: jeromeImg, name: "Fadonougbo Jerome", role: { fr: "Business Developer • USA", en: "Business Developer • USA" } },
   { img: joelImg, name: "Joel Dahoue", role: { fr: "Business Developer • USA", en: "Business Developer • USA" } },
 ];
@@ -177,16 +175,6 @@ export default function TeamSection() {
                     <div className="team-title"><h3>{m.name}</h3></div>
                     <div className="team-text"><p>{m.role[language]}</p></div>
                   </div>
-                  {/* <div className="team-share-social">
-                    <div className="team-socail-icon">
-                      <a href="#"><span><i className="fab fa-facebook-f" /></span></a>
-                      <a href="#"><i className="fa-brands fa-x-twitter" /></a>
-                      <a href="#"><i className="fab fa-pinterest-p" /></a>
-                    </div>
-                    <div className="team-icon">
-                      <span><i className="flaticon-share" /></span>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             ))}

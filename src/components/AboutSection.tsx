@@ -1,16 +1,16 @@
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
-import { useCalendlyModal } from "./CalendlyModal";
+import { useBookingModal } from "./BookingModal";
 
 const COPY = {
   fr: {
-    imageAlt: "SDG Techs - Agence marketing digital",
+    imageAlt: "SDG Techs - Agence de transformation digitale",
     kicker: "À propos",
     titleTop: "SDG TECHS",
     title: "AGENCE ",
-    titleHighlight: "MARKETING DIGITAL",
+    titleHighlight: "TRANSFORMATION DIGITALE",
     paragraph:
-      "Agence marketing digital orientée résultats depuis 2018. Plus de 10 ans d'expérience, interventions en Afrique, Europe, Asie et Canada. Stratégies sur-mesure portées par des spécialistes certifiés et des outils IA pour maximiser votre chiffre d'affaires.",
+      "Agence de transformation digitale orientée résultats depuis 2018. Plus de 10 ans d'expérience, interventions en Afrique, Europe, Asie et Canada. Stratégies sur-mesure portées par des spécialistes certifiés et des outils IA pour maximiser votre chiffre d'affaires.",
     bullets: [
       "Plus de 10 ans d'expérience, projets menés au niveau supérieur",
       "Interventions en Afrique, Europe, Asie et Canada",
@@ -20,13 +20,13 @@ const COPY = {
     cta: "PRENDRE RENDEZ-VOUS",
   },
   en: {
-    imageAlt: "SDG Techs - Digital marketing agency",
+    imageAlt: "SDG Techs - Digital transformation agency",
     kicker: "About",
     titleTop: "SDG TECHS",
     title: "DIGITAL MARKETING ",
     titleHighlight: "AGENCY",
     paragraph:
-      "A results-driven digital marketing agency since 2018. 10+ years of experience with projects across Africa, Europe, Asia, and Canada. Tailor-made strategies delivered by certified specialists and AI tools to maximize your revenue.",
+      "A results-driven digital transformation agency since 2018. 10+ years of experience with projects across Africa, Europe, Asia, and Canada. Tailor-made strategies delivered by certified specialists and AI tools to maximize your revenue.",
     bullets: [
       "10+ years of experience, projects taken to the next level",
       "Projects across Africa, Europe, Asia, and Canada",
@@ -39,7 +39,7 @@ const COPY = {
 
 export default function AboutSection() {
   const { language } = useI18n();
-  const { openModal } = useCalendlyModal();
+  const { openModal } = useBookingModal();
   const c = COPY[language];
 
   return (
@@ -96,26 +96,26 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
-            <div className="row mt-4">
-              <div className="col-lg-12 text-center">
-                <button
-                  onClick={openModal}
-                  className="dreamit-btn"
-                  style={{
-                    background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)", 
-                    color: "#fff", 
-                    padding: "15px 40px", 
-                    border: "none",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                    fontWeight: "bold",
-                    display: "inline-block"
-                  }}
-                >
-                  {c.cta}
-                </button>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div className="row mt-4 about-cta-row">
+          <div className="col-lg-12 text-center">
+            <button
+              onClick={openModal}
+              className="dreamit-btn"
+              style={{
+                background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)",
+                color: "#fff",
+                padding: "15px 40px",
+                border: "none",
+                borderRadius: "5px",
+                cursor: "pointer",
+                fontWeight: "bold",
+                display: "inline-block"
+              }}
+            >
+              {c.cta}
+            </button>
           </div>
         </div>
       </div>
