@@ -2,3 +2,46 @@
 .portfolio_area.style-three .single_portfolio:hover .single_portfolio_thumb:before {
   transform: scale(0) !important; /* Override: keep orange rectangle hidden on hover */
 }
+
+/* Larger project previews */
+.portfolio_area.style-three .portfolio-rotating-slider > .grid-item {
+  width: 100% !important;
+  max-width: 100% !important;
+  flex: none !important;
+}
+
+.portfolio_area.style-three .single_portfolio,
+.portfolio_area.style-three .single_portfolio_inner {
+  width: 100% !important;
+}
+
+.portfolio_area.style-three .single_portfolio_thumb {
+  min-height: 360px !important;
+  height: 360px !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.portfolio_area.style-three .single_portfolio_thumb img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 991px) {
+  .portfolio_area.style-three .single_portfolio_thumb {
+    min-height: 320px !important;
+    height: 320px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio_area.style-three .single_portfolio_thumb {
+    min-height: 280px !important;
+    height: 280px !important;
+  }
+}

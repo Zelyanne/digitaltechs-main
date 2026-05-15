@@ -189,7 +189,7 @@ export default function TestimonialSection() {
               onClick={openModal}
               className="dreamit-btn"
               style={{
-                background: "linear-gradient(135deg, #c86b5a 0%, #a95345 100%)", 
+                background: "linear-gradient(135deg, #d83b2d 0%, #a92722 100%)", 
                 color: "#fff", 
                 padding: "15px 40px", 
                 borderRadius: "30px", 

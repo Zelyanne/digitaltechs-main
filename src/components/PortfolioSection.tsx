@@ -166,7 +166,7 @@ export default function PortfolioSection() {
             </div>
           </div>
         </div>
-        <div className="row image_load portfolio-rotating-slider">
+        <div className="row portfolio-rotating-slider">
           {visibleProjects.map((p, i) => (
             <div
               key={`${p.img}-${slideStart}-${i}`}
@@ -191,7 +191,7 @@ export default function PortfolioSection() {
               onClick={openModal}
               className="dreamit-btn"
               style={{
-                background: "linear-gradient(135deg, #c86b5a 0%, #a95345 100%)", 
+                background: "linear-gradient(135deg, #d83b2d 0%, #a92722 100%)", 
                 color: "#fff", 
                 padding: "15px 40px", 
                 border: "none",
