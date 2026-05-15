@@ -55,8 +55,8 @@ const COPY = {
         ],
         bonus: "1 mois de support technique gratuit",
         tagline: "Votre carte de visite digitale, disponible 24h/24, sans vous ruiner.",
-        accent1: "#7b1e24",
-        accent2: "#7b1e24",
+        accent1: "#b53b47",
+        accent2: "#b53b47",
       },
       {
         badge: "PACK GROWTH",
@@ -74,8 +74,8 @@ const COPY = {
         ],
         bonus: "Audit de votre présence digitale actuelle (valeur 200 €)",
         tagline: "Un système qui attire, capture et relance vos prospects, même quand vous dormez.",
-        accent1: "#7b1e24",
-        accent2: "#7b1e24",
+        accent1: "#b53b47",
+        accent2: "#b53b47",
       },
       {
         badge: "PACK SCALE",
@@ -94,8 +94,8 @@ const COPY = {
         ],
         bonus: "Session stratégie 1h en visio avec l'expert Gislain (valeur 300 €)",
         tagline: "Votre département marketing complet, sans recruter une équipe.",
-        accent1: "#7b1e24",
-        accent2: "#7b1e24",
+        accent1: "#b53b47",
+        accent2: "#b53b47",
         featured: true,
       },
     ] satisfies Pack[],
@@ -113,8 +113,8 @@ const COPY = {
         "🤝 Gestionnaire de compte dédié",
       ],
       tagline: "Un partenariat premium, sur devis, pour accélérer votre croissance.",
-      accent1: "#7b1e24",
-      accent2: "#7b1e24",
+      accent1: "#b53b47",
+      accent2: "#b53b47",
     } satisfies ElitePack,
   },
   en: {
@@ -147,8 +147,8 @@ const COPY = {
         ],
         bonus: "1 month of free technical support",
         tagline: "Your digital business card, available 24/7, without breaking the bank.",
-        accent1: "#7b1e24",
-        accent2: "#7b1e24",
+        accent1: "#b53b47",
+        accent2: "#b53b47",
       },
       {
         badge: "GROWTH PACK",
@@ -166,8 +166,8 @@ const COPY = {
         ],
         bonus: "Audit of your current digital presence (value €200)",
         tagline: "A system that attracts, captures, and follows up with prospects, even while you sleep.",
-        accent1: "#7b1e24",
-        accent2: "#7b1e24",
+        accent1: "#b53b47",
+        accent2: "#b53b47",
       },
       {
         badge: "SCALE PACK",
@@ -186,8 +186,8 @@ const COPY = {
         ],
         bonus: "1-hour strategy session with Gislain (video call, value €300)",
         tagline: "Your full marketing department, without hiring a team.",
-        accent1: "#7b1e24",
-        accent2: "#7b1e24",
+        accent1: "#b53b47",
+        accent2: "#b53b47",
         featured: true,
       },
     ] satisfies Pack[],
@@ -205,8 +205,8 @@ const COPY = {
         "🤝 Dedicated account manager",
       ],
       tagline: "A premium partnership to accelerate your growth.",
-      accent1: "#7b1e24",
-      accent2: "#7b1e24",
+      accent1: "#b53b47",
+      accent2: "#b53b47",
     } satisfies ElitePack,
   },
 } as const;
@@ -761,7 +761,7 @@ body.sdg-dark-mode .pricing-bonus {
 body.sdg-dark-mode .pricing-btn,
 body.sdg-dark-mode .elite-btn,
 body.sdg-dark-mode .elite-close:hover {
-  background: #7b1e24 !important;
+  background: linear-gradient(135deg, #b53b47 0%, #b53b47 100%) !important;
   border-color: rgba(228, 235, 243, 0.18) !important;
   color: #e4ebf3 !important;
 }

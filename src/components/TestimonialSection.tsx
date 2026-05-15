@@ -163,7 +163,7 @@ export default function TestimonialSection() {
                   justifyContent: "center",
                 }}>
                   <div className="testimonial-content">
-                    <div style={{ marginBottom: "15px", color: "#7b1e24", fontSize: "18px" }}>
+                    <div style={{ marginBottom: "15px", color: "#b53b47", fontSize: "18px" }}>
                       ★★★★★
                     </div>
                     <p style={{ 
@@ -189,7 +189,7 @@ export default function TestimonialSection() {
               onClick={openModal}
               className="dreamit-btn"
               style={{
-                background: "#7b1e24", 
+                background: "linear-gradient(135deg, #b53b47 0%, #b53b47 100%)", 
                 color: "#fff", 
                 padding: "15px 40px", 
                 borderRadius: "30px", 

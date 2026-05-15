@@ -25,7 +25,7 @@
 .sector-activity-area::after {
   right: -120px;
   bottom: -180px;
-  background: #7b1e24;
+  background: #b53b47;
 }
 
 .sector-activity-area .container {
@@ -46,7 +46,7 @@
 
 .sector-activity-card:hover {
   transform: translateY(-8px);
-  border-color: #7b1e24;
+  border-color: #b53b47;
   box-shadow: 0 24px 46px rgba(24, 53, 95, 0.14);
 }
 
@@ -58,8 +58,8 @@
   justify-content: center;
   border-radius: 16px;
   margin-bottom: 18px;
-  background: #7b1e24;
-  box-shadow: 0 10px 20px rgba(255, 99, 43, 0.28);
+  background: linear-gradient(135deg, #b53b47 0%, #b53b47 100%);
+  box-shadow: 0 10px 20px rgba(216, 59, 45, 0.28);
 }
 
 .sector-icon-wrap i {

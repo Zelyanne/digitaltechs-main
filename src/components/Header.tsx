@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
 import darkLogo from "../../sdg__1_-removebg-preview.png";
 
@@ -176,7 +177,7 @@ export default function Header() {
                       borderRadius: 8,
                       background: themeMode === "dark"
                         ? "linear-gradient(135deg, #20334b 0%, #2d4967 100%)"
-                        : "#7b1e24",
+                        : "linear-gradient(135deg, #b53b47 0%, #b53b47 100%)",
                       border: themeMode === "dark" ? "1px solid rgba(228, 235, 243, 0.16)" : undefined,
                       color: "#fff",
                       display: "inline-flex",

@@ -9,16 +9,16 @@
   --spacing-md: 24px;
   --spacing-lg: 32px;
   --spacing-xl: 48px;
-  --sdg-primary: #7b1e24;
-  --sdg-primary-light: #7b1e24;
-  --sdg-accent: #7b1e24;
-  --sdg-accent-hover: #7b1e24;
-  --sdg-accent-soft: #7b1e24;
+  --sdg-primary: #b53b47;
+  --sdg-primary-light: #b53b47;
+  --sdg-accent: #b53b47;
+  --sdg-accent-hover: #b53b47;
+  --sdg-accent-soft: #b53b47;
   --sdg-dark-bg: #0f1724;
   --sdg-dark-card: #182437;
-  --sdg-light-bg: #fff6f0;
+  --sdg-light-bg: #f8f9fa;
   --sdg-light-card: #fffdf9;
-  --sdg-text-dark: #2a1717;
+  --sdg-text-dark: #172033;
   --sdg-text-light: #e7edf5;
   --sdg-muted: #b8c4d2;
   --sdg-brand-gradient: linear-gradient(135deg, var(--sdg-accent) 0%, var(--sdg-accent-hover) 100%);
@@ -342,7 +342,7 @@ i.fa-check,
 .style-four .techno-sinlge-service-box:hover::before,
 .style-four .techno-sinlge-service-box.active::before,
 .style-four .techno-sinlge-service-box.active:hover::before {
-  background: #7b1e24 !important;
+  background: linear-gradient(135deg, var(--sdg-primary) 0%, #b53b47 100%) !important;
 }
 
 .style-four .techno-sinlge-service-box::after,
@@ -384,6 +384,11 @@ body.sdg-dark-mode .style-five.dreamit-section-title h5::after {
 body.sdg-dark-mode .slider-content span {
   color: #e4ebf3 !important;
 }
+
+#home .slider-shape-thumb {
+  display: none !important;
+}
+
 body.sdg-dark-mode .slider-button2 a {
   background: linear-gradient(135deg, var(--sdg-dark-accent-start) 0%, var(--sdg-dark-accent-end) 100%) !important;
   border: 1px solid rgba(228, 235, 243, 0.16) !important;
@@ -529,7 +534,7 @@ body.sdg-dark-mode i.fa-check {
   color: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .sector-icon-wrap {
-  background: #7b1e24 !important;
+  background: linear-gradient(135deg, var(--sdg-primary) 0%, #b53b47 100%) !important;
   box-shadow: 0 10px 20px rgba(15, 23, 36, 0.28) !important;
 }
 body.sdg-dark-mode .sector-activity-card:hover {
@@ -609,7 +614,7 @@ body.sdg-dark-mode .techno-sinlge-service-box:hover .techno-service-icon i {
 }
 
 body.sdg-dark-mode .techno-sinlge-service-box:hover {
-  background: #7b1e24 !important;
+  background: linear-gradient(135deg, var(--sdg-primary) 0%, #b53b47 100%) !important;
 }
 body.sdg-dark-mode .techno-sinlge-service-box:focus-within {
   outline-color: var(--sdg-accent-soft) !important;
