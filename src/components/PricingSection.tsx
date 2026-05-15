@@ -55,7 +55,7 @@ const COPY = {
         ],
         bonus: "1 mois de support technique gratuit",
         tagline: "Votre carte de visite digitale, disponible 24h/24, sans vous ruiner.",
-        accent1: "#d83b2d",
+        accent1: "#7b1e24",
         accent2: "#7b1e24",
       },
       {
@@ -74,7 +74,7 @@ const COPY = {
         ],
         bonus: "Audit de votre présence digitale actuelle (valeur 200 €)",
         tagline: "Un système qui attire, capture et relance vos prospects, même quand vous dormez.",
-        accent1: "#d83b2d",
+        accent1: "#7b1e24",
         accent2: "#7b1e24",
       },
       {
@@ -94,7 +94,7 @@ const COPY = {
         ],
         bonus: "Session stratégie 1h en visio avec l'expert Gislain (valeur 300 €)",
         tagline: "Votre département marketing complet, sans recruter une équipe.",
-        accent1: "#f4a261",
+        accent1: "#7b1e24",
         accent2: "#7b1e24",
         featured: true,
       },
@@ -113,7 +113,7 @@ const COPY = {
         "🤝 Gestionnaire de compte dédié",
       ],
       tagline: "Un partenariat premium, sur devis, pour accélérer votre croissance.",
-      accent1: "#d83b2d",
+      accent1: "#7b1e24",
       accent2: "#7b1e24",
     } satisfies ElitePack,
   },
@@ -147,7 +147,7 @@ const COPY = {
         ],
         bonus: "1 month of free technical support",
         tagline: "Your digital business card, available 24/7, without breaking the bank.",
-        accent1: "#d83b2d",
+        accent1: "#7b1e24",
         accent2: "#7b1e24",
       },
       {
@@ -166,7 +166,7 @@ const COPY = {
         ],
         bonus: "Audit of your current digital presence (value €200)",
         tagline: "A system that attracts, captures, and follows up with prospects, even while you sleep.",
-        accent1: "#d83b2d",
+        accent1: "#7b1e24",
         accent2: "#7b1e24",
       },
       {
@@ -186,7 +186,7 @@ const COPY = {
         ],
         bonus: "1-hour strategy session with Gislain (video call, value €300)",
         tagline: "Your full marketing department, without hiring a team.",
-        accent1: "#f4a261",
+        accent1: "#7b1e24",
         accent2: "#7b1e24",
         featured: true,
       },
@@ -205,7 +205,7 @@ const COPY = {
         "🤝 Dedicated account manager",
       ],
       tagline: "A premium partnership to accelerate your growth.",
-      accent1: "#d83b2d",
+      accent1: "#7b1e24",
       accent2: "#7b1e24",
     } satisfies ElitePack,
   },
@@ -761,7 +761,7 @@ body.sdg-dark-mode .pricing-bonus {
 body.sdg-dark-mode .pricing-btn,
 body.sdg-dark-mode .elite-btn,
 body.sdg-dark-mode .elite-close:hover {
-  background: linear-gradient(135deg, #d83b2d 0%, #a92722 100%) !important;
+  background: #7b1e24 !important;
   border-color: rgba(228, 235, 243, 0.18) !important;
   color: #e4ebf3 !important;
 }

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
 import darkLogo from "../../sdg__1_-removebg-preview.png";
 
@@ -60,8 +59,8 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [themeMode, setThemeMode] = useState<ThemeMode>(getInitialTheme);
   const c = COPY[language];
-  const logoSrc = themeMode === "dark" ? darkLogo : IMG("logo.png");
-  const desktopLogoStyle = { maxHeight: themeMode === "dark" ? "42px" : undefined, width: "auto" };
+  const logoSrc = darkLogo;
+  const desktopLogoStyle = { maxHeight: "42px", width: "auto" };
 
   const desktopNavLinkStyle = { margin: "18px 2px", padding: "8px 7px", fontSize: "12.5px" };
 
@@ -177,7 +176,7 @@ export default function Header() {
                       borderRadius: 8,
                       background: themeMode === "dark"
                         ? "linear-gradient(135deg, #20334b 0%, #2d4967 100%)"
-                        : "linear-gradient(135deg, #d83b2d 0%, #a92722 100%)",
+                        : "#7b1e24",
                       border: themeMode === "dark" ? "1px solid rgba(228, 235, 243, 0.16)" : undefined,
                       color: "#fff",
                       display: "inline-flex",
@@ -235,7 +234,7 @@ export default function Header() {
         <div className="mobile-menu-header" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 15px" }}>
           <div className="logo" style={{ flex: "0 0 auto" }}>
             <a href="#home" title="sdgtechs">
-              <img src={logoSrc} alt={c.logoAlt} style={{ height: themeMode === "dark" ? "28px" : "30px", width: "auto" }} />
+              <img src={logoSrc} alt={c.logoAlt} style={{ height: "28px", width: "auto" }} />
             </a>
           </div>
           <button

@@ -1,6 +1,6 @@
-import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
 import { useBookingModal } from "./BookingModal";
+import darkLogo from "../../sdg__1_-removebg-preview.png";
 
 const COPY = {
   fr: {
@@ -51,7 +51,7 @@ export default function Sidebar() {
               <div className="content-inner">
                 <div className="nav-logo">
                   <a href="#home">
-                    <img src={IMG("logo.png")} alt="SDG Techs" />
+                    <img src={darkLogo} alt="SDG Techs" />
                   </a>
                 </div>
                 <div className="content-box">

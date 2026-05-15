@@ -10,10 +10,10 @@
   --spacing-lg: 32px;
   --spacing-xl: 48px;
   --sdg-primary: #7b1e24;
-  --sdg-primary-light: #f4a261;
-  --sdg-accent: #d83b2d;
-  --sdg-accent-hover: #a92722;
-  --sdg-accent-soft: #f3b08f;
+  --sdg-primary-light: #7b1e24;
+  --sdg-accent: #7b1e24;
+  --sdg-accent-hover: #7b1e24;
+  --sdg-accent-soft: #7b1e24;
   --sdg-dark-bg: #0f1724;
   --sdg-dark-card: #182437;
   --sdg-light-bg: #fff6f0;
@@ -342,7 +342,7 @@ i.fa-check,
 .style-four .techno-sinlge-service-box:hover::before,
 .style-four .techno-sinlge-service-box.active::before,
 .style-four .techno-sinlge-service-box.active:hover::before {
-  background: linear-gradient(135deg, var(--sdg-primary) 0%, #a92722 100%) !important;
+  background: #7b1e24 !important;
 }
 
 .style-four .techno-sinlge-service-box::after,
@@ -529,7 +529,7 @@ body.sdg-dark-mode i.fa-check {
   color: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .sector-icon-wrap {
-  background: linear-gradient(135deg, var(--sdg-primary) 0%, #a92722 100%) !important;
+  background: #7b1e24 !important;
   box-shadow: 0 10px 20px rgba(15, 23, 36, 0.28) !important;
 }
 body.sdg-dark-mode .sector-activity-card:hover {
@@ -609,7 +609,7 @@ body.sdg-dark-mode .techno-sinlge-service-box:hover .techno-service-icon i {
 }
 
 body.sdg-dark-mode .techno-sinlge-service-box:hover {
-  background: linear-gradient(135deg, var(--sdg-primary) 0%, #a92722 100%) !important;
+  background: #7b1e24 !important;
 }
 body.sdg-dark-mode .techno-sinlge-service-box:focus-within {
   outline-color: var(--sdg-accent-soft) !important;

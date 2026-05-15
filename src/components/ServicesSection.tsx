@@ -226,7 +226,7 @@ export default function ServicesSection() {
               onClick={openModal}
               className="dreamit-btn"
               style={{
-                background: "linear-gradient(135deg, #d83b2d 0%, #a92722 100%)", 
+                background: "#7b1e24", 
                 color: "#fff", 
                 padding: "15px 40px", 
                 borderRadius: "30px", 

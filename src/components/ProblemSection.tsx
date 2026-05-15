@@ -154,7 +154,7 @@ export default function ProblemSection() {
                   }
                   #problems .problem-card:hover .techno-service-icon i,
                   #problems .problem-card:hover .fas.fa-times-circle {
-                    color: #d83b2d !important;
+                    color: #7b1e24 !important;
                   }
                   body.sdg-dark-mode #problems .problem-card:hover h2,
                   body.sdg-dark-mode #problems .problem-card:hover li {
@@ -162,21 +162,21 @@ export default function ProblemSection() {
                   }
                   /* Focus visible pour la navigation au clavier */
                   #problems .problem-card:focus-within {
-                    outline: 3px solid #d83b2d;
+                    outline: 3px solid #7b1e24;
                     outline-offset: 4px;
                   }
                 `}</style>
                 <div className="techno-service-box-inner">
                   <div className="techno-service-content">
                     <div className="techno-service-icon" style={{ marginBottom: "25px" }}>
-                      <i className={p.icon} style={{ fontSize: "50px", color: "#d83b2d", transition: "color 0.3s" }} />
+                      <i className={p.icon} style={{ fontSize: "50px", color: "#7b1e24", transition: "color 0.3s" }} />
                     </div>
                     <div className="techno-service-title">
                       <h2 style={{ fontSize: "22px", marginBottom: "20px", color: "#333", transition: "color 0.3s" }}>{p.title}</h2>
                       <ul style={{ listStyle: "none", padding: 0 }}>
                         {p.issues.map((issue, idx) => (
                           <li key={idx} style={{ marginBottom: "12px", display: "flex", alignItems: "flex-start", fontSize: "15px", color: "#444", transition: "color 0.3s" }}>
-                            <i className="fas fa-times-circle" style={{ color: "#d83b2d", marginRight: "10px", marginTop: "4px", transition: "color 0.3s" }} />
+                            <i className="fas fa-times-circle" style={{ color: "#7b1e24", marginRight: "10px", marginTop: "4px", transition: "color 0.3s" }} />
                             {issue}
                           </li>
                         ))}
@@ -209,7 +209,7 @@ export default function ProblemSection() {
                 </p>
                 <div className="dreamit-btn mt-3">
                   <a href="#services" className="active" style={{ 
-                    background: "linear-gradient(135deg, #d83b2d 0%, #a92722 100%)", 
+                    background: "#7b1e24", 
                     color: "#fff", 
                     padding: "15px 40px", 
                     borderRadius: "30px", 

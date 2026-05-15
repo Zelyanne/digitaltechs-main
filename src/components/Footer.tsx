@@ -1,5 +1,5 @@
-import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
+import darkLogo from "../../sdg__1_-removebg-preview.png";
 
 const COPY = {
   fr: {
@@ -72,7 +72,7 @@ export default function Footer() {
             <div className="widget-widgets-company-info white">
               <div className="techno-logo">
                 <a className="logo_img" href="#home" title="SDG Techs">
-                  <img src={IMG("logo.png")} alt={c.logoAlt} />
+                  <img src={darkLogo} alt={c.logoAlt} />
                 </a>
               </div>
               <div className="company-info-desc">
