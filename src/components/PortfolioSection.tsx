@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
 import { useBookingModal } from "./BookingModal";
@@ -86,41 +86,23 @@ const projects = [
   { img: "resource/ad7.png", category: "Publicité", title: "Campagne TikTok Ads", filters: "ads" },
 ];
 
-const MOBILE_MAX_ITEMS = 3;
+const PORTFOLIO_PAGE_SIZE = 3;
 type PortfolioFilter = "*" | "apps" | "graphics" | "websites" | "ads";
-
-function useIsMobile(breakpoint = 991) {
-  const [isMobile, setIsMobile] = useState(() =>
-    typeof window !== "undefined" ? window.innerWidth <= breakpoint : false
-  );
-  useEffect(() => {
-    const mq = window.matchMedia(`(max-width: ${breakpoint}px)`);
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    setIsMobile(mq.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, [breakpoint]);
-  return isMobile;
-}
 
 export default function PortfolioSection() {
   const { language } = useI18n();
   const { openModal } = useBookingModal();
   const [activeFilter, setActiveFilter] = useState<PortfolioFilter>("*");
-  const [mobileSlideStart, setMobileSlideStart] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const isotopeRef = useRef<any>(null);
+  const [slideStart, setSlideStart] = useState(0);
   const c = COPY[language];
-  const isMobile = useIsMobile();
   
   const filteredProjects = activeFilter === "*"
     ? projects
     : projects.filter((project) => project.filters === activeFilter);
-  const visibleProjects = isMobile
-    ? Array.from({ length: Math.min(MOBILE_MAX_ITEMS, filteredProjects.length) }, (_, index) =>
-        filteredProjects[(mobileSlideStart + index) % filteredProjects.length]
-      )
-    : projects;
+  const visibleProjects = Array.from(
+    { length: Math.min(PORTFOLIO_PAGE_SIZE, filteredProjects.length) },
+    (_, index) => filteredProjects[(slideStart + index) % filteredProjects.length]
+  );
 
   const portfolioFilters: { key: PortfolioFilter; label: string }[] = [
     { key: "*", label: c.filters.all },
@@ -131,59 +113,16 @@ export default function PortfolioSection() {
   ];
 
   useEffect(() => {
-    if (isMobile) return;
-    const $ = (window as any).$;
-    if (!$?.fn?.isotope || !containerRef.current) return;
-
-    const initIsotope = () => {
-      if (isotopeRef.current) {
-        try { $(containerRef.current).isotope("destroy"); } catch (e) {}
-      }
-      
-      isotopeRef.current = $(containerRef.current).isotope({
-        itemSelector: ".grid-item",
-        filter: activeFilter === "*" ? "*" : `.${activeFilter}`,
-        layoutMode: "masonry",
-        transitionDuration: "0.8s",
-      });
-    };
-
-    if (typeof $(containerRef.current).imagesLoaded === "function") {
-      $(containerRef.current).imagesLoaded(initIsotope);
-    } else {
-      setTimeout(initIsotope, 500);
-    }
-
-    return () => {
-      if (isotopeRef.current) {
-        try { $(containerRef.current).isotope("destroy"); } catch (e) {}
-        isotopeRef.current = null;
-      }
-    };
-  }, [isMobile, language]); // Re-init on mobile change or language change
+    setSlideStart(0);
+  }, [activeFilter]);
 
   useEffect(() => {
-    setMobileSlideStart(0);
-  }, [activeFilter, isMobile]);
-
-  useEffect(() => {
-    if (!isMobile || filteredProjects.length <= MOBILE_MAX_ITEMS) return;
+    if (filteredProjects.length <= PORTFOLIO_PAGE_SIZE) return;
     const timer = window.setInterval(() => {
-      setMobileSlideStart((current) => (current + MOBILE_MAX_ITEMS) % filteredProjects.length);
+      setSlideStart((current) => (current + PORTFOLIO_PAGE_SIZE) % filteredProjects.length);
     }, 5000);
     return () => window.clearInterval(timer);
-  }, [filteredProjects.length, isMobile]);
-
-  // Handle filter changes via Isotope API instead of re-mounting components
-  useEffect(() => {
-    if (isMobile) return;
-    const $ = (window as any).$;
-    if (isotopeRef.current && $?.fn?.isotope) {
-      $(containerRef.current).isotope({
-        filter: activeFilter === "*" ? "*" : `.${activeFilter}`
-      });
-    }
-  }, [activeFilter, isMobile]);
+  }, [filteredProjects.length]);
 
   return (
     <div id="portfolio" className="portfolio_area style-three">
@@ -227,10 +166,10 @@ export default function PortfolioSection() {
             </div>
           </div>
         </div>
-        <div ref={containerRef} className={`row image_load${isMobile ? " portfolio-mobile-slider" : ""}`}>
+        <div className="row image_load portfolio-rotating-slider">
           {visibleProjects.map((p, i) => (
             <div
-              key={`${p.img}-${isMobile ? mobileSlideStart : i}`}
+              key={`${p.img}-${slideStart}-${i}`}
               className={`col-lg-4 col-md-6 col-sm-12 grid-item ${p.filters}`}
             >
               <div className="single_portfolio">
@@ -267,10 +206,8 @@ export default function PortfolioSection() {
         </div>
       </div>
       <style>{`
-        @media (max-width: 991px) {
-          .portfolio-mobile-slider .grid-item {
-            animation: portfolioFadeIn 0.45s ease both;
-          }
+        .portfolio-rotating-slider .grid-item {
+          animation: portfolioFadeIn 0.45s ease both;
         }
         @keyframes portfolioFadeIn {
           from { opacity: 0; transform: translateY(10px); }

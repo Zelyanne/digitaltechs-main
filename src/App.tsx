@@ -12,7 +12,6 @@ import AboutSection from "./components/AboutSection";
 import FeatureSection from "./components/FeatureSection";
 import TestimonialSection from "./components/TestimonialSection";
 import PortfolioSection from "./components/PortfolioSection";
-import CounterSection from "./components/CounterSection";
 import FAQSection from "./components/FAQSection";
 import TeamSection from "./components/TeamSection";
 // // import BlogSection from "./components/BlogSection";
@@ -59,7 +58,6 @@ function App() {
       <FeatureSection />
       <TestimonialSection />
       <PortfolioSection />
-      <CounterSection />
       <FAQSection />
       <TeamSection />
       {/* <BlogSection /> */}
