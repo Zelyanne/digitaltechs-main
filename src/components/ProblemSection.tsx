@@ -120,7 +120,7 @@ export default function ProblemSection() {
         <div className="row">
           {c.problems.map((p, i) => (
             <div key={i} className="col-lg-4 col-md-6 col-sm-12 mb-4">
-              <div className="techno-sinlge-service-box wow fadeInUp" data-wow-delay={`${i * 0.2}s`} style={{ 
+              <div className="problem-card wow fadeInUp" data-wow-delay={`${i * 0.2}s`} style={{ 
                 padding: "40px 30px", 
                 borderRadius: "15px", 
                 background: "#fff", 
@@ -130,24 +130,38 @@ export default function ProblemSection() {
                 border: "1px solid #eee"
               }}>
                 <style>{`
-                  .techno-sinlge-service-box:hover {
-                    background: linear-gradient(135deg, #7b1e24 0%, #a92722 100%) !important;
+                  #problems .problem-card:hover {
+                    background: #fff !important;
                     transform: translateY(-10px);
                   }
-                  /* Accessibilité: Assurer un contraste élevé au hover */
-                  .techno-sinlge-service-box:hover h2,
-                  .techno-sinlge-service-box:hover li,
-                  .techno-sinlge-service-box:hover p,
-                  .techno-sinlge-service-box:hover i {
-                    color: #ffffff !important;
+                  body.sdg-dark-mode #problems .problem-card:hover {
+                    background: var(--sdg-dark-card) !important;
                   }
-                  /* Rendre l'icône de la liste plus visible sur le fond sombre */
-                  .techno-sinlge-service-box:hover .fas.fa-times-circle {
-                    color: #ffffff !important;
-                    opacity: 0.9;
+                  body.sdg-dark-mode #problems .problem-card {
+                    background: var(--sdg-dark-card) !important;
+                    border-color: rgba(228, 235, 243, 0.15) !important;
+                    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28) !important;
+                  }
+                  body.sdg-dark-mode #problems .problem-card h2,
+                  body.sdg-dark-mode #problems .problem-card li {
+                    color: #e4ebf3 !important;
+                  }
+                  #problems .problem-card:hover h2 {
+                    color: #333 !important;
+                  }
+                  #problems .problem-card:hover li {
+                    color: #444 !important;
+                  }
+                  #problems .problem-card:hover .techno-service-icon i,
+                  #problems .problem-card:hover .fas.fa-times-circle {
+                    color: #d83b2d !important;
+                  }
+                  body.sdg-dark-mode #problems .problem-card:hover h2,
+                  body.sdg-dark-mode #problems .problem-card:hover li {
+                    color: var(--sdg-text-light) !important;
                   }
                   /* Focus visible pour la navigation au clavier */
-                  .techno-sinlge-service-box:focus-within {
+                  #problems .problem-card:focus-within {
                     outline: 3px solid #d83b2d;
                     outline-offset: 4px;
                   }

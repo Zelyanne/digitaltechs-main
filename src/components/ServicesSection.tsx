@@ -187,7 +187,7 @@ export default function ServicesSection() {
           {c.services.map((s, i) => (
             <div key={i} className="col-lg-4 col-md-6 col-sm-12">
               <div
-                className={`techno-sinlge-service-box ${s.active ? "active" : ""}`}
+                className="techno-sinlge-service-box service-card"
                 role="button"
                 tabIndex={0}
                 onClick={scrollToCta}

@@ -14,13 +14,13 @@
   --sdg-accent: #d83b2d;
   --sdg-accent-hover: #a92722;
   --sdg-accent-soft: #f3b08f;
-  --sdg-dark-bg: #160f12;
-  --sdg-dark-card: #24151a;
+  --sdg-dark-bg: #0f1724;
+  --sdg-dark-card: #182437;
   --sdg-light-bg: #fff6f0;
   --sdg-light-card: #fffdf9;
   --sdg-text-dark: #2a1717;
-  --sdg-text-light: #fff1e8;
-  --sdg-muted: #d8b8aa;
+  --sdg-text-light: #e7edf5;
+  --sdg-muted: #b8c4d2;
   --sdg-brand-gradient: linear-gradient(135deg, var(--sdg-accent) 0%, var(--sdg-accent-hover) 100%);
 }
 
@@ -49,9 +49,10 @@ body * {
 body.sdg-dark-mode {
   background: var(--sdg-dark-bg);
   color: var(--sdg-text-light);
-  --sdg-dark-accent-start: #5d171d;
-  --sdg-dark-accent-end: #9d2c24;
-  --sdg-dark-accent-soft: var(--sdg-primary-light);
+  --sdg-dark-accent-start: #20334b;
+  --sdg-dark-accent-end: #2d4967;
+  --sdg-dark-accent-soft: var(--sdg-accent);
+  --sdg-accent-soft: var(--sdg-accent);
 }
 
 body.sdg-dark-mode .about-area.style-two,
@@ -127,7 +128,7 @@ body.sdg-dark-mode .sector-icon-wrap {
 }
 
 body.sdg-dark-mode .sector-activity-area::after {
-  background: #8f2a25 !important;
+  background: #2e4564 !important;
 }
 
 body.sdg-dark-mode .style-two .team-content {
@@ -444,6 +445,44 @@ body.sdg-dark-mode .techno-sinlge-service-box:focus-within {
 
 .techno-sinlge-service-box[role="button"] {
   cursor: pointer;
+}
+
+#services .service-card,
+#services .service-card:hover {
+  background: #fff !important;
+}
+
+#services .service-card::before,
+#services .service-card::after,
+#services .service-card:hover::before,
+#services .service-card:hover::after {
+  display: none !important;
+  opacity: 0 !important;
+  background: transparent !important;
+}
+
+#services .service-card:hover .techno-service-title h2,
+#services .service-card:hover .techno-service-title p {
+  color: inherit !important;
+}
+
+#services .service-card:hover .techno-service-icon i {
+  color: var(--sdg-accent) !important;
+}
+
+body.sdg-dark-mode #services .service-card,
+body.sdg-dark-mode #services .service-card:hover {
+  background: var(--sdg-dark-card) !important;
+}
+
+body.sdg-dark-mode #services .service-card .techno-service-title h2,
+body.sdg-dark-mode #services .service-card .techno-service-title p,
+body.sdg-dark-mode #services .service-card:hover .techno-service-title h2 {
+  color: #e4ebf3 !important;
+}
+
+body.sdg-dark-mode #services .service-card:hover .techno-service-icon i {
+  color: var(--sdg-dark-accent-soft) !important;
 }
 
 body.sdg-dark-mode .style-four .techno-sinlge-service-box.active .techno-service-title h2,

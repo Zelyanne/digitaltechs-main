@@ -724,7 +724,7 @@ body.sdg-dark-mode .pricing-card {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28) !important;
 }
 body.sdg-dark-mode .featured-badge {
-  background: linear-gradient(135deg, #5d171d 0%, #9d2c24 100%) !important;
+  background: linear-gradient(135deg, #20334b 0%, #2d4967 100%) !important;
   border: 1px solid rgba(228, 235, 243, 0.18);
 }
 body.sdg-dark-mode .pricing-card::before {
@@ -768,7 +768,7 @@ body.sdg-dark-mode .elite-close:hover {
 body.sdg-dark-mode .elite-card {
   background:
     linear-gradient(#0b0d10, #0b0d10) padding-box,
-    linear-gradient(135deg, #5d171d, #9d2c24) border-box !important;
+    linear-gradient(135deg, #20334b, #2d4967) border-box !important;
 }
 body.sdg-dark-mode .elite-card .pack-badge {
   background: rgba(36, 54, 77, 0.36) !important;
