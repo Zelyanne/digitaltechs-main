@@ -86,7 +86,7 @@ const projects = [
   { img: "resource/ad7.png", category: "Publicité", title: "Campagne TikTok Ads", filters: "ads" },
 ];
 
-const MOBILE_MAX_ITEMS = 6;
+const MOBILE_MAX_ITEMS = 3;
 type PortfolioFilter = "*" | "apps" | "graphics" | "websites" | "ads";
 
 function useIsMobile(breakpoint = 991) {
@@ -107,13 +107,20 @@ export default function PortfolioSection() {
   const { language } = useI18n();
   const { openModal } = useBookingModal();
   const [activeFilter, setActiveFilter] = useState<PortfolioFilter>("*");
+  const [mobileSlideStart, setMobileSlideStart] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const isotopeRef = useRef<any>(null);
   const c = COPY[language];
   const isMobile = useIsMobile();
   
-  // We render all projects and let Isotope handle filtering for better reliability
-  const visibleProjects = projects;
+  const filteredProjects = activeFilter === "*"
+    ? projects
+    : projects.filter((project) => project.filters === activeFilter);
+  const visibleProjects = isMobile
+    ? Array.from({ length: Math.min(MOBILE_MAX_ITEMS, filteredProjects.length) }, (_, index) =>
+        filteredProjects[(mobileSlideStart + index) % filteredProjects.length]
+      )
+    : projects;
 
   const portfolioFilters: { key: PortfolioFilter; label: string }[] = [
     { key: "*", label: c.filters.all },
@@ -124,6 +131,7 @@ export default function PortfolioSection() {
   ];
 
   useEffect(() => {
+    if (isMobile) return;
     const $ = (window as any).$;
     if (!$?.fn?.isotope || !containerRef.current) return;
 
@@ -154,15 +162,28 @@ export default function PortfolioSection() {
     };
   }, [isMobile, language]); // Re-init on mobile change or language change
 
+  useEffect(() => {
+    setMobileSlideStart(0);
+  }, [activeFilter, isMobile]);
+
+  useEffect(() => {
+    if (!isMobile || filteredProjects.length <= MOBILE_MAX_ITEMS) return;
+    const timer = window.setInterval(() => {
+      setMobileSlideStart((current) => (current + MOBILE_MAX_ITEMS) % filteredProjects.length);
+    }, 5000);
+    return () => window.clearInterval(timer);
+  }, [filteredProjects.length, isMobile]);
+
   // Handle filter changes via Isotope API instead of re-mounting components
   useEffect(() => {
+    if (isMobile) return;
     const $ = (window as any).$;
     if (isotopeRef.current && $?.fn?.isotope) {
       $(containerRef.current).isotope({
         filter: activeFilter === "*" ? "*" : `.${activeFilter}`
       });
     }
-  }, [activeFilter]);
+  }, [activeFilter, isMobile]);
 
   return (
     <div id="portfolio" className="portfolio_area style-three">
@@ -206,10 +227,10 @@ export default function PortfolioSection() {
             </div>
           </div>
         </div>
-        <div ref={containerRef} className="row image_load">
+        <div ref={containerRef} className={`row image_load${isMobile ? " portfolio-mobile-slider" : ""}`}>
           {visibleProjects.map((p, i) => (
             <div
-              key={i}
+              key={`${p.img}-${isMobile ? mobileSlideStart : i}`}
               className={`col-lg-4 col-md-6 col-sm-12 grid-item ${p.filters}`}
             >
               <div className="single_portfolio">
@@ -231,7 +252,7 @@ export default function PortfolioSection() {
               onClick={openModal}
               className="dreamit-btn"
               style={{
-                background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)", 
+                background: "linear-gradient(135deg, #c86b5a 0%, #a95345 100%)", 
                 color: "#fff", 
                 padding: "15px 40px", 
                 border: "none",
@@ -245,6 +266,17 @@ export default function PortfolioSection() {
           </div>
         </div>
       </div>
+      <style>{`
+        @media (max-width: 991px) {
+          .portfolio-mobile-slider .grid-item {
+            animation: portfolioFadeIn 0.45s ease both;
+          }
+        }
+        @keyframes portfolioFadeIn {
+          from { opacity: 0; transform: translateY(10px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </div>
   );
 }

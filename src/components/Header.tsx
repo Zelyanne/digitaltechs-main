@@ -176,8 +176,8 @@ export default function Header() {
                       height: 38,
                       borderRadius: 8,
                       background: themeMode === "dark"
-                        ? "linear-gradient(135deg, #18273a 0%, #24364d 100%)"
-                        : "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)",
+                        ? "linear-gradient(135deg, #20334b 0%, #2d4967 100%)"
+                        : "linear-gradient(135deg, #c86b5a 0%, #a95345 100%)",
                       border: themeMode === "dark" ? "1px solid rgba(228, 235, 243, 0.16)" : undefined,
                       color: "#fff",
                       display: "inline-flex",

@@ -55,8 +55,8 @@ const COPY = {
         ],
         bonus: "1 mois de support technique gratuit",
         tagline: "Votre carte de visite digitale, disponible 24h/24, sans vous ruiner.",
-        accent1: "#ff4500",
-        accent2: "#292643",
+        accent1: "#c86b5a",
+        accent2: "#3d5a80",
       },
       {
         badge: "PACK GROWTH",
@@ -74,8 +74,8 @@ const COPY = {
         ],
         bonus: "Audit de votre présence digitale actuelle (valeur 200 €)",
         tagline: "Un système qui attire, capture et relance vos prospects, même quand vous dormez.",
-        accent1: "#ff4500",
-        accent2: "#292643",
+        accent1: "#c86b5a",
+        accent2: "#3d5a80",
       },
       {
         badge: "PACK SCALE",
@@ -94,8 +94,8 @@ const COPY = {
         ],
         bonus: "Session stratégie 1h en visio avec l'expert Gislain (valeur 300 €)",
         tagline: "Votre département marketing complet, sans recruter une équipe.",
-        accent1: "#ff7a18",
-        accent2: "#292643",
+        accent1: "#d18b7c",
+        accent2: "#3d5a80",
         featured: true,
       },
     ] satisfies Pack[],
@@ -113,8 +113,8 @@ const COPY = {
         "🤝 Gestionnaire de compte dédié",
       ],
       tagline: "Un partenariat premium, sur devis, pour accélérer votre croissance.",
-      accent1: "#ff4500",
-      accent2: "#292643",
+      accent1: "#c86b5a",
+      accent2: "#3d5a80",
     } satisfies ElitePack,
   },
   en: {
@@ -147,8 +147,8 @@ const COPY = {
         ],
         bonus: "1 month of free technical support",
         tagline: "Your digital business card, available 24/7, without breaking the bank.",
-        accent1: "#ff4500",
-        accent2: "#292643",
+        accent1: "#c86b5a",
+        accent2: "#3d5a80",
       },
       {
         badge: "GROWTH PACK",
@@ -166,8 +166,8 @@ const COPY = {
         ],
         bonus: "Audit of your current digital presence (value €200)",
         tagline: "A system that attracts, captures, and follows up with prospects, even while you sleep.",
-        accent1: "#ff4500",
-        accent2: "#292643",
+        accent1: "#c86b5a",
+        accent2: "#3d5a80",
       },
       {
         badge: "SCALE PACK",
@@ -186,8 +186,8 @@ const COPY = {
         ],
         bonus: "1-hour strategy session with Gislain (video call, value €300)",
         tagline: "Your full marketing department, without hiring a team.",
-        accent1: "#ff7a18",
-        accent2: "#292643",
+        accent1: "#d18b7c",
+        accent2: "#3d5a80",
         featured: true,
       },
     ] satisfies Pack[],
@@ -205,8 +205,8 @@ const COPY = {
         "🤝 Dedicated account manager",
       ],
       tagline: "A premium partnership to accelerate your growth.",
-      accent1: "#ff4500",
-      accent2: "#292643",
+      accent1: "#c86b5a",
+      accent2: "#3d5a80",
     } satisfies ElitePack,
   },
 } as const;
@@ -368,7 +368,7 @@ export default function PricingSection() {
       <style>{`
         .pricing-area {
           padding: 100px 0 70px;
-          background: linear-gradient(180deg, #fffaf7 0%, #ffffff 55%, #fffaf7 100%);
+          background: linear-gradient(180deg, #f6f3ef 0%, #ffffff 55%, #f6f3ef 100%);
         }
         .pricing-card {
           position: relative;
@@ -379,7 +379,7 @@ export default function PricingSection() {
           margin-bottom: 30px;
           transition: all 0.3s ease;
           color: #111827;
-          background: linear-gradient(180deg, #ffffff 0%, #fffaf7 100%);
+          background: linear-gradient(180deg, #ffffff 0%, #fffdf9 100%);
           box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
           height: 100%;
           display: flex;
@@ -392,8 +392,8 @@ export default function PricingSection() {
           inset: 0;
           pointer-events: none;
           background:
-            radial-gradient(520px 220px at 0% 0%, rgba(255, 69, 0, 0.12), transparent 60%),
-            radial-gradient(520px 240px at 100% 0%, rgba(41, 38, 67, 0.10), transparent 60%);
+            radial-gradient(520px 220px at 0% 0%, rgba(200, 107, 90, 0.12), transparent 60%),
+            radial-gradient(520px 240px at 100% 0%, rgba(61, 90, 128, 0.10), transparent 60%);
           opacity: 1;
         }
         .pricing-card:hover {
@@ -441,7 +441,7 @@ export default function PricingSection() {
           letter-spacing: 0.8px;
           margin-bottom: 10px;
           color: #111827;
-          background: linear-gradient(90deg, rgba(255, 69, 0, 0.10), rgba(41, 38, 67, 0.08));
+          background: linear-gradient(90deg, rgba(200, 107, 90, 0.10), rgba(61, 90, 128, 0.08));
           border: 1px solid rgba(41, 38, 67, 0.12);
         }
         .pack-title {
@@ -515,7 +515,7 @@ export default function PricingSection() {
           padding-top: 8px;
         }
         .pricing-bonus {
-          border: 1px solid rgba(255, 69, 0, 0.18);
+          border: 1px solid rgba(200, 107, 90, 0.18);
           border-radius: 10px;
           padding: 8px;
           font-size: 12px;
@@ -523,7 +523,7 @@ export default function PricingSection() {
           margin-bottom: 12px;
           line-height: 1.4;
           color: rgba(17, 24, 39, 0.86);
-          background: linear-gradient(90deg, rgba(255, 69, 0, 0.08), rgba(41, 38, 67, 0.06));
+          background: linear-gradient(90deg, rgba(200, 107, 90, 0.08), rgba(61, 90, 128, 0.06));
           position: relative;
           z-index: 1;
         }
@@ -609,7 +609,7 @@ export default function PricingSection() {
         /* Ensure elite stays readable on dark card */
         .elite-card .pack-badge {
           color: rgba(255, 255, 255, 0.92);
-          background: linear-gradient(90deg, rgba(255, 69, 0, 0.22), rgba(41, 38, 67, 0.18));
+          background: linear-gradient(90deg, rgba(200, 107, 90, 0.20), rgba(61, 90, 128, 0.18));
           border: 1px solid rgba(255, 255, 255, 0.16);
         }
         .elite-card .pack-title {
@@ -644,8 +644,8 @@ export default function PricingSection() {
           inset: 0;
           pointer-events: none;
           background:
-            radial-gradient(700px 260px at 10% 0%, rgba(255, 69, 0, 0.22), transparent 55%),
-            radial-gradient(640px 240px at 90% 0%, rgba(41, 38, 67, 0.22), transparent 55%);
+            radial-gradient(700px 260px at 10% 0%, rgba(200, 107, 90, 0.18), transparent 55%),
+            radial-gradient(640px 240px at 90% 0%, rgba(61, 90, 128, 0.22), transparent 55%);
           opacity: 0.9;
           mix-blend-mode: screen;
         }
@@ -714,17 +714,17 @@ export default function PricingSection() {
         }
         /* ---------- Dark mode overrides ---------- */
 body.sdg-dark-mode .pricing-area {
-  background: #0c1420 !important;
+  background: #0f1724 !important;
 }
 body.sdg-dark-mode .pricing-card {
-  background: #18273a !important;
+  background: #182437 !important;
   border-color: rgba(228, 235, 243, 0.15) !important;
   border-top-color: #9eb1c6 !important;
   color: #e4ebf3 !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28) !important;
 }
 body.sdg-dark-mode .featured-badge {
-  background: linear-gradient(135deg, #18273a 0%, #24364d 100%) !important;
+  background: linear-gradient(135deg, #20334b 0%, #2d4967 100%) !important;
   border: 1px solid rgba(228, 235, 243, 0.18);
 }
 body.sdg-dark-mode .pricing-card::before {
@@ -761,14 +761,14 @@ body.sdg-dark-mode .pricing-bonus {
 body.sdg-dark-mode .pricing-btn,
 body.sdg-dark-mode .elite-btn,
 body.sdg-dark-mode .elite-close:hover {
-  background: linear-gradient(135deg, #18273a 0%, #24364d 100%) !important;
+  background: linear-gradient(135deg, #c86b5a 0%, #a95345 100%) !important;
   border-color: rgba(228, 235, 243, 0.18) !important;
   color: #e4ebf3 !important;
 }
 body.sdg-dark-mode .elite-card {
   background:
     linear-gradient(#0b0d10, #0b0d10) padding-box,
-    linear-gradient(135deg, #18273a, #24364d) border-box !important;
+    linear-gradient(135deg, #20334b, #2d4967) border-box !important;
 }
 body.sdg-dark-mode .elite-card .pack-badge {
   background: rgba(36, 54, 77, 0.36) !important;

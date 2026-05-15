@@ -104,7 +104,7 @@ export default function AboutSection() {
               onClick={openModal}
               className="dreamit-btn"
               style={{
-                background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)",
+                background: "linear-gradient(135deg, #c86b5a 0%, #a95345 100%)",
                 color: "#fff",
                 padding: "15px 40px",
                 border: "none",

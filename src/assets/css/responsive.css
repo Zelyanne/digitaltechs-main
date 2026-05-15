@@ -9,6 +9,19 @@
   --spacing-md: 24px;
   --spacing-lg: 32px;
   --spacing-xl: 48px;
+  --sdg-primary: #3d5a80;
+  --sdg-primary-light: #98c1d9;
+  --sdg-accent: #c86b5a;
+  --sdg-accent-hover: #a95345;
+  --sdg-accent-soft: #e8a08f;
+  --sdg-dark-bg: #0f1724;
+  --sdg-dark-card: #182437;
+  --sdg-light-bg: #f6f3ef;
+  --sdg-light-card: #fffdf9;
+  --sdg-text-dark: #172033;
+  --sdg-text-light: #e7edf5;
+  --sdg-muted: #b8c4d2;
+  --sdg-brand-gradient: linear-gradient(135deg, var(--sdg-accent) 0%, var(--sdg-accent-hover) 100%);
 }
 
 /* ---------- Global resets ---------- */
@@ -34,11 +47,11 @@ body * {
 }
 
 body.sdg-dark-mode {
-  background: #0c1420;
-  color: #e4ebf3;
-  --sdg-dark-accent-start: #18273a;
-  --sdg-dark-accent-end: #24364d;
-  --sdg-dark-accent-soft: #9eb1c6;
+  background: var(--sdg-dark-bg);
+  color: var(--sdg-text-light);
+  --sdg-dark-accent-start: #20334b;
+  --sdg-dark-accent-end: #2d4967;
+  --sdg-dark-accent-soft: var(--sdg-primary-light);
 }
 
 body.sdg-dark-mode .about-area.style-two,
@@ -51,18 +64,18 @@ body.sdg-dark-mode .portfolio_area.style-three,
 body.sdg-dark-mode .faq-area.style-two,
 body.sdg-dark-mode .team-area.style-two,
 body.sdg-dark-mode .footer-middle {
-  background: #111b2b !important;
+  background: var(--sdg-dark-bg) !important;
 }
 
 body.sdg-dark-mode .counter-area.style-three {
   background:
-    linear-gradient(rgba(12, 20, 32, 0.72), rgba(12, 20, 32, 0.72)),
+    linear-gradient(rgba(15, 23, 36, 0.74), rgba(15, 23, 36, 0.74)),
     url("/sample/assets/images/resource/counterbg.jpg") center center / cover no-repeat !important;
 }
 
 body.sdg-dark-mode .about-area.style-three {
   background:
-    linear-gradient(rgba(17, 27, 43, 0.9), rgba(17, 27, 43, 0.9)),
+    linear-gradient(rgba(15, 23, 36, 0.9), rgba(15, 23, 36, 0.9)),
     url("/sample/assets/images/resource/services.jpg") center center / cover no-repeat !important;
 }
 
@@ -79,7 +92,7 @@ body.sdg-dark-mode .footer-middle li a,
 body.sdg-dark-mode .footer-middle h4,
 body.sdg-dark-mode .single-testimonial p,
 body.sdg-dark-mode .single-testimonial h4 {
-  color: #e4ebf3 !important;
+  color: var(--sdg-text-light) !important;
 }
 
 body.sdg-dark-mode .techno-sinlge-service-box,
@@ -91,7 +104,7 @@ body.sdg-dark-mode .faq-area.style-two .style-three form#dreamit-form,
 body.sdg-dark-mode .faq-area.style-two .row.background_color,
 body.sdg-dark-mode .dreamit-single-team-box2,
 body.sdg-dark-mode .single_portfolio_thumb {
-  background: #18273a !important;
+  background: var(--sdg-dark-card) !important;
   border-color: rgba(228, 235, 243, 0.15) !important;
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28) !important;
 }
@@ -141,11 +154,11 @@ body.sdg-dark-mode .faq-area.style-two .accordion a {
 }
 
 body.sdg-dark-mode .faq-area.style-two .accordion a::before {
-  background: linear-gradient(100deg, #ef3631 0%, #ed2c41 100%) !important;
+  background: var(--sdg-brand-gradient) !important;
 }
 
 body.sdg-dark-mode .faq-area.style-two .accordion a.active {
-  background: linear-gradient(100deg, #ef3631 0%, #ed2c41 100%) !important;
+  background: var(--sdg-brand-gradient) !important;
   color: #fff !important;
 }
 
@@ -279,23 +292,93 @@ body.sdg-dark-mode .mobile-menu {
   background: #000 !important;
 }
 
-/* ---------- Dark mode — brand red #ef3631 replaces orange ---------- */
+/* ---------- Softer brand accents ---------- */
+.dreamit-section-title h5,
+.techno-section-title h5,
+.dreamit-section-title span,
+.dreamit-section-title2 span,
+span.color1,
+span.color2,
+span.color3 {
+  color: var(--sdg-accent) !important;
+}
+
+.dreamit-section-title h5::before,
+.dreamit-section-title h5::after,
+.style-two.dreamit-section-title h5::after,
+.style-three.dreamit-section-title h5::after,
+.style-five.dreamit-section-title h5::after,
+.owl-dot.active,
+.go-top,
+.go-top-button,
+.video-vemo-icon {
+  background: var(--sdg-accent) !important;
+}
+
+.slider-button a,
+.slider-button2 a,
+.dreamit-button a,
+.dreamit-button2 a,
+button.dreamit-btn,
+a.dreamit-btn,
+.theme-btn,
+.theme-btn.btn-style-two,
+.nav-pills .nav-link.active,
+.content-box a.theme-btn {
+  background: var(--sdg-brand-gradient) !important;
+  border-color: rgba(61, 90, 128, 0.18) !important;
+}
+
+.techno-service-icon i,
+i.fas.fa-check,
+i.fa-check,
+.close-side-widget i {
+  color: var(--sdg-accent) !important;
+}
+
+.techno-sinlge-service-box:hover,
+.techno-sinlge-service-box-1:hover,
+.style-four .techno-sinlge-service-box:hover::before,
+.style-four .techno-sinlge-service-box.active::before,
+.style-four .techno-sinlge-service-box.active:hover::before {
+  background: linear-gradient(135deg, var(--sdg-primary) 0%, #263d59 100%) !important;
+}
+
+.style-four .techno-sinlge-service-box::after,
+.style-four .techno-sinlge-service-box.active::after,
+.style-four .techno-sinlge-service-box:hover::after,
+.techno-sinlge-service-box::before,
+.techno-sinlge-service-box-1::before,
+.active.techno-sinlge-service-box::before,
+.techno-sinlge-service-box:hover::before,
+.techno-sinlge-service-box-1:hover::before,
+.style-three .techno-sinlge-service-box::before,
+.style-three .techno-sinlge-service-box:hover::before {
+  background: var(--sdg-accent) !important;
+}
+
+.sector-icon-wrap,
+.pricing-btn,
+.elite-btn {
+  background: var(--sdg-brand-gradient) !important;
+}
+
 body.sdg-dark-mode .dreamit-section-title h5,
 body.sdg-dark-mode .techno-section-title h5 {
-  color: #ef3631 !important;
+  color: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .dreamit-section-title span,
 body.sdg-dark-mode span.color1,
 body.sdg-dark-mode span.color2,
 body.sdg-dark-mode span.color3 {
-  color: #ef3631 !important;
+  color: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .dreamit-section-title h5::before,
 body.sdg-dark-mode .dreamit-section-title h5::after,
 body.sdg-dark-mode .style-two.dreamit-section-title h5::after,
 body.sdg-dark-mode .style-three.dreamit-section-title h5::after,
 body.sdg-dark-mode .style-five.dreamit-section-title h5::after {
-  background: #ef3631 !important;
+  background: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .slider-content span {
   color: #e4ebf3 !important;
@@ -392,37 +475,36 @@ body.sdg-dark-mode .style-four .techno-sinlge-service-box:hover::before {
 body.sdg-dark-mode .style-four .techno-sinlge-service-box::after,
 body.sdg-dark-mode .style-four .techno-sinlge-service-box.active::after,
 body.sdg-dark-mode .style-four .techno-sinlge-service-box:hover::after {
-  background: #ef3631 !important;
+  background: var(--sdg-accent-soft) !important;
 }
 
-/* ---------- Dark mode — replace orange with brand red (#ef3631) ---------- */
 body.sdg-dark-mode .go-top,
 body.sdg-dark-mode .go-top-button {
-  background: #ef3631 !important;
+  background: var(--sdg-accent) !important;
 }
 body.sdg-dark-mode .owl-dot.active {
-  background: #ef3631 !important;
+  background: var(--sdg-accent) !important;
 }
 body.sdg-dark-mode i.fas.fa-check,
 body.sdg-dark-mode i.fa-check {
-  color: #ef3631 !important;
+  color: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .sector-icon-wrap {
-  background: linear-gradient(135deg, #ef3631 0%, #a80c26 100%) !important;
-  box-shadow: 0 10px 20px rgba(225, 25, 58, 0.28) !important;
+  background: linear-gradient(135deg, var(--sdg-primary) 0%, #263d59 100%) !important;
+  box-shadow: 0 10px 20px rgba(15, 23, 36, 0.28) !important;
 }
 body.sdg-dark-mode .sector-activity-card:hover {
-  border-color: #ef3631 !important;
+  border-color: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .sector-activity-area::after {
-  background: #ef3631 !important;
+  background: var(--sdg-accent) !important;
 }
 body.sdg-dark-mode .pricing-card {
-  --accent1: #ef3631 !important;
+  --accent1: var(--sdg-accent) !important;
 }
 body.sdg-dark-mode .pricing-btn,
 body.sdg-dark-mode .elite-btn {
-  background: linear-gradient(135deg, #ef3631 0%, #a80c26 100%) !important;
+  background: var(--sdg-brand-gradient) !important;
   border-color: rgba(228, 235, 243, 0.18) !important;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.30) !important;
 }
@@ -434,7 +516,7 @@ body.sdg-dark-mode #portfolio a.theme-btn,
 body.sdg-dark-mode .pricing-area a,
 body.sdg-dark-mode .testimonial-area a,
 body.sdg-dark-mode .header-contact a {
-  background: linear-gradient(100deg, #ef3631 0%, #ed2c41 100%) !important;
+  background: var(--sdg-brand-gradient) !important;
 }
 /* Desktop nav: disable template gradient-text (removes weird light bg) */
 body.sdg-dark-mode #sticky-header .techno_menu ul li a,
@@ -444,7 +526,7 @@ body.sdg-dark-mode #sticky-header .techno_menu > ul > li > a {
 }
 
 body.sdg-dark-mode #sticky-header .techno_menu > ul > li:hover > a {
-  color: #ef3631 !important;
+  color: var(--sdg-accent-soft) !important;
 }
 
 /* Mobile menu: keep links on dark background (no light blocks) */
@@ -452,21 +534,21 @@ body.sdg-dark-mode .mobile-menu .nav_scroll li a {
   background: transparent !important;
 }
 body.sdg-dark-mode .dreamit-section-title2 span {
-  color: #ef3631 !important;
+  color: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .slider-button a {
-  background: linear-gradient(to right, #ef3631 20%, #ed2c41 85%) !important;
+  background: var(--sdg-brand-gradient) !important;
 }
 body.sdg-dark-mode .video-vemo-icon {
-  background: #ef3631 !important;
+  background: var(--sdg-accent) !important;
 }
 body.sdg-dark-mode .dreamit-button a,
 body.sdg-dark-mode .dreamit-button2 a {
-  background: linear-gradient(135deg, #ef3631 0%, #a80c26 100%) !important;
+  background: var(--sdg-brand-gradient) !important;
   border-color: rgba(228, 235, 243, 0.18) !important;
 }
 body.sdg-dark-mode .nav-pills .nav-link.active {
-  background-color: #ef3631 !important;
+  background-color: var(--sdg-accent) !important;
 }
 body.sdg-dark-mode .techno-sinlge-service-box::before,
 body.sdg-dark-mode .techno-sinlge-service-box-1::before,
@@ -475,11 +557,11 @@ body.sdg-dark-mode .techno-sinlge-service-box:hover::before,
 body.sdg-dark-mode .techno-sinlge-service-box-1:hover::before,
 body.sdg-dark-mode .style-three .techno-sinlge-service-box::before,
 body.sdg-dark-mode .style-three .techno-sinlge-service-box:hover::before {
-  background: #ef3631 !important;
+  background: var(--sdg-accent) !important;
 }
 
 body.sdg-dark-mode .techno-service-icon i {
-  color: #ef3631 !important;
+  color: var(--sdg-accent-soft) !important;
 }
 
 body.sdg-dark-mode .active .techno-service-icon i,
@@ -488,18 +570,17 @@ body.sdg-dark-mode .techno-sinlge-service-box:hover .techno-service-icon i {
 }
 
 body.sdg-dark-mode .techno-sinlge-service-box:hover {
-  background: #ef3631 !important; /* Fallback */
-  background: linear-gradient(100deg, #ef3631 0%, #ed2c41 100%) !important;
+  background: linear-gradient(135deg, var(--sdg-primary) 0%, #263d59 100%) !important;
 }
 body.sdg-dark-mode .techno-sinlge-service-box:focus-within {
-  outline-color: #ef3631 !important;
+  outline-color: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .dreamit-btn a.active {
-  background: linear-gradient(100deg, #ef3631 0%, #ed2c41 100%) !important;
-  box-shadow: 0 10px 20px rgba(225, 25, 58, 0.3) !important;
+  background: var(--sdg-brand-gradient) !important;
+  box-shadow: 0 10px 20px rgba(61, 90, 128, 0.24) !important;
 }
 body.sdg-dark-mode .close-side-widget i {
-  color: #ef3631 !important;
+  color: var(--sdg-accent-soft) !important;
 }
 
 /* Header controls: remove "white box" look in dark mode */
@@ -544,7 +625,7 @@ p {
 
 /* ---------- Focus states (a11y) ---------- */
 a:focus, button:focus {
-  outline: 2px solid #ef3631;
+  outline: 2px solid var(--sdg-accent);
   outline-offset: 2px;
 }
 
@@ -1013,7 +1094,7 @@ input, textarea, select {
   }
   .mobile-menu .nav_scroll li a:hover {
     background: rgba(255, 255, 255, 0.1);
-    color: #ef3631;
+    color: var(--sdg-accent-soft);
   }
 
   .mobile-menu .sdg-language-switcher {

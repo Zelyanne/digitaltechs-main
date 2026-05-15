@@ -131,7 +131,7 @@ export default function ProblemSection() {
               }}>
                 <style>{`
                   .techno-sinlge-service-box:hover {
-                    background: linear-gradient(100deg, #ff4500 0%, #ed2c41 100%) !important;
+                    background: linear-gradient(135deg, #3d5a80 0%, #263d59 100%) !important;
                     transform: translateY(-10px);
                   }
                   /* Accessibilité: Assurer un contraste élevé au hover */
@@ -148,21 +148,21 @@ export default function ProblemSection() {
                   }
                   /* Focus visible pour la navigation au clavier */
                   .techno-sinlge-service-box:focus-within {
-                    outline: 3px solid #ed2c41;
+                    outline: 3px solid #c86b5a;
                     outline-offset: 4px;
                   }
                 `}</style>
                 <div className="techno-service-box-inner">
                   <div className="techno-service-content">
                     <div className="techno-service-icon" style={{ marginBottom: "25px" }}>
-                      <i className={p.icon} style={{ fontSize: "50px", color: "#ed2c41", transition: "color 0.3s" }} />
+                      <i className={p.icon} style={{ fontSize: "50px", color: "#c86b5a", transition: "color 0.3s" }} />
                     </div>
                     <div className="techno-service-title">
                       <h2 style={{ fontSize: "22px", marginBottom: "20px", color: "#333", transition: "color 0.3s" }}>{p.title}</h2>
                       <ul style={{ listStyle: "none", padding: 0 }}>
                         {p.issues.map((issue, idx) => (
                           <li key={idx} style={{ marginBottom: "12px", display: "flex", alignItems: "flex-start", fontSize: "15px", color: "#444", transition: "color 0.3s" }}>
-                            <i className="fas fa-times-circle" style={{ color: "#ed2c41", marginRight: "10px", marginTop: "4px", transition: "color 0.3s" }} />
+                            <i className="fas fa-times-circle" style={{ color: "#c86b5a", marginRight: "10px", marginTop: "4px", transition: "color 0.3s" }} />
                             {issue}
                           </li>
                         ))}
@@ -195,14 +195,14 @@ export default function ProblemSection() {
                 </p>
                 <div className="dreamit-btn mt-3">
                   <a href="#services" className="active" style={{ 
-                    background: "linear-gradient(100deg, #ff4500 0%, #ed2c41 100%)", 
+                    background: "linear-gradient(135deg, #c86b5a 0%, #a95345 100%)", 
                     color: "#fff", 
                     padding: "15px 40px", 
                     borderRadius: "30px", 
                     textDecoration: "none", 
                     fontWeight: "600",
                     display: "inline-block",
-                    boxShadow: "0 10px 20px rgba(237, 44, 65, 0.3)"
+                    boxShadow: "0 10px 20px rgba(61, 90, 128, 0.22)"
                   }}>
                     {c.ctaButton}
                   </a>
