@@ -1,4 +1,64 @@
 /* Portfolio hover - orange overlay disabled */
+.portfolio_area.style-three .portfolio-heading-row {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.portfolio_area.style-three .portfolio-heading-row > .col-lg-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.portfolio_area.style-three .portfolio_nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.portfolio_area.style-three .portfolio_menu {
+  width: 100%;
+}
+
+.portfolio_area.style-three .menu-filtering {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.portfolio_area.style-three .portfolio_menu .menu-filtering li {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  margin: 0 !important;
+  padding: 9px 16px !important;
+  border-radius: 999px;
+  color: #ffffff !important;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.portfolio_area.style-three .portfolio_menu .menu-filtering li.current_menu_item,
+.portfolio_area.style-three .portfolio_menu .menu-filtering li:hover,
+.portfolio_area.style-three .portfolio_menu .menu-filtering li:focus-visible {
+  color: #ffffff !important;
+  background: #d83b2d;
+  box-shadow: 0 10px 22px rgba(216, 59, 45, 0.32);
+  outline: none;
+}
+
 .portfolio_area.style-three .single_portfolio:hover .single_portfolio_thumb:before {
   transform: scale(0) !important; /* Override: keep orange rectangle hidden on hover */
 }
@@ -33,6 +93,25 @@
 }
 
 @media (max-width: 991px) {
+  .portfolio_area.style-three .portfolio-heading-row {
+    flex-direction: column;
+  }
+
+  .portfolio_area.style-three .portfolio-heading-row > .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .portfolio_area.style-three .portfolio_nav {
+    justify-content: flex-start;
+  }
+
+  .portfolio_area.style-three .menu-filtering {
+    justify-content: flex-start;
+    border-radius: 20px;
+  }
+
   .portfolio_area.style-three .single_portfolio_thumb {
     min-height: 320px !important;
     height: 320px !important;

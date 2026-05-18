@@ -47,12 +47,12 @@ function App() {
       <Header />
       <Sidebar />
       <SliderSection />
+      <AboutSection />
       <BrandSection />
       <ProblemSection />
       <ServicesSection />
       <PricingSection />
       <SectorSection />
-      <AboutSection />
       {/* <VideoSection /> */}
       <FeatureSection />
       <TestimonialSection />

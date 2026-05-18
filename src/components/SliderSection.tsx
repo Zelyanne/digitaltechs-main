@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
+import { useBookingModal } from "./BookingModal";
 
 const COPY = {
   fr: {
@@ -9,7 +10,7 @@ const COPY = {
       { tagline: "AGENCE DE TRANSFORMATION DIGITALE", title1: "AMÉLIOREZ VOTRE", title2: "PRÉSENCE", highlight: "EN LIGNE" },
       { tagline: "BIENVENUE CHEZ SDG TECHS", title1: "Solutions", title2: "Digitales", highlight: "Innovantes" },
     ],
-    cta: "DÉCOUVRIR PLUS",
+    cta: "RÉSERVER UNE CONSULTATION",
   },
   en: {
     slides: [
@@ -17,13 +18,14 @@ const COPY = {
       { tagline: "DIGITAL MARKETING AGENCY", title1: "BOOST YOUR", title2: "ONLINE", highlight: "PRESENCE" },
       { tagline: "WELCOME TO SDG TECHS", title1: "Innovative", title2: "Digital", highlight: "Solutions" },
     ],
-    cta: "LEARN MORE",
+    cta: "BOOK A CONSULTATION",
   },
 } as const;
 
 export default function SliderSection() {
   const carouselRef = useRef<HTMLDivElement>(null);
   const { language } = useI18n();
+  const { openModal } = useBookingModal();
   const c = COPY[language];
 
   useEffect(() => {
@@ -64,9 +66,9 @@ export default function SliderSection() {
                     {slide.highlight ? <span className="color2">{slide.highlight}</span> : ""}
                   </h1>
                   <div className="slider-button2">
-                    <a href="#about">
+                    <button type="button" onClick={openModal} className="sdg-slider-cta">
                       {c.cta}<i className="fas fa-check-square" />
-                    </a>
+                    </button>
                   </div>
                 </div>
               </div>

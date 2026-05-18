@@ -127,7 +127,7 @@ export default function PortfolioSection() {
   return (
     <div id="portfolio" className="portfolio_area style-three">
       <div className="container">
-        <div className="row">
+        <div className="row portfolio-heading-row">
           <div className="col-lg-6 col-md-6 col-sm-12">
             <div className="dreamit-section-title text-left style-four">
               <h5>{c.kicker}</h5>
@@ -138,16 +138,17 @@ export default function PortfolioSection() {
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12">
-            <div className="portfolio_nav text-right pt-5">
+            <div className="portfolio_nav pt-5">
               <div className="portfolio_menu">
-                <ul className="menu-filtering">
+                <ul className="menu-filtering" role="tablist" aria-label={language === "fr" ? "Filtres des réalisations" : "Portfolio filters"}>
                   {portfolioFilters.map((filter) => (
                     <li
                       key={filter.key}
                       className={activeFilter === filter.key ? "current_menu_item" : ""}
                       data-filter={filter.key === "*" ? "*" : `.${filter.key}`}
-                      role="button"
+                      role="tab"
                       tabIndex={0}
+                      aria-selected={activeFilter === filter.key}
                       onClick={(event) => {
                         event.stopPropagation();
                         setActiveFilter(filter.key);

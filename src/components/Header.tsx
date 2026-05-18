@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { IMG } from "../utils/images";
 import { useI18n } from "../i18n";
-import darkLogo from "../../sdg__1_-removebg-preview.png";
 
 type ThemeMode = "light" | "dark";
 
@@ -25,12 +24,13 @@ const COPY = {
     logoAlt: "SDG Techs - Agence de transformation digitale",
     nav: {
       home: "Accueil",
+      about: "À Propos",
       partners: "Partenaires",
       services: "Services",
-      about: "À Propos",
+      pricing: "Forfaits",
       projects: "Projets",
       faq: "FAQ",
-      contact: "Contactez-nous",
+      contact: "Contact",
     },
     callLabel: "WhatsApp",
     themeLabel: "Thème",
@@ -41,9 +41,10 @@ const COPY = {
     logoAlt: "SDG Techs - Digital transformation agency",
     nav: {
       home: "Home",
+      about: "About",
       partners: "Partners",
       services: "Services",
-      about: "About",
+      pricing: "Pricing",
       projects: "Projects",
       faq: "FAQ",
       contact: "Contact",
@@ -60,10 +61,10 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [themeMode, setThemeMode] = useState<ThemeMode>(getInitialTheme);
   const c = COPY[language];
-  const logoSrc = darkLogo;
-  const desktopLogoStyle = { maxHeight: "42px", width: "auto" };
+  const logoSrc = IMG("logo.png");
+  const desktopLogoStyle = { maxHeight: "46px", width: "auto" };
 
-  const desktopNavLinkStyle = { margin: "18px 2px", padding: "8px 7px", fontSize: "12.5px" };
+  const desktopNavLinkStyle = { margin: "18px 1px", padding: "8px 6px", fontSize: "13.5px", letterSpacing: "0.2px" };
 
   const languageSelectStyle =
     ({
@@ -135,7 +136,7 @@ export default function Header() {
       <div id="sticky-header" className="techno_nav_manu style-two d-none d-lg-block">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-3">
+            <div className="col-lg-2">
               <div className="logo">
                 <a className="logo_img" href="#home" title="sdgtechs">
                   <img src={logoSrc} alt={c.logoAlt} style={desktopLogoStyle} />
@@ -145,11 +146,14 @@ export default function Header() {
                 </a>
               </div>
             </div>
-            <div className="col-lg-9">
-              <nav className="techno_menu text-center" style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 28 }}>
-                <ul className="nav_scroll" style={{ display: "flex", alignItems: "center", gap: "2px", listStyle: "none", margin: 0, padding: 0 }}>
+            <div className="col-lg-10">
+              <nav className="techno_menu text-center" style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", gap: 34 }}>
+                <ul className="nav_scroll" style={{ display: "flex", alignItems: "center", gap: "6px", listStyle: "none", margin: 0, padding: 0 }}>
                   <li>
                     <a href="#home" style={desktopNavLinkStyle}>{c.nav.home}</a>
+                  </li>
+                  <li>
+                    <a href="#about" style={desktopNavLinkStyle}>{c.nav.about}</a>
                   </li>
                   <li>
                     <a href="#partner-area" style={desktopNavLinkStyle}>{c.nav.partners}</a>
@@ -158,7 +162,7 @@ export default function Header() {
                     <a href="#services" style={desktopNavLinkStyle}>{c.nav.services}</a>
                   </li>
                   <li>
-                    <a href="#about" style={desktopNavLinkStyle}>{c.nav.about}</a>
+                    <a href="#pricing" style={desktopNavLinkStyle}>{c.nav.pricing}</a>
                   </li>
                   <li><a href="#portfolio" style={desktopNavLinkStyle}>{c.nav.projects}</a></li>
                   <li>
@@ -168,7 +172,7 @@ export default function Header() {
                 </ul>
                 <div
                   className="sdg-header-call"
-                  style={{ display: "inline-flex", alignItems: "center", gap: 10, flexShrink: 0 }}
+                  style={{ display: "inline-flex", alignItems: "center", gap: 12, flexShrink: 0, marginLeft: 8 }}
                 >
                   <span
                     style={{
@@ -235,7 +239,7 @@ export default function Header() {
         <div className="mobile-menu-header" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "10px 15px" }}>
           <div className="logo" style={{ flex: "0 0 auto" }}>
             <a href="#home" title="sdgtechs">
-              <img src={logoSrc} alt={c.logoAlt} style={{ height: "28px", width: "auto" }} />
+              <img src={logoSrc} alt={c.logoAlt} style={{ height: "30px", width: "auto" }} />
             </a>
           </div>
           <button
@@ -278,9 +282,10 @@ export default function Header() {
           <div className="mobile-menu" style={{ display: "block", padding: "0 15px 15px" }}>
             <ul className="nav_scroll" style={{ listStyle: "none", padding: 0, margin: 0 }}>
               <li><a href="#home" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.home}</a></li>
+              <li><a href="#about" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.about}</a></li>
               <li><a href="#partner-area" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.partners}</a></li>
               <li><a href="#services" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.services}</a></li>
-              <li><a href="#about" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.about}</a></li>
+              <li><a href="#pricing" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.pricing}</a></li>
               <li><a href="#portfolio" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.projects}</a></li>
               <li><a href="#faq" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.faq}</a></li>
               <li><a href="#contact" onClick={navLinkClick} style={{ display: "block", padding: "14px 0", color: "#fff", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>{c.nav.contact}</a></li>

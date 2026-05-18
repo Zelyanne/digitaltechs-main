@@ -267,6 +267,59 @@ body.sdg-dark-mode .portfolio_menu .menu-filtering li.current_menu_item {
   color: #e4ebf3 !important;
 }
 
+body.sdg-dark-mode .process-step-number {
+  color: rgba(228, 235, 243, 0.12) !important;
+}
+
+body.sdg-dark-mode .sector-activity-card .process-benefit {
+  color: #e4ebf3 !important;
+  border-color: rgba(228, 235, 243, 0.14) !important;
+}
+
+.slider-button2 .sdg-slider-cta {
+  background: linear-gradient(to right, #d83b2d 0%, #d83b2d 100%);
+  padding: 18px 35px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: inline-block;
+  margin-top: 24px;
+  transition: 0.5s;
+  font-family: "Rajdhani";
+  font-weight: 600;
+  animation: 1s 2s fadeInUp both;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.slider-button2 .sdg-slider-cta::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  transform: scale(0);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.slider-button2 .sdg-slider-cta:hover::before {
+  transform: scale(1);
+}
+
+.slider-button2 .sdg-slider-cta:hover,
+.slider-button2 .sdg-slider-cta:hover i {
+  color: #ed2d22;
+}
+
 body.sdg-dark-mode .faq-area.style-two .style-three .from-box input,
 body.sdg-dark-mode .faq-area.style-two .style-three .from-box textarea,
 body.sdg-dark-mode .faq-area.style-two .style-three .from-box select {
@@ -741,6 +794,17 @@ a,
 }
 
 /* ---------- Portfolio grid ---------- */
+.portfolio_area.style-three .portfolio-heading-row {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.portfolio_area.style-three .portfolio-heading-row > .col-lg-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 .portfolio_area .row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -748,6 +812,18 @@ a,
 }
 
 .portfolio_area .grid-item { margin-bottom: 20px; }
+
+@media (max-width: 991px) {
+  .portfolio_area.style-three .portfolio-heading-row {
+    flex-direction: column;
+  }
+
+  .portfolio_area.style-three .portfolio-heading-row > .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 
 /* ---------- Pricing section grid ---------- */
 .pricing-area .row {
@@ -1064,7 +1140,7 @@ input, textarea, select {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-end !important;
-    gap: 8px !important;
+    gap: 28px !important;
     width: auto !important;
   }
 
@@ -1449,7 +1525,7 @@ input, textarea, select {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.85);
-  z-index: 9999;
+  z-index: 20000;
   display: flex;
   align-items: center;
   justify-content: center;
