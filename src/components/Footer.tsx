@@ -121,14 +121,6 @@ export default function Footer() {
               <h4 className="widget-title"><span>{c.headings.contacts.first}</span>{c.headings.contacts.rest}</h4>
               <div className="footer-inner">
                 <div className="footer-socail-icon">
-                  <i className="flaticon-call" />
-                </div>
-                <div className="footer-socail-info">
-                  <p><span>+33746458691</span></p>
-                </div>
-              </div>
-              <div className="footer-inner">
-                <div className="footer-socail-icon">
                   <i className="icon flaticon-email" />
                 </div>
                 <div className="footer-socail-info">

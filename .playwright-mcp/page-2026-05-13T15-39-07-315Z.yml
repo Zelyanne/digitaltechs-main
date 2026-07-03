@@ -1,0 +1,921 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - text:  
+    - generic [ref=e1773]:
+      - generic [ref=e1774]:
+        - link "SDG Techs - Agence marketing digital" [ref=e1776] [cursor=pointer]:
+          - /url: "#home"
+          - img "SDG Techs - Agence marketing digital" [ref=e1777]
+        - button "Close menu" [expanded] [active] [ref=e2234] [cursor=pointer]
+      - generic [ref=e2235]:
+        - list [ref=e2236]:
+          - listitem [ref=e2237]:
+            - link "Accueil" [ref=e2238] [cursor=pointer]:
+              - /url: "#home"
+          - listitem [ref=e2239]:
+            - link "Partenaires" [ref=e2240] [cursor=pointer]:
+              - /url: "#partner-area"
+          - listitem [ref=e2241]:
+            - link "Services" [ref=e2242] [cursor=pointer]:
+              - /url: "#services"
+          - listitem [ref=e2243]:
+            - link "À Propos" [ref=e2244] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e2245]:
+            - link "Projets" [ref=e2246] [cursor=pointer]:
+              - /url: "#portfolio"
+          - listitem [ref=e2247]:
+            - link "FAQ" [ref=e2248] [cursor=pointer]:
+              - /url: "#faq"
+          - listitem [ref=e2249]:
+            - link "Contactez-nous" [ref=e2250] [cursor=pointer]:
+              - /url: "#contact"
+        - generic "Thème" [ref=e2251]:
+          - button "Basculer le thème" [pressed] [ref=e2252] [cursor=pointer]:
+            - generic [ref=e2253]: 
+        - generic "Langue" [ref=e2254]:
+          - combobox "Langue" [ref=e2255] [cursor=pointer]:
+            - option "FR" [selected]
+            - option "EN"
+    - generic [ref=e38]:
+      - generic [ref=e40]:
+        - generic [ref=e1797]:
+          - heading "AGENCE DE MARKETING DIGITAL" [level=4] [ref=e1798]
+          - heading "AMÉLIOREZ VOTRE" [level=1] [ref=e1799]
+          - heading "PRÉSENCE EN LIGNE" [level=1] [ref=e1800]:
+            - text: PRÉSENCE
+            - generic [ref=e1801]: EN LIGNE
+          - link "DÉCOUVRIR PLUS " [ref=e1803] [cursor=pointer]:
+            - /url: "#about"
+            - text: DÉCOUVRIR PLUS
+            - generic [ref=e1804]: 
+        - generic [ref=e1812]:
+          - heading "BIENVENUE CHEZ SDG TECHS" [level=4] [ref=e1813]
+          - heading "Solutions" [level=1] [ref=e1814]
+          - heading "Digitales Innovantes" [level=1] [ref=e1815]:
+            - text: Digitales
+            - generic [ref=e1816]: Innovantes
+          - link "DÉCOUVRIR PLUS " [ref=e1818] [cursor=pointer]:
+            - /url: "#about"
+            - text: DÉCOUVRIR PLUS
+            - generic [ref=e1819]: 
+        - generic [ref=e80]:
+          - heading "BIENVENUE CHEZ SDG TECHS" [level=4] [ref=e81]
+          - heading "Agence de" [level=1] [ref=e82]
+          - heading "Marketing Digital" [level=1] [ref=e83]:
+            - text: Marketing
+            - generic [ref=e1784]: Digital
+          - link "DÉCOUVRIR PLUS " [ref=e85] [cursor=pointer]:
+            - /url: "#about"
+            - text: DÉCOUVRIR PLUS
+            - generic [ref=e86]: 
+        - generic [ref=e97]:
+          - heading "AGENCE DE MARKETING DIGITAL" [level=4] [ref=e98]
+          - heading "AMÉLIOREZ VOTRE" [level=1] [ref=e99]
+          - heading "PRÉSENCE EN LIGNE" [level=1] [ref=e100]:
+            - text: PRÉSENCE
+            - generic [ref=e1785]: EN LIGNE
+          - link "DÉCOUVRIR PLUS " [ref=e102] [cursor=pointer]:
+            - /url: "#about"
+            - text: DÉCOUVRIR PLUS
+            - generic [ref=e103]: 
+        - generic [ref=e114]:
+          - heading "BIENVENUE CHEZ SDG TECHS" [level=4] [ref=e115]
+          - heading "Solutions" [level=1] [ref=e116]
+          - heading "Digitales Innovantes" [level=1] [ref=e117]:
+            - text: Digitales
+            - generic [ref=e1786]: Innovantes
+          - link "DÉCOUVRIR PLUS " [ref=e119] [cursor=pointer]:
+            - /url: "#about"
+            - text: DÉCOUVRIR PLUS
+            - generic [ref=e120]: 
+        - generic [ref=e1827]:
+          - heading "BIENVENUE CHEZ SDG TECHS" [level=4] [ref=e1828]
+          - heading "Agence de" [level=1] [ref=e1829]
+          - heading "Marketing Digital" [level=1] [ref=e1830]:
+            - text: Marketing
+            - generic [ref=e1831]: Digital
+          - link "DÉCOUVRIR PLUS " [ref=e1833] [cursor=pointer]:
+            - /url: "#about"
+            - text: DÉCOUVRIR PLUS
+            - generic [ref=e1834]: 
+        - generic [ref=e1842]:
+          - heading "AGENCE DE MARKETING DIGITAL" [level=4] [ref=e1843]
+          - heading "AMÉLIOREZ VOTRE" [level=1] [ref=e1844]
+          - heading "PRÉSENCE EN LIGNE" [level=1] [ref=e1845]:
+            - text: PRÉSENCE
+            - generic [ref=e1846]: EN LIGNE
+          - link "DÉCOUVRIR PLUS " [ref=e1848] [cursor=pointer]:
+            - /url: "#about"
+            - text: DÉCOUVRIR PLUS
+            - generic [ref=e1849]: 
+      - generic:
+        - generic [ref=e161] [cursor=pointer]: 
+        - generic [ref=e163] [cursor=pointer]: 
+    - generic [ref=e165]:
+      - heading "MES CLIENTS" [level=1] [ref=e169]
+      - generic [ref=e171]:
+        - generic [ref=e173]:
+          - img "Logo client SDG Techs" [ref=e1856]
+          - img "Logo client SDG Techs" [ref=e1861]
+          - img "Logo client SDG Techs" [ref=e1866]
+          - img "Logo client SDG Techs" [ref=e1871]
+          - img "Logo client SDG Techs" [ref=e1876]
+          - img "Logo client SDG Techs" [ref=e1881]
+          - img "Logo client SDG Techs" [ref=e208]
+          - img "Logo client SDG Techs" [ref=e213]
+          - img "Logo client SDG Techs" [ref=e218]
+          - img "Logo client SDG Techs" [ref=e223]
+          - img "Logo client SDG Techs" [ref=e228]
+          - img "Logo client SDG Techs" [ref=e233]
+          - img "Logo client SDG Techs" [ref=e238]
+          - img "Logo client SDG Techs" [ref=e243]
+          - img "Logo client SDG Techs" [ref=e248]
+          - img "Logo client SDG Techs" [ref=e253]
+          - img "Logo client SDG Techs" [ref=e258]
+          - img "Logo client SDG Techs" [ref=e263]
+          - img "Logo client SDG Techs" [ref=e1886]
+          - img "Logo client SDG Techs" [ref=e1891]
+          - img "Logo client SDG Techs" [ref=e1896]
+          - img "Logo client SDG Techs" [ref=e1901]
+          - img "Logo client SDG Techs" [ref=e1906]
+          - img "Logo client SDG Techs" [ref=e1911]
+        - text:  
+    - generic [ref=e295]:
+      - heading "MES PARTENAIRES" [level=1] [ref=e299]
+      - generic [ref=e301]:
+        - generic [ref=e303]:
+          - img "Logo partenaire SDG Techs" [ref=e1916]
+          - img "Logo partenaire SDG Techs" [ref=e1921]
+          - img "Logo partenaire SDG Techs" [ref=e1926]
+          - img "Logo partenaire SDG Techs" [ref=e1931]
+          - img "Logo partenaire SDG Techs" [ref=e1936]
+          - img "Logo partenaire SDG Techs" [ref=e333]
+          - img "Logo partenaire SDG Techs" [ref=e338]
+          - img "Logo partenaire SDG Techs" [ref=e343]
+          - img "Logo partenaire SDG Techs" [ref=e348]
+          - img "Logo partenaire SDG Techs" [ref=e353]
+          - img "Logo partenaire SDG Techs" [ref=e358]
+          - img "Logo partenaire SDG Techs" [ref=e363]
+          - img "Logo partenaire SDG Techs" [ref=e368]
+          - img "Logo partenaire SDG Techs" [ref=e373]
+          - img "Logo partenaire SDG Techs" [ref=e1941]
+          - img "Logo partenaire SDG Techs" [ref=e1946]
+          - img "Logo partenaire SDG Techs" [ref=e1951]
+          - img "Logo partenaire SDG Techs" [ref=e1956]
+          - img "Logo partenaire SDG Techs" [ref=e1961]
+        - text:  
+    - generic [ref=e400]:
+      - generic [ref=e403]:
+        - heading "VOS DÉFIS" [level=5] [ref=e404]
+        - heading "RECONNAISSEZ-VOUS CES OBSTACLES ?" [level=1] [ref=e405]
+        - paragraph [ref=e406]: Diriger une activité demande du temps et de l'énergie. Voici les problèmes fréquents qui freinent votre croissance.
+      - generic [ref=e407]:
+        - generic [ref=e411]:
+          - generic [ref=e413]: 
+          - generic [ref=e414]:
+            - heading "Entreprises & PME" [level=2] [ref=e415]
+            - list [ref=e416]:
+              - listitem [ref=e417]:
+                - generic [ref=e418]: 
+                - text: Manque de visibilité en ligne face à la concurrence.
+              - listitem [ref=e419]:
+                - generic [ref=e420]: 
+                - text: Difficulté à transformer les visiteurs en clients fidèles.
+              - listitem [ref=e421]:
+                - generic [ref=e422]: 
+                - text: Processus internes lents et répétitifs sans automatisation.
+              - listitem [ref=e423]:
+                - generic [ref=e424]: 
+                - text: Coûts marketing élevés pour des résultats incertains.
+        - generic [ref=e428]:
+          - generic [ref=e430]: 
+          - generic [ref=e431]:
+            - heading "Coachs & Consultants" [level=2] [ref=e432]
+            - list [ref=e433]:
+              - listitem [ref=e434]:
+                - generic [ref=e435]: 
+                - text: Agenda vide et difficulté à trouver des prospects qualifiés.
+              - listitem [ref=e436]:
+                - generic [ref=e437]: 
+                - text: Passer trop de temps sur l'administratif plutôt que le coaching.
+              - listitem [ref=e438]:
+                - generic [ref=e439]: 
+                - text: Absence de tunnel de vente automatisé efficace.
+              - listitem [ref=e440]:
+                - generic [ref=e441]: 
+                - text: Image de marque peu percutante sur les réseaux sociaux.
+        - generic [ref=e445]:
+          - generic [ref=e447]: 
+          - generic [ref=e448]:
+            - heading "E-commerçants" [level=2] [ref=e449]
+            - list [ref=e450]:
+              - listitem [ref=e451]:
+                - generic [ref=e452]: 
+                - text: Taux d'abandon de panier trop élevé.
+              - listitem [ref=e453]:
+                - generic [ref=e454]: 
+                - text: Gestion client chronophage et manque de réactivité.
+              - listitem [ref=e455]:
+                - generic [ref=e456]: 
+                - text: Publicités (Ads) qui coûtent cher sans ROI garanti.
+              - listitem [ref=e457]:
+                - generic [ref=e458]: 
+                - text: Site web lent ou non optimisé pour la conversion mobile.
+      - generic [ref=e462]:
+        - heading "Rassurez-vous, nous avons exactement ce qu'il vous faut." [level=2] [ref=e463]
+        - paragraph [ref=e464]: SDG Techs transforme vos problématiques en opportunités de croissance grâce à nos solutions sur-mesure.
+        - link "DÉCOUVRIR NOS SOLUTIONS" [ref=e466] [cursor=pointer]:
+          - /url: "#services"
+    - generic [ref=e468]:
+      - generic [ref=e469]:
+        - generic [ref=e471]:
+          - heading "SERVICES" [level=5] [ref=e472]
+          - heading "NOUS PROPOSONS" [level=1] [ref=e473]
+          - heading "DES SOLUTIONS PARFAITES" [level=1] [ref=e474]
+        - paragraph [ref=e477]: SDG Techs, agence digital créée en 2016. Nous aidons les organisations de tout genre et entrepreneurs à maximiser leurs résultats grâce à des déploiements en ligne au meilleur prix. Stratégies sur-mesure, résultats rapides et mesurables, grâce à des professionnels polyvalents et des outils d'intelligence artificielle.
+      - generic [ref=e478]:
+        - generic [ref=e482]:
+          - generic [ref=e484]: 
+          - generic [ref=e485]:
+            - heading "GROWTH HACKING" [level=2] [ref=e486]
+            - paragraph [ref=e487]: Accélérez votre croissance avec des tests rapides, l'automatisation intelligente et des leviers data-driven pour générer plus d'acquisition, d'activation et de rétention.
+        - generic [ref=e491]:
+          - generic [ref=e493]: 
+          - generic [ref=e494]:
+            - heading "MARKETING DIGITAL" [level=2] [ref=e495]
+            - paragraph [ref=e496]: Maximisez vos campagnes d'acquisition et tunnels de vente pour attirer clients et prospects, booster trafic, leads et ventes en ligne efficacement.
+        - generic [ref=e500]:
+          - generic [ref=e502]: 
+          - generic [ref=e503]:
+            - heading "MÉDIAS SOCIAUX" [level=2] [ref=e504]
+            - paragraph [ref=e505]: "Déploiement marketing quotidien sur les réseaux sociaux : Facebook, Instagram, LinkedIn... pour atteindre vos objectifs."
+        - generic [ref=e509]:
+          - generic [ref=e511]: 
+          - generic [ref=e512]:
+            - heading "SITE WEB & APPLICATION" [level=2] [ref=e513]
+            - paragraph [ref=e514]: "Sites web, pages de capture et applications fluides : CRM, SaaS, applications sur mesure... des outils puissants pour votre marketing et vos ventes."
+        - generic [ref=e518]:
+          - generic [ref=e520]: 
+          - generic [ref=e521]:
+            - heading "GRAPHISME" [level=2] [ref=e522]
+            - paragraph [ref=e523]: Contenu graphique à votre image pour ancrer votre marque. Visuels captivants pour vous démarquer et gagner en visibilité.
+        - generic [ref=e527]:
+          - generic [ref=e529]: 
+          - generic [ref=e530]:
+            - heading "AI AGENT & AUTOMATISATION" [level=2] [ref=e531]
+            - paragraph [ref=e532]: Automatisez vos processus métier avec des agents IA intelligents et des workflows automatisés. Gagnez en efficacité et réduisez les tâches répétitives grâce à l'IA.
+        - generic [ref=e536]:
+          - generic [ref=e538]: 
+          - generic [ref=e539]:
+            - heading "CUSTOMER SUPPORT E-COMMERCE & TPE" [level=2] [ref=e540]
+            - paragraph [ref=e541]: "Nous accompagnons PME et groupes dans l'optimisation de l'expérience client. Partenaire robuste pour secteurs variés : habitat, santé, industrie…"
+        - generic [ref=e545]:
+          - generic [ref=e547]: 
+          - generic [ref=e548]:
+            - heading "RÉDACTION WEB & SEO/SEA" [level=2] [ref=e549]
+            - paragraph [ref=e550]: Enrichir votre site, créer des pages à indexer, favoriser le linkbaiting. Notre expertise en rédaction web pour un SEO performant.
+        - generic [ref=e554]:
+          - generic [ref=e556]: 
+          - generic [ref=e557]:
+            - heading "VIRTUAL ASSISTANCE" [level=2] [ref=e558]
+            - paragraph [ref=e559]: Marre d'être au four et au moulin ? Faites-vous épauler par un Assistant Virtuel qualifié et dévoué à votre service au quotidien.
+      - button "PRENDRE RENDEZ-VOUS" [ref=e562] [cursor=pointer]
+    - generic [ref=e564]:
+      - generic [ref=e567]:
+        - heading "NOS OFFRES" [level=5] [ref=e568]
+        - heading "CHOISISSEZ VOTRE PACK" [level=1] [ref=e569]
+        - paragraph [ref=e570]: Des formules adaptées à chaque étape de votre croissance digitale
+      - generic [ref=e571]:
+        - generic [ref=e573]:
+          - generic [ref=e574]:
+            - generic [ref=e575]: PACK STARTER
+            - heading "Visibilité Garantie" [level=3] [ref=e576]
+            - paragraph [ref=e577]: "Idéal pour : Freelances, coachs, consultants, commerçants qui débutent en ligne"
+          - generic [ref=e578]: CONTACTEZ-NOUS
+          - list [ref=e579]:
+            - listitem [ref=e580]: 🌐 Site web professionnel 5 pages (mobile-first, ultra-rapide)
+            - listitem [ref=e581]: ✍️ Rédaction du contenu optimisé SEO incluse
+            - listitem [ref=e582]: 📍 Référencement Google local (Google My Business)
+            - listitem [ref=e583]: 📱 Intégration réseaux sociaux
+            - listitem [ref=e584]: 📬 Formulaire de contact + appel à l'action
+            - listitem [ref=e585]: ✅ Livraison en 7 jours ouvrés
+          - generic [ref=e586]:
+            - strong [ref=e587]: "🎁 Bonus:"
+            - text: 1 mois de support technique gratuit
+          - link "COMMENCER MAINTENANT" [ref=e589] [cursor=pointer]:
+            - /url: "#contact"
+          - paragraph [ref=e590]: Votre carte de visite digitale, disponible 24h/24, sans vous ruiner.
+        - generic [ref=e592]:
+          - generic [ref=e593]:
+            - generic [ref=e594]: PACK GROWTH
+            - heading "Acquisition Clients" [level=3] [ref=e595]
+            - paragraph [ref=e596]: "Idéal pour : TPE, PME, entrepreneurs qui veulent générer des leads réguliers"
+          - generic [ref=e597]: CONTACTEZ-NOUS
+          - list [ref=e598]:
+            - listitem [ref=e599]: "Tout le Pack Starter + ou :"
+            - listitem [ref=e600]: 🎯 Tunnel de vente complet (page de capture + page de vente + thank you page)
+            - listitem [ref=e601]: 📧 Séquence d'emails automatisés (5 emails de nurturing)
+            - listitem [ref=e602]: 🤖 Agent IA de qualification des prospects
+            - listitem [ref=e603]: 📊 Tableau de bord analytique (Google Analytics + heatmap)
+            - listitem [ref=e604]: 📅 Intégration prise de RDV automatique (Cal.com)
+            - listitem [ref=e605]: 🔁 1 campagne publicitaire Meta Ads ou Google Ads configurée
+            - listitem [ref=e606]: ✅ Livraison en 14 jours ouvrés
+          - generic [ref=e607]:
+            - strong [ref=e608]: "🎁 Bonus:"
+            - text: Audit de votre présence digitale actuelle (valeur 200 €)
+          - link "COMMENCER MAINTENANT" [ref=e610] [cursor=pointer]:
+            - /url: "#contact"
+          - paragraph [ref=e611]: Un système qui attire, capture et relance vos prospects, même quand vous dormez.
+        - generic [ref=e613]:
+          - generic [ref=e614]: POPULAIRE
+          - generic [ref=e615]:
+            - generic [ref=e616]: PACK SCALE
+            - heading "Croissance Automatisée" [level=3] [ref=e617]
+            - paragraph [ref=e618]: "Idéal pour : PME ambitieuses, startups, coachs & consultants en pleine croissance"
+          - generic [ref=e619]: CONTACTEZ-NOUS
+          - list [ref=e620]:
+            - listitem [ref=e621]: "Tout le Pack Growth + ou :"
+            - listitem [ref=e622]: 🔥 Stratégie marketing digitale complète sur 3 mois
+            - listitem [ref=e623]: 📈 SEO avancé (audit + optimisation + création de contenu mensuel)
+            - listitem [ref=e624]: 📣 Gestion réseaux sociaux (3 publications/semaine pendant 1 mois)
+            - listitem [ref=e625]: 💌 Email marketing mensuel (newsletters + séquences de vente)
+            - listitem [ref=e626]: ⚡ Growth hacking & stratégies d'acquisition sur mesure
+            - listitem [ref=e627]: 🤖 Agents IA personnalisés (chatbot, relance automatique, CRM)
+            - listitem [ref=e628]: 📞 Suivi mensuel avec rapport de performance détaillé
+            - listitem [ref=e629]: ✅ Livraison en 21 jours ouvrés
+          - generic [ref=e630]:
+            - strong [ref=e631]: "🎁 Bonus:"
+            - text: Session stratégie 1h en visio avec l'expert Gislain (valeur 300 €)
+          - link "COMMENCER MAINTENANT" [ref=e633] [cursor=pointer]:
+            - /url: "#contact"
+          - paragraph [ref=e634]: Votre département marketing complet, sans recruter une équipe.
+      - generic [ref=e636]:
+        - paragraph [ref=e637]: Vous en voulez plus ?
+        - button "DÉCOUVRIR LE PACK ÉLITE" [ref=e638] [cursor=pointer]
+    - generic [ref=e640]:
+      - generic [ref=e643]:
+        - heading "SECTEURS D'ACTIVITÉ" [level=5] [ref=e644]
+        - heading "DES EXPERTISES ADAPTÉES" [level=1] [ref=e645]
+        - paragraph [ref=e646]: Nous accompagnons les entreprises avec des plans d'action précis, calibrés selon leur marché, leurs objectifs et leur maturité digitale.
+      - generic [ref=e647]:
+        - generic [ref=e649]:
+          - generic [ref=e651]: 
+          - heading "E-commerce" [level=3] [ref=e652]
+          - paragraph [ref=e653]: Stratégies d'acquisition, automation et conversion pour faire évoluer vos ventes en ligne.
+        - generic [ref=e655]:
+          - generic [ref=e657]: 
+          - heading "Immobilier" [level=3] [ref=e658]
+          - paragraph [ref=e659]: Génération de leads qualifiés, visibilité locale et tunnels adaptés aux cycles longs.
+        - generic [ref=e661]:
+          - generic [ref=e663]: 
+          - heading "Santé & Bien-être" [level=3] [ref=e664]
+          - paragraph [ref=e665]: Communication de confiance, présence digitale réglementée et fidélisation des patients.
+        - generic [ref=e667]:
+          - generic [ref=e669]: 
+          - heading "Éducation" [level=3] [ref=e670]
+          - paragraph [ref=e671]: Campagnes ciblées pour augmenter inscriptions, notoriété et engagement des apprenants.
+        - generic [ref=e673]:
+          - generic [ref=e675]: 
+          - heading "Industrie & B2B" [level=3] [ref=e676]
+          - paragraph [ref=e677]: Positionnement expert, inbound marketing et contenus performants pour cycles complexes.
+        - generic [ref=e679]:
+          - generic [ref=e681]: 
+          - heading "Restauration & Hôtellerie" [level=3] [ref=e682]
+          - paragraph [ref=e683]: Visibilité locale, réservation directe et campagnes saisonnières axées sur la rentabilité.
+    - generic [ref=e686]:
+      - img "SDG Techs - Agence marketing digital" [ref=e690]
+      - generic [ref=e691]:
+        - generic [ref=e692]:
+          - generic [ref=e694]:
+            - heading "À propos" [level=5] [ref=e695]
+            - heading "SDG TECHS" [level=1] [ref=e696]
+            - heading "AGENCE MARKETING DIGITAL" [level=1] [ref=e697]
+            - paragraph [ref=e698]: Agence marketing digital orientée résultats depuis 2018. Plus de 10 ans d'expérience, interventions en Afrique, Europe, Asie et Canada. Stratégies sur-mesure portées par des spécialistes certifiés et des outils IA pour maximiser votre chiffre d'affaires.
+          - generic [ref=e700]:
+            - generic [ref=e702]: 
+            - paragraph [ref=e704]: Plus de 10 ans d'expérience, projets menés au niveau supérieur
+            - generic [ref=e706]: 
+            - paragraph [ref=e708]: Interventions en Afrique, Europe, Asie et Canada
+            - generic [ref=e710]: 
+            - paragraph [ref=e712]: Spécialistes certifiés et outils d'intelligence artificielle
+          - img "Plus de 10 ans d'expérience SDG Techs" [ref=e715]
+        - button "PRENDRE RENDEZ-VOUS" [ref=e718] [cursor=pointer]
+    - generic [ref=e721]:
+      - generic [ref=e723]:
+        - heading "NOS SERVICES" [level=5] [ref=e724]
+        - heading "SOLUTIONS DIGITALES" [level=1] [ref=e725]
+        - heading "ORIENTÉES" [level=1] [ref=e726]
+        - heading "RÉSULTATS" [level=1] [ref=e727]:
+          - generic [ref=e728]: RÉSULTATS
+        - paragraph [ref=e729]: SDG Techs, agence digital créée en 2016. Nous aidons les organisations de tout genre et entrepreneurs à maximiser leurs résultats grâce à des déploiements en ligne au meilleur prix. Stratégies sur-mesure, résultats rapides et mesurables, grâce à des professionnels polyvalents et des outils d'intelligence artificielle.
+      - generic [ref=e731]:
+        - tablist [ref=e732]:
+          - listitem [ref=e733]:
+            - tab "SATISFACTION" [selected] [ref=e734] [cursor=pointer]:
+              - generic [ref=e1789]: SATISFACTION
+          - listitem [ref=e735]:
+            - tab "ÉQUIPE D'EXPERTS" [ref=e736] [cursor=pointer]:
+              - generic [ref=e1790]: ÉQUIPE D'EXPERTS
+          - listitem [ref=e737]:
+            - tab "MISSION & VISION" [ref=e738] [cursor=pointer]:
+              - generic [ref=e1791]: MISSION & VISION
+        - generic [ref=e739]:
+          - tabpanel "SATISFACTION" [ref=e740]:
+            - generic [ref=e742]:
+              - paragraph [ref=e745]: "Nous plaçons la satisfaction client au cœur de notre démarche. Chaque projet est suivi de près pour garantir des résultats optimaux. Notre engagement : des livrables de qualité, des délais respectés et un accompagnement personnalisé tout au long de notre collaboration."
+              - img "Solutions digitales SDG Techs" [ref=e748]
+              - list [ref=e751]:
+                - listitem [ref=e752]:
+                  - generic [ref=e753]: 
+                  - text: Suivi de chaque projet de A à Z
+                - listitem [ref=e754]:
+                  - generic [ref=e755]: 
+                  - text: Livrables de qualité, délais respectés
+                - listitem [ref=e756]:
+                  - generic [ref=e757]: 
+                  - text: Accompagnement personnalisé tout au long de la collaboration
+                - listitem [ref=e758]:
+                  - generic [ref=e759]: 
+                  - text: Reportings réguliers et transparents
+          - text:        
+    - generic [ref=e761]:
+      - generic [ref=e764]:
+        - heading "TÉMOIGNAGES" [level=5] [ref=e765]
+        - heading "CE QUE NOS CLIENTS DISENT" [level=1] [ref=e766]
+        - heading "DE NOUS" [level=1] [ref=e767]
+      - generic [ref=e771]:
+        - generic [ref=e1965]:
+          - generic [ref=e1966]: ★★★★★
+          - paragraph [ref=e1967]: "\"Une agence qui comprend réellement les défis du marché africain. Leur accompagnement sur nos campagnes Ads au Bénin a été exceptionnel. Je recommande les yeux fermés.\""
+          - heading "Koffi Mensah" [level=4] [ref=e1968]
+          - paragraph [ref=e1969]: Entrepreneur, Cotonou - Bénin
+        - generic [ref=e1973]:
+          - generic [ref=e1974]: ★★★★★
+          - paragraph [ref=e1975]: "\"Grâce à SDG Techs, j'ai enfin un tunnel de vente qui travaille pour moi. Mes prises de rendez-vous ont doublé en moins d'un mois. Une expertise IA bluffante !\""
+          - heading "Amina Diallo" [level=4] [ref=e1976]
+          - paragraph [ref=e1977]: Coach en Leadership, Dakar - Sénégal
+        - generic [ref=e1981]:
+          - generic [ref=e1982]: ★★★★★
+          - paragraph [ref=e1983]: "\"Leur approche du marketing digital est innovante et surtout axée sur le ROI. Nous avons modernisé toute notre image de marque et nos processus commerciaux grâce à eux.\""
+          - heading "Moussa Traoré" [level=4] [ref=e1984]
+          - paragraph [ref=e1985]: Directeur, Traoré Industrie
+        - generic [ref=e799]:
+          - generic [ref=e800]: ★★★★★
+          - paragraph [ref=e801]: "\"SDG Techs a transformé notre présence en ligne. Grâce à leur expertise en growth hacking et en publicité payante, nous avons vu notre trafic augmenter de 300% en seulement 3 mois.\""
+          - heading "Jean Dupont" [level=4] [ref=e802]
+          - paragraph [ref=e803]: CEO, TechStartup
+        - generic [ref=e807]:
+          - generic [ref=e808]: ★★★★★
+          - paragraph [ref=e809]: "\"L'équipe de SDG Techs est professionnelle, réactive et extrêmement compétente. Ils ont réussi à doubler notre taux de conversion grâce à leurs stratégies de CRO et d'optimisation de landing pages.\""
+          - heading "Marie Martin" [level=4] [ref=e810]
+          - paragraph [ref=e811]: Directrice Marketing, E-commerce Plus
+        - generic [ref=e815]:
+          - generic [ref=e816]: ★★★★★
+          - paragraph [ref=e817]: "\"Je recommande vivement SDG Techs pour toute entreprise souhaitant accélérer sa croissance digitale. Leur approche data-driven et leur maîtrise des outils d'IA ont fait toute la différence pour notre entreprise.\""
+          - heading "Sophie Laurent" [level=4] [ref=e818]
+          - paragraph [ref=e819]: Fondatrice, GreenSolutions
+        - generic [ref=e823]:
+          - generic [ref=e824]: ★★★★★
+          - paragraph [ref=e825]: "\"Une agence qui comprend réellement les défis du marché africain. Leur accompagnement sur nos campagnes Ads au Bénin a été exceptionnel. Je recommande les yeux fermés.\""
+          - heading "Koffi Mensah" [level=4] [ref=e826]
+          - paragraph [ref=e827]: Entrepreneur, Cotonou - Bénin
+        - generic [ref=e831]:
+          - generic [ref=e832]: ★★★★★
+          - paragraph [ref=e833]: "\"Grâce à SDG Techs, j'ai enfin un tunnel de vente qui travaille pour moi. Mes prises de rendez-vous ont doublé en moins d'un mois. Une expertise IA bluffante !\""
+          - heading "Amina Diallo" [level=4] [ref=e834]
+          - paragraph [ref=e835]: Coach en Leadership, Dakar - Sénégal
+        - generic [ref=e839]:
+          - generic [ref=e840]: ★★★★★
+          - paragraph [ref=e841]: "\"Leur approche du marketing digital est innovante et surtout axée sur le ROI. Nous avons modernisé toute notre image de marque et nos processus commerciaux grâce à eux.\""
+          - heading "Moussa Traoré" [level=4] [ref=e842]
+          - paragraph [ref=e843]: Directeur, Traoré Industrie
+        - generic [ref=e1989]:
+          - generic [ref=e1990]: ★★★★★
+          - paragraph [ref=e1991]: "\"SDG Techs a transformé notre présence en ligne. Grâce à leur expertise en growth hacking et en publicité payante, nous avons vu notre trafic augmenter de 300% en seulement 3 mois.\""
+          - heading "Jean Dupont" [level=4] [ref=e1992]
+          - paragraph [ref=e1993]: CEO, TechStartup
+        - generic [ref=e1997]:
+          - generic [ref=e1998]: ★★★★★
+          - paragraph [ref=e1999]: "\"L'équipe de SDG Techs est professionnelle, réactive et extrêmement compétente. Ils ont réussi à doubler notre taux de conversion grâce à leurs stratégies de CRO et d'optimisation de landing pages.\""
+          - heading "Marie Martin" [level=4] [ref=e2000]
+          - paragraph [ref=e2001]: Directrice Marketing, E-commerce Plus
+        - generic [ref=e2005]:
+          - generic [ref=e2006]: ★★★★★
+          - paragraph [ref=e2007]: "\"Je recommande vivement SDG Techs pour toute entreprise souhaitant accélérer sa croissance digitale. Leur approche data-driven et leur maîtrise des outils d'IA ont fait toute la différence pour notre entreprise.\""
+          - heading "Sophie Laurent" [level=4] [ref=e2008]
+          - paragraph [ref=e2009]: Fondatrice, GreenSolutions
+      - button "PRENDRE RENDEZ-VOUS" [ref=e873] [cursor=pointer]
+    - generic [ref=e875]:
+      - generic [ref=e876]:
+        - generic [ref=e878]:
+          - heading "PROJETS" [level=5] [ref=e879]
+          - heading "NOS RÉALISATIONS" [level=1] [ref=e880]
+        - list [ref=e884]:
+          - button "TOUS" [ref=e885] [cursor=pointer]
+          - button "APPLICATIONS" [ref=e886] [cursor=pointer]
+          - button "GRAPHISMES" [ref=e887] [cursor=pointer]
+          - button "SITES WEB" [ref=e888] [cursor=pointer]
+          - button "ADS" [ref=e889] [cursor=pointer]
+      - generic [ref=e890]:
+        - img "Digital Agency - Sites Web" [ref=e895]
+        - img "Globe Design - Sites Web" [ref=e900]
+        - img "Marketing Agency - Sites Web" [ref=e905]
+        - img "Beauty Parlor - Sites Web" [ref=e910]
+        - img "Apps Design - Sites Web" [ref=e915]
+        - img "Shopping Mohol - Sites Web" [ref=e920]
+        - img "Shopping Mohol - Sites Web" [ref=e925]
+        - img "Shopping Mohol - Sites Web" [ref=e930]
+        - img "Shopping Mohol - Sites Web" [ref=e935]
+        - img "Shopping Mohol - Sites Web" [ref=e940]
+        - img "Flyer Design - Graphismes" [ref=e945]
+        - img "Flyer Design - Graphismes" [ref=e950]
+        - img "Flyer Design - Graphismes" [ref=e955]
+        - img "Flyer Design - Graphismes" [ref=e960]
+        - img "Flyer Design - Graphismes" [ref=e965]
+        - img "Flyer Design - Graphismes" [ref=e970]
+        - img "Flyer Design - Graphismes" [ref=e975]
+        - img "Flyer Design - Graphismes" [ref=e980]
+        - img "Poster Design - Graphismes" [ref=e985]
+        - img "Social Media Design - Graphismes" [ref=e990]
+        - img "Social Media Design - Graphismes" [ref=e995]
+        - img "Social Media Design - Graphismes" [ref=e1000]
+        - img "Social Media Design - Graphismes" [ref=e1005]
+        - img "Social Media Design - Graphismes" [ref=e1010]
+        - img "Social Media Design - Graphismes" [ref=e1015]
+        - img "Shopping Mohol - Applications" [ref=e1020]
+        - img "Shopping Mohol - Applications" [ref=e1025]
+        - img "Shopping Mohol - Applications" [ref=e1030]
+        - img "Shopping Mohol - Applications" [ref=e1035]
+        - img "Shopping Mohol - Applications" [ref=e1040]
+        - img "Shopping Mohol - Applications" [ref=e1045]
+        - img "Campagne Google Ads - Publicité" [ref=e1050]
+        - img "Campagne Facebook Ads - Publicité" [ref=e1055]
+        - img "Campagne Instagram Ads - Publicité" [ref=e1060]
+        - img "Campagne LinkedIn Ads - Publicité" [ref=e1065]
+        - img "Campagne Display - Publicité" [ref=e1070]
+        - img "Campagne Shopping - Publicité" [ref=e1075]
+        - img "Campagne TikTok Ads - Publicité" [ref=e1080]
+      - button "PRENDRE RENDEZ-VOUS" [ref=e1083] [cursor=pointer]
+    - generic [ref=e1086]:
+      - generic [ref=e1089]:
+        - generic [ref=e1091]: 
+        - generic [ref=e1092]:
+          - heading "0" [level=1] [ref=e1093]
+          - generic [ref=e1094]: +
+        - heading "Projets réalisés" [level=4] [ref=e1096]
+      - generic [ref=e1099]:
+        - generic [ref=e1101]: 
+        - generic [ref=e1102]:
+          - heading "0" [level=1] [ref=e1103]
+          - generic [ref=e1104]: +
+        - heading "Membres actifs" [level=4] [ref=e1106]
+      - generic [ref=e1109]:
+        - generic [ref=e1111]: 
+        - generic [ref=e1112]:
+          - heading "0" [level=1] [ref=e1113]
+          - generic [ref=e1114]: "%"
+        - heading "Taux de satisfaction" [level=4] [ref=e1116]
+    - generic [ref=e1119]:
+      - generic [ref=e1121]:
+        - generic [ref=e1122]:
+          - heading "Contact" [level=5] [ref=e1123]
+          - heading "CONTACTEZ-NOUS" [level=3] [ref=e1124]
+          - heading "NOTRE AGENCE DIGITALE" [level=3] [ref=e1125]
+        - generic [ref=e1126]:
+          - generic [ref=e1127]:
+            - textbox "Votre nom*" [ref=e1130]
+            - textbox "Votre email*" [ref=e1133]
+            - generic [ref=e1135]:
+              - combobox "Indicatif pays" [ref=e1137] [cursor=pointer]:
+                - option "+33 (France)" [selected]
+                - option "+229 (Bénin)"
+                - option "+1 (Canada/USA)"
+                - option "+32 (Belgique)"
+                - option "+91 (Inde)"
+                - option "+225 (Côte d'Ivoire)"
+                - option "+221 (Sénégal)"
+                - option "+237 (Cameroun)"
+              - textbox "Numéro de téléphone" [ref=e1139]
+            - textbox "Message*" [ref=e1142]
+          - button "Envoyer " [ref=e1144] [cursor=pointer]:
+            - text: Envoyer
+            - generic [ref=e1145]: 
+      - generic [ref=e1148]:
+        - generic [ref=e1149]:
+          - heading "QUESTIONS FRÉQUENTES" [level=5] [ref=e1150]
+          - heading "COMMENT POUVONS-NOUS VOUS AIDER ?" [level=1] [ref=e1151]
+          - paragraph [ref=e1152]: Trouvez les réponses aux questions les plus courantes sur nos services et notre accompagnement.
+        - list [ref=e1153]:
+          - listitem [ref=e1154]:
+            - link "Quels services marketing digital proposez-vous ?" [ref=e1155] [cursor=pointer]:
+              - /url: "#"
+            - paragraph [ref=e1156]: Nous proposons du marketing digital, gestion des médias sociaux, création de sites web et applications, graphisme, emailing, rédaction web & SEO/SEA, assistance virtuelle et bien d'autres services sur mesure.
+          - listitem [ref=e1157]:
+            - link "Sur quels territoires intervenez-vous ?" [ref=e1158] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1159]:
+            - link "Comment se déroule un premier projet avec vous ?" [ref=e1160] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1161]:
+            - link "Proposez-vous des stratégies Google Ads ?" [ref=e1162] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=e1163]:
+            - link "Comment mesurer les résultats de nos campagnes ?" [ref=e1164] [cursor=pointer]:
+              - /url: "#"
+    - generic [ref=e1166]:
+      - generic [ref=e1169]:
+        - heading "NOTRE ÉQUIPE" [level=5] [ref=e1170]
+        - heading "DÉCOUVREZ NOS EXPERTS" [level=1] [ref=e1171]
+      - generic [ref=e1173]:
+        - generic [ref=e1175]:
+          - generic [ref=e2016]:
+            - img "Bernard" [ref=e2018]
+            - generic [ref=e2019]:
+              - heading "Bernard" [level=3] [ref=e2021]
+              - paragraph [ref=e2023]: Photographe & Vidéaste Expert • Bénin
+          - generic [ref=e2026]:
+            - img "Junior Waylee" [ref=e2028]
+            - generic [ref=e2029]:
+              - heading "Junior Waylee" [level=3] [ref=e2031]
+              - paragraph [ref=e2033]: Graphic Designer Expert • Côte d'Ivoire
+          - generic [ref=e2036]:
+            - img "Lucas Goudou" [ref=e2038]
+            - generic [ref=e2039]:
+              - heading "Lucas Goudou" [level=3] [ref=e2041]
+              - paragraph [ref=e2043]: Customer Support Expert • Bénin
+          - generic [ref=e2046]:
+            - img "Franck Ameganvi" [ref=e2048]
+            - generic [ref=e2049]:
+              - heading "Franck Ameganvi" [level=3] [ref=e2051]
+              - paragraph [ref=e2053]: Administrateur Système et Réseau Informatique • Bénin
+          - generic [ref=e2056]:
+            - img "Pascal Alidjinou" [ref=e2058]
+            - generic [ref=e2059]:
+              - heading "Pascal Alidjinou" [level=3] [ref=e2061]
+              - paragraph [ref=e2063]: Chargé de Communication / Voix off / Montage Audio • France
+          - generic [ref=e2066]:
+            - img "Onesime Malkiel Adje" [ref=e2068]
+            - generic [ref=e2069]:
+              - heading "Onesime Malkiel Adje" [level=3] [ref=e2071]
+              - paragraph [ref=e2073]: Senior Software Developer • Bénin
+          - generic [ref=e2076]:
+            - img "Achille Tchobo" [ref=e2078]
+            - generic [ref=e2079]:
+              - heading "Achille Tchobo" [level=3] [ref=e2081]
+              - paragraph [ref=e2083]: Développeur senior WordPress, PHP / Magento I & II
+          - generic [ref=e2086]:
+            - img "Alexis Othily" [ref=e2088]
+            - generic [ref=e2089]:
+              - heading "Alexis Othily" [level=3] [ref=e2091]
+              - paragraph [ref=e2093]: AI Engineer • IA & Automatisation
+          - generic [ref=e2096]:
+            - img "KOUTCHIKO A. Hénok" [ref=e2098]
+            - generic [ref=e2099]:
+              - heading "KOUTCHIKO A. Hénok" [level=3] [ref=e2101]
+              - paragraph [ref=e2103]: Business Developer et Dr en Physiopathologie
+          - generic [ref=e2106]:
+            - img "Fadonougbo Jerome" [ref=e2108]
+            - generic [ref=e2109]:
+              - heading "Fadonougbo Jerome" [level=3] [ref=e2111]
+              - paragraph [ref=e2113]: Business Developer • USA
+          - generic [ref=e2116]:
+            - img "Joel Dahoue" [ref=e2118]
+            - generic [ref=e2119]:
+              - heading "Joel Dahoue" [level=3] [ref=e2121]
+              - paragraph [ref=e2123]: Business Developer • USA
+          - generic [ref=e1288]:
+            - img "Gislain Sokponwe" [ref=e1290]
+            - generic [ref=e1291]:
+              - heading "Gislain Sokponwe" [level=3] [ref=e1293]
+              - paragraph [ref=e1295]: CEO SDG TECHS • Bénin
+          - generic [ref=e1298]:
+            - img "Jean-Bernard Batina" [ref=e1300]
+            - generic [ref=e1301]:
+              - heading "Jean-Bernard Batina" [level=3] [ref=e1303]
+              - paragraph [ref=e1305]: Développeur web & Digital Marketeur • France
+          - generic [ref=e1308]:
+            - img "Florian Grosjean" [ref=e1310]
+            - generic [ref=e1311]:
+              - heading "Florian Grosjean" [level=3] [ref=e1313]
+              - paragraph [ref=e1315]: Meta Buyer Expert • France
+          - generic [ref=e1318]:
+            - img "Eya Azizou" [ref=e1320]
+            - generic [ref=e1321]:
+              - heading "Eya Azizou" [level=3] [ref=e1323]
+              - paragraph [ref=e1325]: Inbound Marketing Experte • Belgique
+          - generic [ref=e1328]:
+            - img "Shams Raju" [ref=e1330]
+            - generic [ref=e1331]:
+              - heading "Shams Raju" [level=3] [ref=e1333]
+              - paragraph [ref=e1335]: Développeur WordPress & Web Designer • Inde
+          - generic [ref=e1338]:
+            - img "Alexandre Mc Kinnon" [ref=e1340]
+            - generic [ref=e1341]:
+              - heading "Alexandre Mc Kinnon" [level=3] [ref=e1343]
+              - paragraph [ref=e1345]: Business Developer Expert • Canada
+          - generic [ref=e1348]:
+            - img "Ado Nawainaou" [ref=e1350]
+            - generic [ref=e1351]:
+              - heading "Ado Nawainaou" [level=3] [ref=e1353]
+              - paragraph [ref=e1355]: Experte en Stratégie & Marketing Digital • Cameroun
+          - generic [ref=e1358]:
+            - img "Lucien Savi" [ref=e1360]
+            - generic [ref=e1361]:
+              - heading "Lucien Savi" [level=3] [ref=e1363]
+              - paragraph [ref=e1365]: Graphic Designer • France
+          - generic [ref=e1368]:
+            - img "Claude Nyake" [ref=e1370]
+            - generic [ref=e1371]:
+              - heading "Claude Nyake" [level=3] [ref=e1373]
+              - paragraph [ref=e1375]: Consultante Inbound Marketing • Cameroun
+          - generic [ref=e1378]:
+            - img "Amina Dambaba" [ref=e1380]
+            - generic [ref=e1381]:
+              - heading "Amina Dambaba" [level=3] [ref=e1383]
+              - paragraph [ref=e1385]: Copywriter Experte • Bénin
+          - generic [ref=e1388]:
+            - img "Bernard" [ref=e1390]
+            - generic [ref=e1391]:
+              - heading "Bernard" [level=3] [ref=e1393]
+              - paragraph [ref=e1395]: Photographe & Vidéaste Expert • Bénin
+          - generic [ref=e1398]:
+            - img "Junior Waylee" [ref=e1400]
+            - generic [ref=e1401]:
+              - heading "Junior Waylee" [level=3] [ref=e1403]
+              - paragraph [ref=e1405]: Graphic Designer Expert • Côte d'Ivoire
+          - generic [ref=e1408]:
+            - img "Lucas Goudou" [ref=e1410]
+            - generic [ref=e1411]:
+              - heading "Lucas Goudou" [level=3] [ref=e1413]
+              - paragraph [ref=e1415]: Customer Support Expert • Bénin
+          - generic [ref=e1418]:
+            - img "Franck Ameganvi" [ref=e1420]
+            - generic [ref=e1421]:
+              - heading "Franck Ameganvi" [level=3] [ref=e1423]
+              - paragraph [ref=e1425]: Administrateur Système et Réseau Informatique • Bénin
+          - generic [ref=e1428]:
+            - img "Pascal Alidjinou" [ref=e1430]
+            - generic [ref=e1431]:
+              - heading "Pascal Alidjinou" [level=3] [ref=e1433]
+              - paragraph [ref=e1435]: Chargé de Communication / Voix off / Montage Audio • France
+          - generic [ref=e1438]:
+            - img "Onesime Malkiel Adje" [ref=e1440]
+            - generic [ref=e1441]:
+              - heading "Onesime Malkiel Adje" [level=3] [ref=e1443]
+              - paragraph [ref=e1445]: Senior Software Developer • Bénin
+          - generic [ref=e1448]:
+            - img "Achille Tchobo" [ref=e1450]
+            - generic [ref=e1451]:
+              - heading "Achille Tchobo" [level=3] [ref=e1453]
+              - paragraph [ref=e1455]: Développeur senior WordPress, PHP / Magento I & II
+          - generic [ref=e1458]:
+            - img "Alexis Othily" [ref=e1460]
+            - generic [ref=e1461]:
+              - heading "Alexis Othily" [level=3] [ref=e1463]
+              - paragraph [ref=e1465]: AI Engineer • IA & Automatisation
+          - generic [ref=e1468]:
+            - img "KOUTCHIKO A. Hénok" [ref=e1470]
+            - generic [ref=e1471]:
+              - heading "KOUTCHIKO A. Hénok" [level=3] [ref=e1473]
+              - paragraph [ref=e1475]: Business Developer et Dr en Physiopathologie
+          - generic [ref=e1478]:
+            - img "Fadonougbo Jerome" [ref=e1480]
+            - generic [ref=e1481]:
+              - heading "Fadonougbo Jerome" [level=3] [ref=e1483]
+              - paragraph [ref=e1485]: Business Developer • USA
+          - generic [ref=e1488]:
+            - img "Joel Dahoue" [ref=e1490]
+            - generic [ref=e1491]:
+              - heading "Joel Dahoue" [level=3] [ref=e1493]
+              - paragraph [ref=e1495]: Business Developer • USA
+          - generic [ref=e2126]:
+            - img "Gislain Sokponwe" [ref=e2128]
+            - generic [ref=e2129]:
+              - heading "Gislain Sokponwe" [level=3] [ref=e2131]
+              - paragraph [ref=e2133]: CEO SDG TECHS • Bénin
+          - generic [ref=e2136]:
+            - img "Jean-Bernard Batina" [ref=e2138]
+            - generic [ref=e2139]:
+              - heading "Jean-Bernard Batina" [level=3] [ref=e2141]
+              - paragraph [ref=e2143]: Développeur web & Digital Marketeur • France
+          - generic [ref=e2146]:
+            - img "Florian Grosjean" [ref=e2148]
+            - generic [ref=e2149]:
+              - heading "Florian Grosjean" [level=3] [ref=e2151]
+              - paragraph [ref=e2153]: Meta Buyer Expert • France
+          - generic [ref=e2156]:
+            - img "Eya Azizou" [ref=e2158]
+            - generic [ref=e2159]:
+              - heading "Eya Azizou" [level=3] [ref=e2161]
+              - paragraph [ref=e2163]: Inbound Marketing Experte • Belgique
+          - generic [ref=e2166]:
+            - img "Shams Raju" [ref=e2168]
+            - generic [ref=e2169]:
+              - heading "Shams Raju" [level=3] [ref=e2171]
+              - paragraph [ref=e2173]: Développeur WordPress & Web Designer • Inde
+          - generic [ref=e2176]:
+            - img "Alexandre Mc Kinnon" [ref=e2178]
+            - generic [ref=e2179]:
+              - heading "Alexandre Mc Kinnon" [level=3] [ref=e2181]
+              - paragraph [ref=e2183]: Business Developer Expert • Canada
+          - generic [ref=e2186]:
+            - img "Ado Nawainaou" [ref=e2188]
+            - generic [ref=e2189]:
+              - heading "Ado Nawainaou" [level=3] [ref=e2191]
+              - paragraph [ref=e2193]: Experte en Stratégie & Marketing Digital • Cameroun
+          - generic [ref=e2196]:
+            - img "Lucien Savi" [ref=e2198]
+            - generic [ref=e2199]:
+              - heading "Lucien Savi" [level=3] [ref=e2201]
+              - paragraph [ref=e2203]: Graphic Designer • France
+          - generic [ref=e2206]:
+            - img "Claude Nyake" [ref=e2208]
+            - generic [ref=e2209]:
+              - heading "Claude Nyake" [level=3] [ref=e2211]
+              - paragraph [ref=e2213]: Consultante Inbound Marketing • Cameroun
+          - generic [ref=e2216]:
+            - img "Amina Dambaba" [ref=e2218]
+            - generic [ref=e2219]:
+              - heading "Amina Dambaba" [level=3] [ref=e2221]
+              - paragraph [ref=e2223]: Copywriter Experte • Bénin
+          - generic [ref=e2226]:
+            - img "Bernard" [ref=e2228]
+            - generic [ref=e2229]:
+              - heading "Bernard" [level=3] [ref=e2231]
+              - paragraph [ref=e2233]: Photographe & Vidéaste Expert • Bénin
+        - text:  
+    - generic [ref=e1629]:
+      - generic [ref=e1630]:
+        - generic [ref=e1632]:
+          - link "SDG Techs - Agence marketing digital" [ref=e1634] [cursor=pointer]:
+            - /url: "#home"
+            - img "SDG Techs - Agence marketing digital" [ref=e1635]
+          - paragraph [ref=e1637]: Agence marketing digital orientée résultats. 10+ ans d'expérience, Afrique, Europe, Asie, Canada.
+          - generic [ref=e1638]:
+            - link "" [ref=e1639] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1640]: 
+            - link "" [ref=e1641] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1642]: 
+            - link "" [ref=e1643] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1644]: 
+            - link "" [ref=e1645] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e1646]: 
+        - generic [ref=e1648]:
+          - heading "SERVICES" [level=4] [ref=e1649]
+          - list [ref=e1651]:
+            - listitem [ref=e1652]:
+              - link "Marketing Digital" [ref=e1653] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e1654]:
+              - link "Sites Web & Apps" [ref=e1655] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e1656]:
+              - link "SEO & Rédaction" [ref=e1657] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e1658]:
+              - link "Graphisme" [ref=e1659] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e1660]:
+              - link "Contact" [ref=e1661] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e1662]:
+          - heading "LIENS UTILES" [level=4] [ref=e1664]
+          - list [ref=e1666]:
+            - listitem [ref=e1667]:
+              - link "Accueil" [ref=e1668] [cursor=pointer]:
+                - /url: "#home"
+            - listitem [ref=e1669]:
+              - link "Partenaires" [ref=e1670] [cursor=pointer]:
+                - /url: "#partner-area"
+            - listitem [ref=e1671]:
+              - link "Services" [ref=e1672] [cursor=pointer]:
+                - /url: "#services"
+            - listitem [ref=e1673]:
+              - link "À Propos" [ref=e1674] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e1675]:
+              - link "Projets" [ref=e1676] [cursor=pointer]:
+                - /url: "#portfolio"
+            - listitem [ref=e1677]:
+              - link "Contact" [ref=e1678] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e1680]:
+          - heading "CONTACTS" [level=4] [ref=e1681]
+          - generic [ref=e1682]:
+            - generic [ref=e1684]: 
+            - paragraph [ref=e1686]: "+33746458691"
+          - generic [ref=e1687]:
+            - generic [ref=e1689]: 
+            - paragraph [ref=e1691]: contact@sdgtechs.com
+          - generic [ref=e1692]:
+            - generic [ref=e1694]: 
+            - paragraph [ref=e1696]: Afrique, Asie, Europe, Canada
+      - generic [ref=e1697]:
+        - paragraph [ref=e1701]: Copyright © 2026. Tous droits réservés SDG Techs
+        - paragraph [ref=e1704]: Mentions légales · Services · Carrières
+  - text: 

@@ -11,7 +11,6 @@ const COPY = {
     contactTitle: "Contacts",
     contact: {
       email: "contact@sdgtechs.com",
-      phone: "+33746458691",
       regions: "Afrique, Asie, Europe, Canada",
       hours: "Lun-Ven : 09:00 à 18:00 · Dimanche : fermé",
     },
@@ -24,7 +23,6 @@ const COPY = {
     contactTitle: "Contact info",
     contact: {
       email: "contact@sdgtechs.com",
-      phone: "+33746458691",
       regions: "Africa, Asia, Europe, Canada",
       hours: "Mon-Fri: 09:00 to 18:00 · Sunday: Closed",
     },
@@ -68,9 +66,6 @@ export default function Sidebar() {
                   <ul className="list-style-one">
                     <li>
                       <span className="icon flaticon-email" />{c.contact.email}
-                    </li>
-                    <li>
-                      <span className="flaticon-phone-call" />{c.contact.phone}
                     </li>
                     <li>
                       <span className="icon flaticon-placeholder-1" />

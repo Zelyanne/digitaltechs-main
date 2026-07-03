@@ -9,11 +9,11 @@
   --spacing-md: 24px;
   --spacing-lg: 32px;
   --spacing-xl: 48px;
-  --sdg-primary: #b53b47;
-  --sdg-primary-light: #b53b47;
-  --sdg-accent: #b53b47;
-  --sdg-accent-hover: #b53b47;
-  --sdg-accent-soft: #b53b47;
+  --sdg-primary: #d83b2d;
+  --sdg-primary-light: #d83b2d;
+  --sdg-accent: #d83b2d;
+  --sdg-accent-hover: #d83b2d;
+  --sdg-accent-soft: #d83b2d;
   --sdg-dark-bg: #0f1724;
   --sdg-dark-card: #182437;
   --sdg-light-bg: #f8f9fa;
@@ -395,7 +395,7 @@ i.fa-check,
 .style-four .techno-sinlge-service-box:hover::before,
 .style-four .techno-sinlge-service-box.active::before,
 .style-four .techno-sinlge-service-box.active:hover::before {
-  background: linear-gradient(135deg, var(--sdg-primary) 0%, #b53b47 100%) !important;
+  background: linear-gradient(135deg, var(--sdg-primary) 0%, #d83b2d 100%) !important;
 }
 
 .style-four .techno-sinlge-service-box::after,
@@ -587,7 +587,7 @@ body.sdg-dark-mode i.fa-check {
   color: var(--sdg-accent-soft) !important;
 }
 body.sdg-dark-mode .sector-icon-wrap {
-  background: linear-gradient(135deg, var(--sdg-primary) 0%, #b53b47 100%) !important;
+  background: linear-gradient(135deg, var(--sdg-primary) 0%, #d83b2d 100%) !important;
   box-shadow: 0 10px 20px rgba(15, 23, 36, 0.28) !important;
 }
 body.sdg-dark-mode .sector-activity-card:hover {
@@ -667,7 +667,7 @@ body.sdg-dark-mode .techno-sinlge-service-box:hover .techno-service-icon i {
 }
 
 body.sdg-dark-mode .techno-sinlge-service-box:hover {
-  background: linear-gradient(135deg, var(--sdg-primary) 0%, #b53b47 100%) !important;
+  background: linear-gradient(135deg, var(--sdg-primary) 0%, #d83b2d 100%) !important;
 }
 body.sdg-dark-mode .techno-sinlge-service-box:focus-within {
   outline-color: var(--sdg-accent-soft) !important;

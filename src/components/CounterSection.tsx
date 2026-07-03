@@ -1,20 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { useI18n } from "../i18n";
 
-type CounterKey = "projects" | "members" | "satisfaction";
+type CounterKey = "projects" | "satisfaction";
 
 const COPY = {
   fr: {
     labels: {
       projects: "Projets réalisés",
-      members: "Membres actifs",
       satisfaction: "Taux de satisfaction",
     },
   },
   en: {
     labels: {
       projects: "Projects completed",
-      members: "Active team members",
       satisfaction: "Satisfaction rate",
     },
   },
@@ -22,7 +20,6 @@ const COPY = {
 
 const COUNTERS = [
   { icon: "flaticon-code", value: 250, suffix: "+", labelKey: "projects" as const, format: "none" },
-  { icon: "flaticon-temporary-agency", value: 95, suffix: "+", labelKey: "members" as const, format: "none" },
   { icon: "fas fa-award", value: 100, suffix: "%", labelKey: "satisfaction" as const, format: "none" },
 ] as const satisfies readonly { icon: string; value: number; suffix: string; labelKey: CounterKey; format: string }[];
 

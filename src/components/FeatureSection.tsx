@@ -11,14 +11,11 @@ const COPY = {
       "SDG Techs, agence digital créée en 2016. Nous aidons les organisations de tout genre et entrepreneurs à maximiser leurs résultats grâce à des déploiements en ligne au meilleur prix. Stratégies sur-mesure, résultats rapides et mesurables, grâce à des professionnels polyvalents et des outils d'intelligence artificielle.",
     tabs: {
       satisfaction: "SATISFACTION",
-      experts: "ÉQUIPE D'EXPERTS",
       mission: "MISSION & VISION",
     },
     content: {
       satisfaction:
         "Nous plaçons la satisfaction client au cœur de notre démarche. Chaque projet est suivi de près pour garantir des résultats optimaux. Notre engagement : des livrables de qualité, des délais respectés et un accompagnement personnalisé tout au long de notre collaboration.",
-      experts:
-        "Notre équipe d'experts certifiés combine compétences techniques et savoir-faire marketing. Du développement web à l'IA, en passant par le growth hacking et le graphisme, nous disposons de tous les talents pour propulser votre entreprise vers le succès digital.",
       mission:
         "Notre mission est de démocratiser l'accès aux solutions digitales performantes pour tous types d'organisations. Nous croyons en une technologie au service de l'humain, avec des stratégies innovantes et des outils IA de pointe pour des résultats mesurables et durables.",
     },
@@ -29,12 +26,6 @@ const COPY = {
         "Accompagnement personnalisé tout au long de la collaboration",
         "Reportings réguliers et transparents",
       ],
-      experts: [
-        "Plus de 10 ans d'expérience cumulée",
-        "Spécialistes certifiés en marketing digital, IA et développement",
-        "Présence en France, Belgique, USA, Canada, Bénin, Cameroun, etc.",
-        "Équipe polyvalente : growth, design, dev, SEO, copywriting",
-      ],
       mission: [
         "Démocratiser l'accès aux solutions digitales performantes",
         "Technologie au service de l'humain",
@@ -44,7 +35,7 @@ const COPY = {
     },
     alts: {
       feature1: "Solutions digitales SDG Techs",
-      img2: "Équipe d'experts SDG Techs",
+
     },
   },
   en: {
@@ -56,14 +47,11 @@ const COPY = {
       "SDG Techs is a digital agency founded in 2016. We help organizations of all kinds and entrepreneurs maximize their results through online execution at the best price. Tailor-made strategies and fast, measurable results, powered by versatile experts and AI tools.",
     tabs: {
       satisfaction: "SATISFACTION",
-      experts: "EXPERT TEAM",
       mission: "MISSION & VISION",
     },
     content: {
       satisfaction:
         "We put client satisfaction at the center of our approach. Every project is closely monitored to deliver optimal outcomes. Our commitment: high-quality deliverables, respected timelines, and personalized support throughout our collaboration.",
-      experts:
-        "Our certified experts combine technical skills with marketing know-how. From web development to AI, including growth tactics and design, we bring together the talent needed to drive your business toward digital success.",
       mission:
         "Our mission is to make high-performing digital solutions accessible to all kinds of organizations. We believe in technology that serves people, with innovative strategies and cutting-edge AI tools for measurable, sustainable results.",
     },
@@ -74,12 +62,6 @@ const COPY = {
         "Personalized support throughout collaboration",
         "Regular and transparent reporting",
       ],
-      experts: [
-        "10+ years of combined experience",
-        "Certified specialists in digital marketing, AI, and development",
-        "Operations in France, Belgium, USA, Canada, Benin, Cameroon, and more",
-        "Versatile team: growth, design, dev, SEO, copywriting",
-      ],
       mission: [
         "Making high-performing digital solutions accessible to all",
         "Technology that serves people",
@@ -89,7 +71,7 @@ const COPY = {
     },
     alts: {
       feature1: "SDG Techs digital solutions",
-      img2: "SDG Techs expert team",
+
     },
   },
 } as const;
@@ -132,17 +114,6 @@ export default function FeatureSection() {
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    id="pills-profile-tab"
-                    data-toggle="pill"
-                    href="#pills-profile"
-                    role="tab"
-                  aria-controls="pills-profile"
-                  aria-selected="false"
-                  ><span>{c.tabs.experts}</span></a>
-                </li>
-                <li className="nav-item">
-                  <a
-                    className="nav-link"
                     id="pills-contact-tab"
                     data-toggle="pill"
                     href="#pills-contact"
@@ -175,36 +146,6 @@ export default function FeatureSection() {
                         <div className="dreamit-department-bottom-content-inner">
                           <ul>
                             {c.bullets.satisfaction.map((b, i) => (
-                              <li key={i}><i className="fas fa-check" /><span>{b}</span></li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="tab-pane fade"
-                  id="pills-profile"
-                  role="tabpanel"
-                  aria-labelledby="pills-profile-tab"
-                >
-                  <div className="dreamit-department-tab-box">
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className="tab-content-text">
-                          <p>{c.content.experts}</p>
-                        </div>
-                      </div>
-                      <div className="col-lg-6 col-md-6">
-                        <div className="dreamit-department-thumb">
-                          <img src={IMG("resource/img-2.png")} alt={c.alts.img2} />
-                        </div>
-                      </div>
-                      <div className="col-lg-6 col-md-6">
-                        <div className="dreamit-department-bottom-content-inner">
-                          <ul>
-                            {c.bullets.experts.map((b, i) => (
                               <li key={i}><i className="fas fa-check" /><span>{b}</span></li>
                             ))}
                           </ul>

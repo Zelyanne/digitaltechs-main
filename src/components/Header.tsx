@@ -32,7 +32,6 @@ const COPY = {
       faq: "FAQ",
       contact: "Contact",
     },
-    callLabel: "WhatsApp",
     themeLabel: "Thème",
     themeToggle: "Basculer le thème",
     languageLabel: "Langue",
@@ -49,7 +48,6 @@ const COPY = {
       faq: "FAQ",
       contact: "Contact",
     },
-    callLabel: "WhatsApp",
     themeLabel: "Theme",
     themeToggle: "Toggle theme",
     languageLabel: "Language",
@@ -170,32 +168,7 @@ export default function Header() {
                   </li>
                   <li><a href="#contact" style={desktopNavLinkStyle}>{c.nav.contact}</a></li>
                 </ul>
-                <div
-                  className="sdg-header-call"
-                  style={{ display: "inline-flex", alignItems: "center", gap: 12, flexShrink: 0, marginLeft: 8 }}
-                >
-                  <span
-                    style={{
-                      width: 38,
-                      height: 38,
-                      borderRadius: 8,
-                      background: themeMode === "dark"
-                        ? "linear-gradient(135deg, #20334b 0%, #2d4967 100%)"
-                        : "linear-gradient(135deg, #b53b47 0%, #b53b47 100%)",
-                      border: themeMode === "dark" ? "1px solid rgba(228, 235, 243, 0.16)" : undefined,
-                      color: "#fff",
-                      display: "inline-flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <i className="flaticon-phone-call" style={{ fontSize: 16 }} />
-                  </span>
-                  <span style={{ display: "inline-flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1.1, color: "#fff" }}>
-                    <span style={{ fontSize: 10, fontWeight: 600, opacity: 0.82 }}>{c.callLabel}</span>
-                    <strong style={{ fontSize: 12.5, fontWeight: 800, whiteSpace: "nowrap" }}>+33746458691</strong>
-                  </span>
-                </div>
+
                 <div
                   className="sdg-theme-switcher"
                   style={{ display: "inline-flex", alignItems: "center", gap: 6, flexShrink: 0 }}

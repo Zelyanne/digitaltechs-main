@@ -483,7 +483,7 @@
     right: -15px;
 }
 .meta-blog a:hover {
-    color: #b53b47;
+    color: #d83b2d;
 }
 .meta-blog-right a {
     position: relative;
@@ -492,7 +492,7 @@
     margin-left: 15px;
 }
 .meta-blog-right a:hover {
-    color: #b53b47;
+    color: #d83b2d;
 }
 .meta-blog-right a:before {
     position: absolute;
@@ -515,7 +515,7 @@
     font-family: 'Rajdhani';
 }
 .blog-page-title h2 a:hover {
-    color: #b53b47;
+    color: #d83b2d;
 }
 .meta-blog1 {
     float: left;
@@ -538,10 +538,10 @@
     right: -15px;
 }
 .meta-blog1 a:hover {
-    color: #b53b47;
+    color: #d83b2d;
 }
 .meta-blog span:hover {
-    color: #b53b47;
+    color: #d83b2d;
 }
 .blog-page-title1 h2 {
     font-size: 21px;
@@ -552,7 +552,7 @@
     display: block;
 }
 .blog-page-title1 h2 a:hover {
-    color: #b53b47;
+    color: #d83b2d;
 }
 .search {
     padding: 35px 30px 35px;
@@ -652,14 +652,14 @@ button.icons {
     border-radius: 5px;
 }
 .Tags-Cloud-title a:hover {
-    background: #b53b47;
+    background: #d83b2d;
     color: #fff;
 }
 .popular-post-content a:hover {
-    color: #b53b47;
+    color: #d83b2d;
 }
 .categories-content ul li a:hover {
-    color: #b53b47;
+    color: #d83b2d;
 }
 /*bg-ber*/
 .text-left1.em_bar_bg {
@@ -678,7 +678,7 @@ button.icons {
     height: 9px;
     width: 9px;
     border-radius: 50%;
-    background: #b53b47;
+    background: #d83b2d;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -722,7 +722,7 @@ button.icons {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background: #b53b47;
+    background: #d83b2d;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -747,7 +747,7 @@ padding-top: 11px;
 padding-bottom: 13px;
 }
 .sidebar-search input:focus {
-border: 1px solid #b53b47;
+border: 1px solid #d83b2d;
 }
 .widget-title h2 {
     font-size: 25px;
@@ -809,7 +809,7 @@ border: 1px solid #ccc;
 background-color: #fff;
 }
 .all-date li.monthdate:hover {
-    background-color: #b53b47;
+    background-color: #d83b2d;
     color: #fff;
 }
 .widget-items p {
@@ -840,8 +840,8 @@ margin-bottom: 0;
     transition: .5s;
 }
 .techno-socail-icon a i:hover {
-    background: #b53b47;
-    border: #b53b47;
+    background: #d83b2d;
+    border: #d83b2d;
     color: #fff;
 }
 /*contact form*/
@@ -880,14 +880,14 @@ margin-bottom: 0;
 }
 .style-four .from-box input:focus {
     background: transparent;
-    border: 3px solid #b53b47 !important;
+    border: 3px solid #d83b2d !important;
     outline-color: none;
     box-shadow: none;
     border-radius: 5px;
 }
 .style-four .from-box textarea:focus {
     background: transparent;
-    border: 3px solid #b53b47 !important;
+    border: 3px solid #d83b2d !important;
     outline-color: none;
     box-shadow: none;
 }
@@ -899,7 +899,7 @@ margin-bottom: 0;
     font-weight: 600;
     text-transform: uppercase;
     padding: 14px 30px;
-    background: linear-gradient(to right, #b53b47 0%, #b53b47 100%);
+    background: linear-gradient(to right, #d83b2d 0%, #d83b2d 100%);
     border-radius: 5px;
     font-family: 'Rajdhani';
     border: 0;
@@ -950,7 +950,7 @@ margin-bottom: 0;
     display: inline-block;
     font-size: 35px;
     margin-top: 25px;
-    color: #b53b47;
+    color: #d83b2d;
 }
 .contact-now-title {
     padding-bottom: 13px;
@@ -966,7 +966,7 @@ margin-bottom: 0;
     margin-bottom: 10px;
 }
 .contact-now-form-box-inner:hover {
-    border: 2px solid #b53b47;
+    border: 2px solid #d83b2d;
 }
 .widget-sidebar-title-2 h2 {
     font-size: 32px;
